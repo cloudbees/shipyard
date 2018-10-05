@@ -35,6 +35,7 @@ assets:
     - _assets/js
     - _assets/css
     - _assets/img
+    - _assets/shipyard/sass
 
 defaults:
   -

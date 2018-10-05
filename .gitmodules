@@ -2,3 +2,6 @@
 	path = _site
 	url = git@github.com:cloudbees/shipyard-styleguide.git
 	branch = gh-pages
+[submodule "_assets/shipyard"]
+	path = _assets/shipyard
+	url = git@github.com:cloudbees/shipyard.git

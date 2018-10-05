@@ -8,7 +8,7 @@ module Shipyard
       end
 
       def render(context)
-        JSON.parse(File.read('../package.json'))['version']
+        JSON.parse(File.read('_assets/shipyard/package.json'))['version']
       end
     end
   end
