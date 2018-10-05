@@ -1,0 +1,100 @@
+<div class="modal-container z-200 {{ include.css_class }}" modal="example">
+  <div class="modal" role="dialog">
+    <div class="modal-content">
+      <div class="modal-title-border sm:mb-20">
+        <h1 class="text-lg sm:text-xl">Billing Info</h1>
+      </div>
+      <form>
+        <div class="col-container mb-20">
+          <div class="col">
+            <label class="label">First Name</label>
+            <div class="input-required">
+              <input type="text" class="input input-text" />
+            </div>
+          </div>
+          <div class="col">
+            <label class="label">Last Name</label>
+            <div class="input-required">
+              <input type="text" class="input input-text" />
+            </div>
+          </div>
+        </div>
+        <div class="col-container mb-20">
+          <div class="col col-100 sm:col-50 mb-15 sm:mb-0">
+            <label class="label">Email Address</label>
+            <input type="text" class="input input-text" />
+          </div>
+          <div class="col col-100 sm:col-50">
+            <label class="label">Phone Number</label>
+            <div class="input-required">
+              <input type="text" class="input input-text" />
+            </div>
+          </div>
+        </div>
+        <div class="col-container mb-20">
+          <div class="col col-100 mb-15">
+            <label class="label">Billing Address</label>
+            <input type="text" class="input input-text" placeholder="Company Name" />
+          </div>
+          <div class="col col-100 mb-15">
+            <input type="text" class="input input-text" placeholder="Street Address" />
+          </div>
+          <div class="col col-100 sm:col-33 mb-15">
+            <div class="input-required">
+              <input type="text" class="input input-text" placeholder="Postal Code" />
+            </div>
+          </div>
+          <div class="col col-50 sm:col-33 mb-15">
+            <input type="text" class="input input-text" placeholder="City" />
+          </div>
+          <div class="col col-50 sm:col-33 mb-15">
+            <input type="text" class="input input-text" placeholder="State" />
+          </div>
+          <div class="col col-100">
+            <div class="input-required">
+              <div class="input-select-container">
+                <select class="input input-select">
+                  <option class="input-option-placeholder">Country</option>
+                  <option>United States of America</option>
+                  <option>France</option>
+                  <option>Germany</option>
+                  <option>Austria</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-container mb-20">
+          <div class="col">
+            <label class="label">Tax Information</label>
+            <input type="text" class="input input-text" placeholder="VAT Number" />
+          </div>
+        </div>
+        <div class="col-container mb-15 sm:mb-0">
+          <div class="col">
+            <label class="label">Additional Invoice Information</label>
+            <p class="label-note">This information will appear on each invoice. Don't include any confidential financial information.</p>
+            <input type="text" class="input input-text" placeholder="e.g. Invoice notes, accounts payable info, additional address info, etc..." />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-ctas">
+      <div class="col-container-nowrap">
+        <div class="col col-100">
+          <button class="btn btn-primary btn-sm sm:btn-md" modal-close>
+            Save
+            <span class="hidden sm:inline">&amp; Close</span>
+          </button>
+          <button class="btn btn-secondary btn-sm sm:btn-md ml-5 sm:ml-10" modal-close>Cancel</button>
+        </div>
+        <div class="col align-right">
+          <span class="btn-sm sm:btn-md white-space-nowrap p-0">
+            {% icon :lock, class: 'green-dark center-obj mr-5' %}
+            <span class="text-sm text-lighter medium">Secure Server</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

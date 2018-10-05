@@ -1,0 +1,115 @@
+// Code "Span"
+code.highlighter-rouge
+  @extend .code-inline
+  margin: 0 3px
+
+// Code "Block"
+.code-block
+  margin: 15px 0
+
+h1
+  @extend .text-xxxl
+
+h2
+  @extend .text-lg
+
+hr
+  @extend .hr
+  +respond-to(margin, (all: 30px 0, sm: 40px 0, md: 50px 0))
+
+// Shared
+.section-description
+  @extend .text-light
+  @extend .mb-20
+
+// Utilities: Colors
++component('shade')
+  &-list
+    +respond-to(margin-left, (all: -5px, sm: -10px))
+    +respond-to(margin-right, (all: -5px, sm: -10px))
+  &-item
+    text-align: center
+  &-box
+    height: 165px
+    padding: 5px
+    white-space: nowrap
+    &:hover
+      cursor: default
+    &:not(:hover)
+      background: #fff !important
+    &.bg-white
+      background: $gray-darkest !important
+  &-color
+    height: 120px
+    border-radius: 2px 2px 0 0
+    color: transparent
+    transition: 300ms color ease
+    +when('box:hover')
+      color: #fff
+    +when('light:hover, white:hover')
+      color: $gray-darker
+  &-text
+    line-height: 40px
+    transition: 300ms color ease
+    +when('box:hover')
+      color: rgba(#fff,.7)
+    +when('light:hover')
+      color: rgba($gray-darker,.6)
+
++component('utilities-margin-padding')
+  &-box
+    line-height: 40px
+
++component('utilities-grid')
+  &-box
+    width: 100%
+    flex-grow: 1
+    min-height: 30px
+
++component('utilities-z-index')
+  &-list
+    height: 130px
+  &-item
+    +width-height(80px)
+    @for $i from 2 through 6
+      &:nth-child(#{$i})
+        top: ($i - 1) * 10px
+        left: ($i - 1) * 10px
+
++component('utilities-typography')
+  &-hr
+    margin: 0 30px
+    &-box
+      &,
+      &-dark,
+      &-light,
+      &-default
+        padding: 30px 0
+        margin: 15px 0
+      &-dark
+        background: $gray-lighter
+      &-light
+        background: #fff
+      &-default
+        border: 2px solid $border-color-light
+
++component('modal-downgrade')
+  &-coupon
+    padding: 0
+    margin: 0 4px !important
+    white-space: normal
+    &-txt
+      padding: 0 8px
+      font-family: $font-family
+  &-tag
+    padding: 5px
+    display: inline-block
+    border-radius: 3px 0 0 3px
+
++component('components-checkboxes')
+  &-switch-col
+    line-height: 1.2
+
++component('css-stat')
+  &-item
+    line-height: 1.3

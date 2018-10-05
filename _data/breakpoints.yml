@@ -1,0 +1,15 @@
+-
+  modifier: null
+  label: All Screens
+-
+  modifier: sm
+  label: Phones
+-
+  modifier: md
+  label: Tablets
+-
+  modifier: lg
+  label: Laptops
+-
+  modifier: xl
+  label: Wide Screens

@@ -1,0 +1,52 @@
+---
+title: Shipyard Modal Example
+answers:
+  - We're happy with Codeship, but we don't need it anymore.
+  - We've chosen another CI/CD provider.
+  - Codeship is too expensive for our needs.
+  - Codeship is missing a feature that we needed.
+  - We're unsatisfied with our experience.
+---
+
+{% include page-heading.html page=page %}
+
+<div class="modal-container z-200" modal="example-small">
+  <div class="modal modal-sm modal-billing" role="dialog">
+    <div class="alert alert-success mb-0 rounded-top medium text-sm">
+      We'd like to offer you
+      <span class="modal-downgrade-coupon code-inline bold"><span class="modal-downgrade-tag bg-green-dark mr-0 rounded-left">{% icon :tag, class: 'center-obj modal-downgrade-tag-icon' %}</span><span class="modal-downgrade-coupon-txt">50% OFF</span></span>
+      one month if you decide to stay.
+      <button class="alert-cta btn btn-cta btn-sm" modal-close>Apply Discount</button>
+    </div>
+    <div class="modal-content rounded-0">
+      <div class="modal-title">
+        <h1 class="text-lg sm:text-xl">Codeship Basic Downgrade</h1>
+      </div>
+      <p class="text-light mb-20">
+        We'd appreciate it if you would take a moment to share your thoughts
+        and experience on why Codeship wasn't a good fit for your team.
+      </p>
+      <form>
+        <ul class="input-list">
+          {% for answer in page.answers %}
+            <li class="input-item">
+              <input id="checkbox-{{ forloop.index }}" name="checkbox-name" type="checkbox" class="input input-checkbox" />
+              <label for="checkbox-{{ forloop.index }}" class="input-label">{{ answer }}</label>
+            </li>
+          {% endfor %}
+        </ul>
+        <div class="input-group">
+          <label class="label">Please provide additional details:</label>
+          <textarea class="input input-text input-lg" placeholder="How could we have made your experience better?"></textarea>
+        </div>
+      </form>
+    </div>
+    <div class="modal-ctas">
+      <button class="btn btn-caution btn-sm sm:btn-md mr-5 sm:mr-10" modal-close>
+        <span class="hidden sm:inline">Confirm</span> Downgrade
+      </button>
+      <button class="btn btn-cta btn-sm sm:btn-md mr-5 sm:mr-10" modal-close>Apply Discount</button>
+      <button class="btn btn-secondary btn-sm sm:btn-md" modal-close>Cancel</button>
+    </div>
+  </div>
+</div>
