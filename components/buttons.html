@@ -1,0 +1,234 @@
+<html lang="en" class="env- components-buttons">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shipyard Buttons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#20a5a8" />
+    <link media="screen" rel="stylesheet" type="text/css" href="//assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="//assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="//assets/application-5c629b9dbfd027cf06ebd3120372d993eef26f3caf672363b4f1939c04a4a1af.css">
+  </head>
+  <body>
+    <header class="header z-100">
+      <div class="container">
+        <h6 class="header-logo"><a href="//">Shipyard</a></h6>
+        <button class="hamburger sm:hidden" shipyard="hamburger">
+          <span class="hamburger-button">Menu</span>
+        </button>
+        <ul class="header-list">
+          
+            <li class="header-item ">
+              <a href="//" class="header-link">Installation</a>
+            </li>
+          
+            <li class="header-item ">
+              <a href="//methodology" class="header-link">Methodology</a>
+            </li>
+          
+            <li class="header-item ">
+              <a href="//components/" class="header-link">Components</a>
+            </li>
+          
+            <li class="header-item ">
+              <a href="//utilities/" class="header-link">Utilities</a>
+            </li>
+          
+          <li class="header-item header-item-cta">
+            <a href="https://github.com/codeship/shipyard" target="_blank" class="header-link-cta" rel="noopener">Download</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container"><h1>Shipyard Buttons</h1>
+
+<hr />
+
+<h2 id="common-buttons">Common Buttons</h2>
+<p class="section-description">Shipyard gives you more buttons than you can shake a stick at.</p>
+
+<div class="mb-20">
+  <button class="btn mr-10">Default</button>
+  <button class="btn btn-primary mr-10">Primary</button>
+  <button class="btn btn-primary-dark mr-10">Primary Dark</button>
+  <button class="btn btn-cta mr-10">CTA</button>
+  <button class="btn btn-caution mr-10">Caution</button>
+  <button class="btn btn-disabled mr-10">Disabled</button>
+  <button class="btn btn-link">Link</button>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Default<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary"</span><span class="nt">&gt;</span>Primary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary-dark"</span><span class="nt">&gt;</span>Primary Dark<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-cta"</span><span class="nt">&gt;</span>CTA<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-caution"</span><span class="nt">&gt;</span>Caution<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-disabled"</span><span class="nt">&gt;</span>Disabled<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-link"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="secondary-buttons">Secondary Buttons</h2>
+<p class="section-description">Useful when you have a button on a darker background.</p>
+
+<div class="mb-20">
+  <button class="btn btn-secondary mr-10">Secondary</button>
+  <button class="btn btn-secondary-dark mr-10">Secondary Dark</button>
+  <button class="btn btn-secondary-link">Secondary Link</button>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>Secondary<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary-dark"</span><span class="nt">&gt;</span>Secondary Dark<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary-link"</span><span class="nt">&gt;</span>Secondary Link<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="inverse-buttons">Inverse Buttons</h2>
+<p class="section-description">Useful when you have a button on a darker background.</p>
+
+<div class="box-secondary p-10 sm:p-15 md:p-20 lg:p-30 bg-gray-dark mb-20">
+  <button class="btn btn-inverse mr-10">Inverse</button>
+  <button class="btn btn-inverse-secondary">Inverse Secondary</button>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-inverse"</span><span class="nt">&gt;</span>Inverse<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-inverse-secondary"</span><span class="nt">&gt;</span>Inverse Secondary<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="rounded-buttons">Rounded Buttons</h2>
+<p class="section-description">Rounded buttons utilize the <a href="/utilities/border-radius">border-radius utility</a>, and are useful when you want a button with completely rounded corners.</p>
+
+<div class="mb-20">
+  <button class="btn rounded-pill mr-10">Default</button>
+  <button class="btn btn-primary rounded-pill mr-10">Primary</button>
+  <button class="btn btn-cta rounded-pill mr-10">CTA</button>
+  <button class="btn btn-caution rounded-pill mr-10">Caution</button>
+  <button class="btn btn-secondary rounded-pill">Secondary</button>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn rounded-pill"</span><span class="nt">&gt;</span>Rounded<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="loading-buttons">Loading Buttons</h2>
+<p class="section-description">Useful when you have a button that triggers an asynchronous action.</p>
+
+<div class="mb-20">
+  <button class="btn btn-loading mr-10">Default</button>
+  <button class="btn btn-primary btn-loading mr-10">Primary</button>
+  <button class="btn btn-cta btn-loading mr-10">CTA</button>
+  <button class="btn btn-caution btn-loading mr-10">Caution</button>
+  <button class="btn btn-secondary btn-loading mr-10">Secondary</button>
+  <button class="btn btn-secondary-link btn-loading">Secondary Link</button>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-loading"</span><span class="nt">&gt;</span>Loading<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="full-screen-buttons">Full-Screen Buttons</h3>
+<p class="section-description">Often really useful on mobile screens or in combination with other grids.</p>
+
+<div class="mb-20">
+  <button class="btn btn-full">Save Changes</button>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-full"</span><span class="nt">&gt;</span>Save Changes<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h3 id="common-buttons-tags">Common Buttons Tags</h3>
+<p class="section-description">The button classes can be applied to any type of html tag to achieve the desired result. The most common examples being the <code class="language-html highlighter-rouge">button</code>, <code class="language-html highlighter-rouge">a</code>, and <code class="language-html highlighter-rouge">input</code> tags as seen in the example below.</p>
+
+<div class="mb-30">
+  <button class="btn">Button</button>
+  <a href="#" class="btn">Link</a>
+  <input type="button" class="btn" value="Input" />
+  <input type="submit" class="btn" value="Submit" />
+  <input type="reset" class="btn" value="Reset" />
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"btn"</span><span class="nt">&gt;</span>Link<span class="nt">&lt;/a&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">value=</span><span class="s">"Input"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">value=</span><span class="s">"Input"</span> <span class="nt">/&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"reset"</span> <span class="na">class=</span><span class="s">"btn"</span> <span class="na">value=</span><span class="s">"Input"</span> <span class="nt">/&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="button-sizes-default-md">Button Sizes (default: md)</h2>
+<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+  <button class="btn btn-xxs">XX-Small</button>
+  <button class="btn btn-xs">X-Small</button>
+  <button class="btn btn-sm">Small</button>
+  <button class="btn btn-md">Medium</button>
+  <button class="btn btn-lg">Large</button>
+  <button class="btn btn-xl">X-Large</button>
+</div>
+
+<h2 id="xx-small-responsive-buttons">XX-Small, Responsive Buttons</h2>
+<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+  <button class="btn btn-xxs">All Screens</button>
+  <button class="btn sm:btn-xxs">Tablets</button>
+  <button class="btn md:btn-xxs">Laptops</button>
+  <button class="btn lg:btn-xxs">Wide Screens</button>
+  <button class="btn xl:btn-xxs">Giant Screens</button>
+</div>
+
+<h2 id="x-small-responsive-buttons">X-Small, Responsive Buttons</h2>
+<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+  <button class="btn btn-xs">All Screens</button>
+  <button class="btn sm:btn-xs">Tablets</button>
+  <button class="btn md:btn-xs">Laptops</button>
+  <button class="btn lg:btn-xs">Wide Screens</button>
+  <button class="btn xl:btn-xs">Giant Screens</button>
+</div>
+
+<h2 id="small-responsive-buttons">Small, Responsive Buttons</h2>
+<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+  <button class="btn btn-sm">All Screens</button>
+  <button class="btn sm:btn-sm">Tablets</button>
+  <button class="btn md:btn-sm">Laptops</button>
+  <button class="btn lg:btn-sm">Wide Screens</button>
+  <button class="btn xl:btn-sm">Giant Screens</button>
+</div>
+
+<h2 id="medium-responsive-buttons-default-size">Medium, Responsive Buttons (Default Size)</h2>
+<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+  <button class="btn btn-md">All Screens</button>
+  <button class="btn btn-sm sm:btn-md">Tablets</button>
+  <button class="btn btn-sm md:btn-md">Laptops</button>
+  <button class="btn btn-sm lg:btn-md">Wide Screens</button>
+  <button class="btn btn-sm xl:btn-md">Giant Screens</button>
+</div>
+
+<hr />
+
+<ul class="col-container">
+  <li class="css-stat-item col col-10">
+    <span class="text-sm medium text-lighter block">Gzipped Size</span>
+    <span class="text-xxxl bold text-darker"></span>
+  </li>
+  <li class="css-stat-item col col-10">
+    <span class="text-sm medium text-lighter block">Declarations</span>
+    <span class="text-xxxl bold text-darker"></span>
+  </li>
+  <li class="css-stat-item col col-10">
+    <span class="text-sm medium text-lighter block">Selectors</span>
+    <span class="text-xxxl bold text-darker"></span>
+  </li>
+</ul>
+
+</div>
+    <footer class="align-center text-lightest">
+      &copy; Shipyard Framework 2017
+    </footer>
+    <script src="//assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js" type="text/javascript"></script>
+  </body>
+</html>

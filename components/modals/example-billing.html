@@ -1,0 +1,126 @@
+<html lang="en" class="env- components-modals-example-billing">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shipyard Modal Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#20a5a8" />
+    <link media="screen" rel="stylesheet" type="text/css" href="//assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="//assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="//assets/application-5c629b9dbfd027cf06ebd3120372d993eef26f3caf672363b4f1939c04a4a1af.css">
+  </head>
+  <body>
+    <header class="header z-100">
+      <div class="container">
+        <h6 class="header-logo"><a href="//">Shipyard</a></h6>
+        <button class="hamburger sm:hidden" shipyard="hamburger">
+          <span class="hamburger-button">Menu</span>
+        </button>
+        <ul class="header-list">
+          
+            <li class="header-item ">
+              <a href="//" class="header-link">Installation</a>
+            </li>
+          
+            <li class="header-item ">
+              <a href="//methodology" class="header-link">Methodology</a>
+            </li>
+          
+            <li class="header-item ">
+              <a href="//components/" class="header-link">Components</a>
+            </li>
+          
+            <li class="header-item ">
+              <a href="//utilities/" class="header-link">Utilities</a>
+            </li>
+          
+          <li class="header-item header-item-cta">
+            <a href="https://github.com/codeship/shipyard" target="_blank" class="header-link-cta" rel="noopener">Download</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container"><h1>Shipyard Modal Example</h1>
+
+
+
+<div class="modal-container z-200" modal="example-small">
+  <div class="modal modal-sm modal-billing" role="dialog">
+    <div class="modal-content">
+      <div class="modal-title-border mb-20 sm:mb-30">
+        <div class="col-container">
+          <h1 class="text-lg sm:text-xl col">Payment Period</h1>
+          <p class="col text-light medium align-right hidden sm:block">
+            <span class="bold green-dark">1</span> Concurrent Build
+            <span class="bullet">&amp;</span>
+            <span class="bold green-dark">1</span> Test Pipeline
+          </p>
+        </div>
+      </div>
+      <button class="btn btn-cta btn-sm sm:btn-md mr-10 sm:mr-15 mb-10 sm:mb-0">
+        <input type="radio" class="input input-radio-checkbox input-radio-inverse mr-10" checked />
+        Monthly &mdash; $39
+      </button>
+      <button class="btn btn-secondary-link btn-sm sm:btn-md">
+        <input type="radio" class="input input-radio-checkbox mr-10" />
+        Yearly &mdash; $390
+        <span class="btn btn-cta rounded-pill btn-xxs ml-10 uppercase">2 Months Free</span>
+        #<Shipyard::Jekyll::Icon:0x00007f8a87412120>
+      </button>
+      <p class="text-light mt-10 sm:mt-15" markdown="1">
+        Your new subscription will be prorated on your next invoice. If you have any questions, don't hesitate to <a href="#" class="medium">contact our support team</a>.
+      </p>
+      <div class="modal-title-border mt-30 mb-20 sm:mb-30">
+        <h1 class="text-lg sm:text-xl">Payment Info</h1>
+      </div>
+      <form>
+        <div class="input-required">
+          <input type="text" class="input input-text" placeholder="Card Number" />
+        </div>
+        <div class="col-container mt-20">
+          <div class="col col-50 sm:col-33">
+            <label class="label">Expiry Date</label>
+            <div class="input-required">
+              <input type="text" class="input input-text" placeholder="MM/YYYY" />
+            </div>
+          </div>
+          <div class="col col-50 sm:col-33">
+            <label class="label">CCV</label>
+            <div class="input-required">
+              <input type="text" class="input input-text" placeholder="3 or 4 digits" />
+            </div>
+          </div>
+          <div class="col col-100 sm:col-33 mt-20 sm:mt-0 mb-15 sm:mb-0">
+            <label class="label">Zip Code</label>
+            <div class="input-required">
+              <input type="text" class="input input-text" />
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-ctas">
+      <div class="col-container-nowrap">
+        <div class="col col-100">
+          <button class="btn btn-primary btn-sm sm:btn-md" modal-close>
+            Save
+            <span class="hidden sm:inline">&amp; Continue</span>
+          </button>
+          <button class="btn btn-secondary btn-sm sm:btn-md ml-5 sm:ml-10" modal-close>Cancel</button>
+        </div>
+        <div class="col align-right">
+          <span class="btn-sm sm:btn-md white-space-nowrap p-0">
+            #<Shipyard::Jekyll::Icon:0x00007f8a87411950>
+            <span class="text-sm text-lighter medium">Secure Server</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+    <footer class="align-center text-lightest">
+      &copy; Shipyard Framework 2017
+    </footer>
+    <script src="//assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js" type="text/javascript"></script>
+  </body>
+</html>

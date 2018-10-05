@@ -1,0 +1,341 @@
+<html lang="en" class="env- components-radio-buttons">
+  <head>
+    <meta charset="utf-8" />
+    <title>Radio Buttons</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#20a5a8" />
+    <link media="screen" rel="stylesheet" type="text/css" href="//assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="//assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="//assets/application-5c629b9dbfd027cf06ebd3120372d993eef26f3caf672363b4f1939c04a4a1af.css">
+  </head>
+  <body>
+    <header class="header z-100">
+      <div class="container">
+        <h6 class="header-logo"><a href="//">Shipyard</a></h6>
+        <button class="hamburger sm:hidden" shipyard="hamburger">
+          <span class="hamburger-button">Menu</span>
+        </button>
+        <ul class="header-list">
+          
+            <li class="header-item ">
+              <a href="//" class="header-link">Installation</a>
+            </li>
+          
+            <li class="header-item ">
+              <a href="//methodology" class="header-link">Methodology</a>
+            </li>
+          
+            <li class="header-item ">
+              <a href="//components/" class="header-link">Components</a>
+            </li>
+          
+            <li class="header-item ">
+              <a href="//utilities/" class="header-link">Utilities</a>
+            </li>
+          
+          <li class="header-item header-item-cta">
+            <a href="https://github.com/codeship/shipyard" target="_blank" class="header-link-cta" rel="noopener">Download</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <div class="container"><h1>Radio Buttons</h1>
+
+<hr />
+
+<h2 id="inline-radio-button-lists">Inline Radio-Button Lists</h2>
+<p class="section-description">Useful when you want to group a series of radio buttons together on a single line.</p>
+
+<ul class="input-list mb-30">
+  
+    <li class="input-item-inline">
+      <input id="radio-inline-1" name="radio-list" type="radio" class="input input-radio" checked="" />
+      <label for="radio-inline-1" class="input-label">Inline Label</label>
+    </li>
+  
+    <li class="input-item-inline">
+      <input id="radio-inline-2" name="radio-list" type="radio" class="input input-radio" />
+      <label for="radio-inline-2" class="input-label">Inline Label</label>
+    </li>
+  
+    <li class="input-item-inline">
+      <input id="radio-inline-3" name="radio-list" type="radio" class="input input-radio" />
+      <label for="radio-inline-3" class="input-label">Inline Label</label>
+    </li>
+  
+    <li class="input-item-inline">
+      <input id="radio-inline-4" name="radio-list" type="radio" class="input input-radio" />
+      <label for="radio-inline-4" class="input-label">Inline Label</label>
+    </li>
+  
+    <li class="input-item-inline">
+      <input id="radio-inline-5" name="radio-list" type="radio" class="input input-radio" />
+      <label for="radio-inline-5" class="input-label">Inline Label</label>
+    </li>
+  
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"input-list"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"input-item-inline"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-id"</span> <span class="na">name=</span><span class="s">"radio-name"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"input input-radio"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-id"</span> <span class="na">class=</span><span class="s">"input-label"</span><span class="nt">&gt;</span>Radio Button Label<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="stacked-radio-button-lists">Stacked Radio-Button Lists</h2>
+<p class="section-description">Useful when you want to group a series of radio buttons together in a list (stacked by default).</p>
+
+<div class="col-container mb-15 sm:mb-30">
+  <div class="col col-100 sm:col-50 mb-15 sm:mb-0">
+    <div class="rounded bg-white p-10 sm:p-15 md:p-20 lg:p-30">
+      <ul class="input-list">
+        
+          <li class="input-item">
+            <input id="radio-light-1" name="radio-light-list" type="radio" class="input input-radio" checked="" />
+            <label for="radio-light-1" class="input-label">Nulla vitae elit libero, a pharetra augue.</label>
+          </li>
+        
+          <li class="input-item">
+            <input id="radio-light-2" name="radio-light-list" type="radio" class="input input-radio" />
+            <label for="radio-light-2" class="input-label">Cras mattis consectetur purus sit amet fermentum.</label>
+          </li>
+        
+          <li class="input-item">
+            <input id="radio-light-3" name="radio-light-list" type="radio" class="input input-radio" />
+            <label for="radio-light-3" class="input-label">Cum sociis natoque penatibus et magnis dis parturient montes.</label>
+          </li>
+        
+          <li class="input-item">
+            <input id="radio-light-4" name="radio-light-list" type="radio" class="input input-radio" />
+            <label for="radio-light-4" class="input-label">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia.</label>
+          </li>
+        
+          <li class="input-item">
+            <input id="radio-light-5" name="radio-light-list" type="radio" class="input input-radio" />
+            <label for="radio-light-5" class="input-label">Donec id elit non mi porta gravida at eget metus.</label>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+  <div class="col col-100 sm:col-50">
+    <div class="box-secondary p-10 sm:p-15 md:p-20 lg:p-30">
+      <ul class="input-list">
+        
+          <li class="input-item">
+            <input id="radio-dark-1" name="radio-dark-list" type="radio" class="input input-radio" checked="" />
+            <label for="radio-dark-1" class="input-label">Nulla vitae elit libero, a pharetra augue.</label>
+          </li>
+        
+          <li class="input-item">
+            <input id="radio-dark-2" name="radio-dark-list" type="radio" class="input input-radio" />
+            <label for="radio-dark-2" class="input-label">Cras mattis consectetur purus sit amet fermentum.</label>
+          </li>
+        
+          <li class="input-item">
+            <input id="radio-dark-3" name="radio-dark-list" type="radio" class="input input-radio" />
+            <label for="radio-dark-3" class="input-label">Cum sociis natoque penatibus et magnis dis parturient montes.</label>
+          </li>
+        
+          <li class="input-item">
+            <input id="radio-dark-4" name="radio-dark-list" type="radio" class="input input-radio" />
+            <label for="radio-dark-4" class="input-label">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia.</label>
+          </li>
+        
+          <li class="input-item">
+            <input id="radio-dark-5" name="radio-dark-list" type="radio" class="input input-radio" />
+            <label for="radio-dark-5" class="input-label">Donec id elit non mi porta gravida at eget metus.</label>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"input-list"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"input-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-id"</span> <span class="na">name=</span><span class="s">"radio-name"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"input input-radio"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-id"</span> <span class="na">class=</span><span class="s">"input-label"</span><span class="nt">&gt;</span>Radio Button Label<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="inverse-radio-button-lists">Inverse Radio-Button Lists</h2>
+<p class="section-description">Useful when the radio buttons are displayed on a dark background.</p>
+
+<div class="box-secondary p-10 sm:p-15 md:p-20 lg:p-30 bg-gray-darker">
+  <ul class="input-list">
+    
+      <li class="input-item">
+        <input id="radio-inverse-1" name="radio-inverse-list" type="radio" class="input input-radio input-radio-inverse" checked="" />
+        <label for="radio-inverse-1" class="input-label-inverse">Nulla vitae elit libero, a pharetra augue.</label>
+      </li>
+    
+      <li class="input-item">
+        <input id="radio-inverse-2" name="radio-inverse-list" type="radio" class="input input-radio input-radio-inverse" />
+        <label for="radio-inverse-2" class="input-label-inverse">Cras mattis consectetur purus sit amet fermentum.</label>
+      </li>
+    
+      <li class="input-item">
+        <input id="radio-inverse-3" name="radio-inverse-list" type="radio" class="input input-radio input-radio-inverse" />
+        <label for="radio-inverse-3" class="input-label-inverse">Cum sociis natoque penatibus et magnis dis parturient montes.</label>
+      </li>
+    
+      <li class="input-item">
+        <input id="radio-inverse-4" name="radio-inverse-list" type="radio" class="input input-radio input-radio-inverse" />
+        <label for="radio-inverse-4" class="input-label-inverse">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia.</label>
+      </li>
+    
+      <li class="input-item">
+        <input id="radio-inverse-5" name="radio-inverse-list" type="radio" class="input input-radio input-radio-inverse" />
+        <label for="radio-inverse-5" class="input-label-inverse">Donec id elit non mi porta gravida at eget metus.</label>
+      </li>
+    
+  </ul>
+</div>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"input-list"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"input-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-id"</span> <span class="na">name=</span><span class="s">"radio-name"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"input input-radio input-radio-inverse"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-id"</span> <span class="na">class=</span><span class="s">"input-label-inverse"</span><span class="nt">&gt;</span>Radio Button Inverse Label<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="caution-radio-button-lists">Caution Radio-Button Lists</h2>
+<p class="section-description">Useful when you want to the user to proceed with caution about the choices they’re making.</p>
+
+<ul class="input-list">
+  
+    <li class="input-item">
+      <input id="radio-caution-1" name="radio-caution-list" type="radio" class="input input-radio input-radio-caution" checked="" />
+      <label for="radio-caution-1" class="input-label">Nulla vitae elit libero, a pharetra augue.</label>
+    </li>
+  
+    <li class="input-item">
+      <input id="radio-caution-2" name="radio-caution-list" type="radio" class="input input-radio input-radio-caution" />
+      <label for="radio-caution-2" class="input-label">Cras mattis consectetur purus sit amet fermentum.</label>
+    </li>
+  
+    <li class="input-item">
+      <input id="radio-caution-3" name="radio-caution-list" type="radio" class="input input-radio input-radio-caution" />
+      <label for="radio-caution-3" class="input-label">Cum sociis natoque penatibus et magnis dis parturient montes.</label>
+    </li>
+  
+    <li class="input-item">
+      <input id="radio-caution-4" name="radio-caution-list" type="radio" class="input input-radio input-radio-caution" />
+      <label for="radio-caution-4" class="input-label">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia.</label>
+    </li>
+  
+    <li class="input-item">
+      <input id="radio-caution-5" name="radio-caution-list" type="radio" class="input input-radio input-radio-caution" />
+      <label for="radio-caution-5" class="input-label">Donec id elit non mi porta gravida at eget metus.</label>
+    </li>
+  
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"input-list"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"input-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-id"</span> <span class="na">name=</span><span class="s">"radio-name"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"input input-radio input-radio-caution"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-id"</span> <span class="na">class=</span><span class="s">"input-label"</span><span class="nt">&gt;</span>Radio Button Caution Label<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 id="radio-checkbox-button-lists">Radio-Checkbox Button Lists</h2>
+<p class="section-description">Yep, that’s exactly what it sounds like. It behaves like a radio button but looks a bit like a checkbox. Fancy!</p>
+
+<ul class="input-list">
+  
+    <li class="input-item">
+      <input id="radio-checkbox-1" name="radio-list" type="radio" class="input input-radio-checkbox" checked="" />
+      <label for="radio-checkbox-1" class="input-label">Nulla vitae elit libero, a pharetra augue.</label>
+    </li>
+  
+    <li class="input-item">
+      <input id="radio-checkbox-2" name="radio-list" type="radio" class="input input-radio-checkbox" />
+      <label for="radio-checkbox-2" class="input-label">Cras mattis consectetur purus sit amet fermentum.</label>
+    </li>
+  
+    <li class="input-item">
+      <input id="radio-checkbox-3" name="radio-list" type="radio" class="input input-radio-checkbox" />
+      <label for="radio-checkbox-3" class="input-label">Cum sociis natoque penatibus et magnis dis parturient montes.</label>
+    </li>
+  
+    <li class="input-item">
+      <input id="radio-checkbox-4" name="radio-list" type="radio" class="input input-radio-checkbox" />
+      <label for="radio-checkbox-4" class="input-label">Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia.</label>
+    </li>
+  
+    <li class="input-item">
+      <input id="radio-checkbox-5" name="radio-list" type="radio" class="input input-radio-checkbox" />
+      <label for="radio-checkbox-5" class="input-label">Donec id elit non mi porta gravida at eget metus.</label>
+    </li>
+  
+</ul>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"input-list"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"input-item"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"radio-id"</span> <span class="na">name=</span><span class="s">"radio-name"</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"input input-radio-checkbox"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"radio-id"</span> <span class="na">class=</span><span class="s">"input-label"</span><span class="nt">&gt;</span>Radio Button Label<span class="nt">&lt;/label&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span>
+</code></pre></div></div>
+
+<hr />
+
+<h2 class="mb-20" id="radio-buttons-nested-in-buttons">Radio Buttons Nested in Buttons</h2>
+
+<p><button class="btn btn-secondary mr-10 mb-10">
+  <input type="radio" class="input input-radio mr-5" />
+  Unchecked
+</button>
+<button class="btn btn-secondary mr-10 mb-10">
+  <input type="radio" class="input input-radio mr-5" checked="" />
+  Checked
+</button>
+<button class="btn btn-secondary mr-10 mb-10">
+  <input type="radio" class="input input-radio-checkbox mr-5" checked="" />
+  Checked w/ Icon
+</button>
+<button class="btn btn-cta mr-10 mb-10">
+  <input type="radio" class="input input-radio input-radio-inverse mr-5" />
+  Inverse Unchecked
+</button>
+<button class="btn btn-cta mr-10 mb-10">
+  <input type="radio" class="input input-radio input-radio-inverse mr-5" checked="" />
+  Inverse Checked
+</button>
+<button class="btn btn-cta mr-10 mb-10">
+  <input type="radio" class="input input-radio-checkbox input-radio-inverse mr-10" checked="" />
+  Inverse Checked w/ Icon
+</button></p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="c">&lt;!-- Secondary button with a radio button in the unchecked state. --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"input input-radio mr-5"</span> <span class="nt">/&gt;</span>
+  Button Text
+<span class="nt">&lt;/button&gt;</span>
+
+<span class="c">&lt;!-- CTA button with a radio-checkbox in the checked state. --&gt;</span>
+<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-cta"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">class=</span><span class="s">"input input-radio-checkbox input-radio-inverse mr-5"</span> <span class="na">checked</span> <span class="nt">/&gt;</span>
+  Button Text
+<span class="nt">&lt;/button&gt;</span>
+</code></pre></div></div>
+</div>
+    <footer class="align-center text-lightest">
+      &copy; Shipyard Framework 2017
+    </footer>
+    <script src="//assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js" type="text/javascript"></script>
+  </body>
+</html>
