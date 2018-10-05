@@ -1,6 +1,6 @@
 title: Shipyard
 description: A sweet front-end framework for Ruby on Rails and Jekyll.
-baseurl: /shipyard-styleguide/
+baseurl: /shipyard-styleguide
 url: https://cloudbees.github.io
 permalink: /:title
 sass:
