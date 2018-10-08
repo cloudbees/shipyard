@@ -48,561 +48,114 @@
 
 <div class="mb-25">
   <button tooltip="skipped" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-skipped status-xs">#<Shipyard::Jekyll::Icon:0x00007fc861c7b6f0>&lt;/span&gt;
+    <span class="status status-skipped status-xs">
+      
+  <?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 8" class="icon-status-skipped icon-outline">
+  <polyline vector-effect="non-scaling-stroke" points="0 8 4 4 0 0" />
+</svg>
+
+
+
+    </span>
     <span class="text-sm medium ml-5 text-skipped">Skipped</span>
-  &lt;/button&gt;
+  </button>
+
   <button tooltip="waiting" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-waiting status-xs">#<Shipyard::Jekyll::Icon:0x00007fc861c7aac0>&lt;/span&gt;
+    <span class="status status-waiting status-xs">
+      
+  <?xml version="1.0"?>
+<svg viewBox="0 0 12 2" class="icon-waiting icon-outline">
+  <circle class="icon-waiting-dot-1" vector-effect="non-scaling-stroke" r="1" cx="0" cy="1" />
+  <circle class="icon-waiting-dot-2" vector-effect="non-scaling-stroke" r="1" cx="6" cy="1" />
+  <circle class="icon-waiting-dot-3" vector-effect="non-scaling-stroke" r="1" cx="12" cy="1" />
+</svg>
+
+
+
+    </span>
     <span class="text-sm medium ml-5 text-waiting">Waiting</span>
-  &lt;/button&gt;
+  </button>
+
   <button tooltip="running" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-running status-xs">#<Shipyard::Jekyll::Icon:0x00007fc861c79e40>&lt;/span&gt;
+    <span class="status status-running status-xs">
+      
+  <?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" class="icon-status-running icon-outline">
+  <path vector-effect="non-scaling-stroke" d="M4,0A4,4,0,0,1,8,4" />
+</svg>
+
+
+
+    </span>
     <span class="text-sm medium ml-5 text-running">Running</span>
-  &lt;/button&gt;
+  </button>
+
   <button tooltip="success" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-success status-xs">#<Shipyard::Jekyll::Icon:0x00007fc861c792d8>&lt;/span&gt;
+    <span class="status status-success status-xs">
+      
+  <?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" class="icon-status-success icon-outline">
+  <polyline vector-effect="non-scaling-stroke" points="0 4 3 7 8 0" />
+</svg>
+
+
+
+    </span>
     <span class="text-sm medium ml-5 text-success">Success</span>
-  &lt;/button&gt;
+  </button>
+
   <button tooltip="paused" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-paused status-xs">#<Shipyard::Jekyll::Icon:0x00007fc861c786d0>&lt;/span&gt;
+    <span class="status status-paused status-xs">
+      
+  <?xml version="1.0"?>
+<svg viewBox="0 0 4 4">
+  <line vector-effect="non-scaling-stroke" x1="4" x2="4" y2="4" />
+  <line vector-effect="non-scaling-stroke" x1="0" x2="0" y2="4" />
+</svg>
+
+
+
+    </span>
     <span class="text-sm medium ml-5 text-paused">Paused</span>
-  &lt;/button&gt;
+  </button>
+
   <button tooltip="error" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-error status-xs">#<Shipyard::Jekyll::Icon:0x00007fc861c73b08>&lt;/span&gt;
+    <span class="status status-error status-xs">
+      
+  <?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 4">
+  <polyline vector-effect="non-scaling-stroke" points="0 4 2 0 4 4 0 4" />
+</svg>
+
+
+
+    </span>
     <span class="text-sm medium ml-5 text-error">Error</span>
-  &lt;/button&gt;
+  </button>
+
   <button tooltip="fail" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-fail status-xs">#<Shipyard::Jekyll::Icon:0x00007fc861c72f00>&lt;/span&gt;
+    <span class="status status-fail status-xs">
+      
+  <?xml version="1.0"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 8 8" class="icon-status-failed icon-outline">
+  <line vector-effect="non-scaling-stroke" x2="8" y2="8" />
+  <line vector-effect="non-scaling-stroke" y1="8" x2="8" />
+</svg>
+
+
+
+    </span>
     <span class="text-sm medium ml-5 text-fail">Fail</span>
-  &lt;/button&gt;
-&lt;/div&gt;
+  </button>
+</div>
 
-```erb
-<!-- Status: Skipped -->
-<span class="status status-xs status-skipped">
-  &lt;%= icon :skipped, prefix: 'status-xs', class: 'status-icon' %&gt;
-</span>
-<span class="text-skipped">Skipped</span>
+<hr />
 
-<!-- Status: Waiting -->
-<span class="status status-xs status-waiting">
-  &lt;%= icon :waiting, prefix: 'status-xs', class: 'status-icon' %&gt;
-</span>
-<span class="text-waiting">Waiting</span>
+<h3 id="utility-css">Utility CSS</h3>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code></code></pre></div></div>
 
-<!-- Status: Running -->
-<span class="status status-xs status-running">
-  &lt;%= icon :running, prefix: 'status-xs', class: 'status-icon' %&gt;
-</span>
-<span class="text-running">Running</span>
-
-<!-- Status: Success -->
-<span class="status status-xs status-success">
-  &lt;%= icon :success, prefix: 'status-xs', class: 'status-icon' %&gt;
-</span>
-<span class="text-success">Success</span>
-
-<!-- Status: Paused -->
-<span class="status status-xs status-paused">
-  &lt;%= icon :paused, prefix: 'status-xs', class: 'status-icon' %&gt;
-</span>
-<span class="text-paused">Paused</span>
-
-<!-- Status: Error -->
-<span class="status status-xs status-error">
-  &lt;%= icon :error_xs, prefix: 'status-xs', class: 'status-icon' %&gt;
-</span>
-<span class="text-error">Error</span>
-
-<!-- Status: Fail -->
-<span class="status status-xs status-fail">
-  &lt;%= icon :fail, prefix: 'status-xs', class: 'status-icon' %&gt;
-</span>
-<span class="text-fail">Fail</span>
-```
-
----
-
-### Small Status Icons `.status-sm`
-Useful when next to standard text where where it's important to show the status of a particular object.
-{: .section-description }
-
-<button tooltip="skipped" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-skipped status-sm">#<Shipyard::Jekyll::Icon:0x00007fc861c6b9f8>&lt;/span&gt;
-  <span class="text-md medium ml-5 text-skipped">Skipped</span>
-&lt;/button&gt;
-<button tooltip="waiting" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-waiting status-sm">#<Shipyard::Jekyll::Icon:0x00007fc861c6ae68>&lt;/span&gt;
-  <span class="text-md medium ml-5 text-waiting">Waiting</span>
-&lt;/button&gt;
-<button tooltip="running" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-running status-sm">#<Shipyard::Jekyll::Icon:0x00007fc861c6a238>&lt;/span&gt;
-  <span class="text-md medium ml-5 text-running">Running</span>
-&lt;/button&gt;
-<button tooltip="success" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-success status-sm">#<Shipyard::Jekyll::Icon:0x00007fc861c69680>&lt;/span&gt;
-  <span class="text-md medium ml-5 text-success">Success</span>
-&lt;/button&gt;
-<button tooltip="paused" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-paused status-sm">#<Shipyard::Jekyll::Icon:0x00007fc861c68b18>&lt;/span&gt;
-  <span class="text-md medium ml-5 text-paused">Paused</span>
-&lt;/button&gt;
-<button tooltip="error" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-error status-sm">#<Shipyard::Jekyll::Icon:0x00007fc861c63f28>&lt;/span&gt;
-  <span class="text-md medium ml-5 text-error">Error</span>
-&lt;/button&gt;
-<button tooltip="fail" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-fail status-sm">#<Shipyard::Jekyll::Icon:0x00007fc861c63320>&lt;/span&gt;
-  <span class="text-md medium ml-5 text-fail">Fail</span>
-&lt;/button&gt;
-
-```erb
-<!-- Status: Skipped -->
-<span class="status status-sm status-skipped">
-  &lt;%= icon :skipped, prefix: 'status-sm', class: 'status-icon' %&gt;
-</span>
-<span class="text-skipped">Skipped</span>
-
-<!-- Status: Waiting -->
-<span class="status status-sm status-waiting">
-  &lt;%= icon :waiting, prefix: 'status-sm', class: 'status-icon' %&gt;
-</span>
-<span class="text-waiting">Waiting</span>
-
-<!-- Status: Running -->
-<span class="status status-sm status-running">
-  &lt;%= icon :running, prefix: 'status-sm', class: 'status-icon' %&gt;
-</span>
-<span class="text-running">Running</span>
-
-<!-- Status: Success -->
-<span class="status status-sm status-success">
-  &lt;%= icon :success, prefix: 'status-sm', class: 'status-icon' %&gt;
-</span>
-<span class="text-success">Success</span>
-
-<!-- Status: Paused -->
-<span class="status status-sm status-paused">
-  &lt;%= icon :paused, prefix: 'status-sm', class: 'status-icon' %&gt;
-</span>
-<span class="text-paused">Paused</span>
-
-<!-- Status: Error -->
-<span class="status status-sm status-error">
-  &lt;%= icon :error_xs, prefix: 'status-sm', class: 'status-icon' %&gt;
-</span>
-<span class="text-error">Error</span>
-
-<!-- Status: Fail -->
-<span class="status status-sm status-fail">
-  &lt;%= icon :fail, prefix: 'status-sm', class: 'status-icon' %&gt;
-</span>
-<span class="text-fail">Fail</span>
-```
-
----
-
-### Medium Status Icons `.status-md`
-Useful when next to standard text where where it's important to show the status of a particular object.
-{: .section-description }
-
-<button tooltip="skipped" class="mr-5">
-  <span class="status status-skipped status-md">#<Shipyard::Jekyll::Icon:0x00007fc861c5bf30>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="waiting" class="mr-5">
-  <span class="status status-waiting status-md">#<Shipyard::Jekyll::Icon:0x00007fc861c5b3a0>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="running" class="mr-5">
-  <span class="status status-running status-md">#<Shipyard::Jekyll::Icon:0x00007fc861c5a770>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="success" class="mr-5">
-  <span class="status status-success status-md">#<Shipyard::Jekyll::Icon:0x00007fc861c59b18>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="paused" class="mr-5">
-  <span class="status status-paused status-md">#<Shipyard::Jekyll::Icon:0x00007fc861c58f88>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="error" class="mr-5">
-  <span class="status status-error status-md">#<Shipyard::Jekyll::Icon:0x00007fc861c583a8>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="fail" class="mr-5">
-  <span class="status status-fail status-md">#<Shipyard::Jekyll::Icon:0x00007fc861c538d0>&lt;/span&gt;
-&lt;/button&gt;
-
-```erb
-<span class="status status-md status-skipped">
-  &lt;%= icon :skipped, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-md status-waiting">
-  &lt;%= icon :waiting, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-md status-running">
-  &lt;%= icon :running, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-md status-success">
-  &lt;%= icon :success, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-md status-paused">
-  &lt;%= icon :paused, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-md status-error">
-  &lt;%= icon :error, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-md status-fail">
-  &lt;%= icon :fail, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-```
-
----
-
-### Medium, Inverse Status Icons `.status-inverse.status-md`
-Useful when next to standard text where where it's important to show the status of a particular object.
-{: .section-description }
-
-<div class="col-container m-0 align-center mb-30">
-  <div class="status-skipped-bg p-20 pl-0 pr-0 col rounded rounded-left" tooltip="skipped">
-    <span class="status status-inverse status-skipped status-md">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c51ad0>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-waiting-bg p-20 pl-0 pr-0 col" tooltip="waiting">
-    <span class="status status-inverse status-waiting status-md">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c50ec8>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-running-bg p-20 pl-0 pr-0 col" tooltip="running">
-    <span class="status status-inverse status-running status-md">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c50220>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-success-bg p-20 pl-0 pr-0 col" tooltip="success">
-    <span class="status status-inverse status-success status-md">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c4b630>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-paused-bg p-20 pl-0 pr-0 col" tooltip="paused">
-    <span class="status status-inverse status-paused status-md">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c4aa28>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-error-bg p-20 pl-0 pr-0 col" tooltip="error">
-    <span class="status status-inverse status-error status-md">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c49e20>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-fail-bg p-20 pl-0 pr-0 col rounded rounded-right" tooltip="fail">
-    <span class="status status-inverse status-fail status-md">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c492b8>
-    &lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-```erb
-<span class="status status-inverse status-md status-skipped">
-  &lt;%= icon :skipped, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-md status-waiting">
-  &lt;%= icon :waiting, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-md status-running">
-  &lt;%= icon :running, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-md status-success">
-  &lt;%= icon :success, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-md status-paused">
-  &lt;%= icon :paused, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-md status-error">
-  &lt;%= icon :error, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-md status-fail">
-  &lt;%= icon :fail, prefix: 'status-md', class: 'status-icon' %&gt;
-</span>
-```
-
----
-
-### Large Status Icons `.status-lg`
-Useful when next to standard text where where it's important to show the status of a particular object.
-{: .section-description }
-
-<button tooltip="skipped" class="mr-5">
-  <span class="status status-skipped status-lg">#<Shipyard::Jekyll::Icon:0x00007fc861c435c0>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="waiting" class="mr-5">
-  <span class="status status-waiting status-lg">#<Shipyard::Jekyll::Icon:0x00007fc861c42990>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="running" class="mr-5">
-  <span class="status status-running status-lg">#<Shipyard::Jekyll::Icon:0x00007fc861c41d38>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="success" class="mr-5">
-  <span class="status status-success status-lg">#<Shipyard::Jekyll::Icon:0x00007fc861c41108>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="paused" class="mr-5">
-  <span class="status status-paused status-lg">#<Shipyard::Jekyll::Icon:0x00007fc861c404d8>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="error" class="mr-5">
-  <span class="status status-error status-lg">#<Shipyard::Jekyll::Icon:0x00007fc861c3b8e8>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="fail" class="mr-5">
-  <span class="status status-fail status-lg">#<Shipyard::Jekyll::Icon:0x00007fc861c3ad80>&lt;/span&gt;
-&lt;/button&gt;
-
-```erb
-<span class="status status-lg status-skipped">
-  &lt;%= icon :skipped, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-lg status-waiting">
-  &lt;%= icon :waiting, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-lg status-running">
-  &lt;%= icon :running, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-lg status-success">
-  &lt;%= icon :success, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-lg status-paused">
-  &lt;%= icon :paused, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-lg status-error">
-  &lt;%= icon :error, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-lg status-fail">
-  &lt;%= icon :fail, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-```
-
----
-
-### Large, Inverse Status Icons `.status-inverse.status-lg`
-Useful when next to standard text where where it's important to show the status of a particular object.
-{: .section-description }
-
-<div class="col-container m-0 align-center mb-30">
-  <div class="status-skipped-bg p-20 pl-0 pr-0 col rounded rounded-left" tooltip="skipped">
-    <span class="status status-inverse status-skipped status-lg">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c39070>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-waiting-bg p-20 pl-0 pr-0 col" tooltip="waiting">
-    <span class="status status-inverse status-waiting status-lg">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c38508>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-running-bg p-20 pl-0 pr-0 col" tooltip="running">
-    <span class="status status-inverse status-running status-lg">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c33878>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-success-bg p-20 pl-0 pr-0 col" tooltip="success">
-    <span class="status status-inverse status-success status-lg">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c32bf8>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-paused-bg p-20 pl-0 pr-0 col" tooltip="paused">
-    <span class="status status-inverse status-paused status-lg">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c31fc8>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-error-bg p-20 pl-0 pr-0 col" tooltip="error">
-    <span class="status status-inverse status-error status-lg">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c31438>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-fail-bg p-20 pl-0 pr-0 col rounded rounded-right" tooltip="fail">
-    <span class="status status-inverse status-fail status-lg">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c30830>
-    &lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-```erb
-<span class="status status-inverse status-lg status-skipped">
-  &lt;%= icon :skipped, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-lg status-waiting">
-  &lt;%= icon :waiting, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-lg status-running">
-  &lt;%= icon :running, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-lg status-success">
-  &lt;%= icon :success, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-lg status-paused">
-  &lt;%= icon :paused, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-lg status-error">
-  &lt;%= icon :error, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-lg status-fail">
-  &lt;%= icon :fail, prefix: 'status-lg', class: 'status-icon' %&gt;
-</span>
-```
-
----
-
-### X-Large Status Icons `.status-xl`
-Useful when next to standard text where where it's important to show the status of a particular object.
-{: .section-description }
-
-<button tooltip="skipped" class="mr-5">
-  <span class="status status-skipped status-xl">#<Shipyard::Jekyll::Icon:0x00007fc861c2abd8>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="waiting" class="mr-5">
-  <span class="status status-waiting status-xl">#<Shipyard::Jekyll::Icon:0x00007fc861c29ff8>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="running" class="mr-5">
-  <span class="status status-running status-xl">#<Shipyard::Jekyll::Icon:0x00007fc861c29468>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="success" class="mr-5">
-  <span class="status status-success status-xl">#<Shipyard::Jekyll::Icon:0x00007fc861c288b0>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="paused" class="mr-5">
-  <span class="status status-paused status-xl">#<Shipyard::Jekyll::Icon:0x00007fc861c23ce8>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="error" class="mr-5">
-  <span class="status status-error status-xl">#<Shipyard::Jekyll::Icon:0x00007fc861c23130>&lt;/span&gt;
-&lt;/button&gt;
-<button tooltip="fail">
-  <span class="status status-fail status-xl">#<Shipyard::Jekyll::Icon:0x00007fc861c22578>&lt;/span&gt;
-&lt;/button&gt;
-
-```erb
-<span class="status status-xl status-skipped">
-  &lt;%= icon :skipped, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-xl status-waiting">
-  &lt;%= icon :waiting, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-xl status-running">
-  &lt;%= icon :running, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-xl status-success">
-  &lt;%= icon :success, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-xl status-paused">
-  &lt;%= icon :paused, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-xl status-error">
-  &lt;%= icon :error, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-xl status-fail">
-  &lt;%= icon :fail, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-```
-
----
-
-### X-Large, Inverse Status Icons `.status-inverse.status-xl`
-Useful when next to standard text where where it's important to show the status of a particular object.
-{: .section-description }
-
-<div class="col-container m-0 align-center mb-30">
-  <div class="status-skipped-bg p-10 sm:p-20 pl-0 pr-0 col rounded rounded-left" tooltip="skipped">
-    <span class="status status-inverse status-skipped status-xl">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c207a0>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-waiting-bg p-10 sm:p-20 pl-0 pr-0 col" tooltip="waiting">
-    <span class="status status-inverse status-waiting status-xl">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c1bb60>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-running-bg p-10 sm:p-20 pl-0 pr-0 col" tooltip="running">
-    <span class="status status-inverse status-running status-xl">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c1af30>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-success-bg p-10 sm:p-20 pl-0 pr-0 col" tooltip="success">
-    <span class="status status-inverse status-success status-xl">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c1a3c8>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-paused-bg p-10 sm:p-20 pl-0 pr-0 col" tooltip="paused">
-    <span class="status status-inverse status-paused status-xl">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c197e8>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-error-bg p-10 sm:p-20 pl-0 pr-0 col" tooltip="error">
-    <span class="status status-inverse status-error status-xl">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c18c30>
-    &lt;/span&gt;
-  &lt;/div&gt;
-  <div class="status-fail-bg p-10 sm:p-20 pl-0 pr-0 col rounded rounded-right" tooltip="fail">
-    <span class="status status-inverse status-fail status-xl">
-      #<Shipyard::Jekyll::Icon:0x00007fc861c180c8>
-    &lt;/span&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-```erb
-<span class="status status-inverse status-xl status-skipped">
-  &lt;%= icon :skipped, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-xl status-waiting">
-  &lt;%= icon :waiting, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-xl status-running">
-  &lt;%= icon :running, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-xl status-success">
-  &lt;%= icon :success, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-xl status-paused">
-  &lt;%= icon :paused, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-xl status-error">
-  &lt;%= icon :error, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-
-<span class="status status-inverse status-xl status-fail">
-  &lt;%= icon :fail, prefix: 'status-xl', class: 'status-icon' %&gt;
-</span>
-```
-
----
-
-### Utility CSS
-```css
-```
-
----
+<hr />
 
 <ul class="col-container">
   <li class="css-stat-item col col-10">
@@ -619,7 +172,6 @@ Useful when next to standard text where where it's important to show the status 
   </li>
 </ul>
 
-</Shipyard::Jekyll::Icon:0x00007fc861c180c8></span></div></Shipyard::Jekyll::Icon:0x00007fc861c18c30></span></div></Shipyard::Jekyll::Icon:0x00007fc861c197e8></span></div></Shipyard::Jekyll::Icon:0x00007fc861c1a3c8></span></div></Shipyard::Jekyll::Icon:0x00007fc861c1af30></span></div></Shipyard::Jekyll::Icon:0x00007fc861c1bb60></span></div></Shipyard::Jekyll::Icon:0x00007fc861c207a0></span></div></div></Shipyard::Jekyll::Icon:0x00007fc861c22578></span></button></Shipyard::Jekyll::Icon:0x00007fc861c23130></span></button></Shipyard::Jekyll::Icon:0x00007fc861c23ce8></span></button></Shipyard::Jekyll::Icon:0x00007fc861c288b0></span></button></Shipyard::Jekyll::Icon:0x00007fc861c29468></span></button></Shipyard::Jekyll::Icon:0x00007fc861c29ff8></span></button></Shipyard::Jekyll::Icon:0x00007fc861c2abd8></span></button></Shipyard::Jekyll::Icon:0x00007fc861c30830></span></div></Shipyard::Jekyll::Icon:0x00007fc861c31438></span></div></Shipyard::Jekyll::Icon:0x00007fc861c31fc8></span></div></Shipyard::Jekyll::Icon:0x00007fc861c32bf8></span></div></Shipyard::Jekyll::Icon:0x00007fc861c33878></span></div></Shipyard::Jekyll::Icon:0x00007fc861c38508></span></div></Shipyard::Jekyll::Icon:0x00007fc861c39070></span></div></div></Shipyard::Jekyll::Icon:0x00007fc861c3ad80></span></button></Shipyard::Jekyll::Icon:0x00007fc861c3b8e8></span></button></Shipyard::Jekyll::Icon:0x00007fc861c404d8></span></button></Shipyard::Jekyll::Icon:0x00007fc861c41108></span></button></Shipyard::Jekyll::Icon:0x00007fc861c41d38></span></button></Shipyard::Jekyll::Icon:0x00007fc861c42990></span></button></Shipyard::Jekyll::Icon:0x00007fc861c435c0></span></button></Shipyard::Jekyll::Icon:0x00007fc861c492b8></span></div></Shipyard::Jekyll::Icon:0x00007fc861c49e20></span></div></Shipyard::Jekyll::Icon:0x00007fc861c4aa28></span></div></Shipyard::Jekyll::Icon:0x00007fc861c4b630></span></div></Shipyard::Jekyll::Icon:0x00007fc861c50220></span></div></Shipyard::Jekyll::Icon:0x00007fc861c50ec8></span></div></Shipyard::Jekyll::Icon:0x00007fc861c51ad0></span></div></div></Shipyard::Jekyll::Icon:0x00007fc861c538d0></span></button></Shipyard::Jekyll::Icon:0x00007fc861c583a8></span></button></Shipyard::Jekyll::Icon:0x00007fc861c58f88></span></button></Shipyard::Jekyll::Icon:0x00007fc861c59b18></span></button></Shipyard::Jekyll::Icon:0x00007fc861c5a770></span></button></Shipyard::Jekyll::Icon:0x00007fc861c5b3a0></span></button></Shipyard::Jekyll::Icon:0x00007fc861c5bf30></span></button></Shipyard::Jekyll::Icon:0x00007fc861c63320></span></button></Shipyard::Jekyll::Icon:0x00007fc861c63f28></span></button></Shipyard::Jekyll::Icon:0x00007fc861c68b18></span></button></Shipyard::Jekyll::Icon:0x00007fc861c69680></span></button></Shipyard::Jekyll::Icon:0x00007fc861c6a238></span></button></Shipyard::Jekyll::Icon:0x00007fc861c6ae68></span></button></Shipyard::Jekyll::Icon:0x00007fc861c6b9f8></span></button></Shipyard::Jekyll::Icon:0x00007fc861c72f00></span></button></Shipyard::Jekyll::Icon:0x00007fc861c73b08></span></button></Shipyard::Jekyll::Icon:0x00007fc861c786d0></span></button></Shipyard::Jekyll::Icon:0x00007fc861c792d8></span></button></Shipyard::Jekyll::Icon:0x00007fc861c79e40></span></button></Shipyard::Jekyll::Icon:0x00007fc861c7aac0></span></button></Shipyard::Jekyll::Icon:0x00007fc861c7b6f0></span></button></div>
 </div>
     <footer class="align-center text-lightest">
       &copy; Shipyard Framework 2017
