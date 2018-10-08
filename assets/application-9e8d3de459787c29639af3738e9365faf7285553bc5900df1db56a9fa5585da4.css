@@ -1086,8 +1086,8 @@ svg, path, circle, polyline {
       width: 10px;
       height: 6px;
       background-color: rgba(89, 123, 145, 0.3);
-      /* @alternate */ -webkit-mask: url(//assets/arrows/down-edaefb70e5ad9e2336d3383b45e0feffdc6c131e8a37b546536fbeeff1e1023f.svg) no-repeat center;
-      mask: url(//assets/arrows/down-edaefb70e5ad9e2336d3383b45e0feffdc6c131e8a37b546536fbeeff1e1023f.svg) no-repeat center; }
+      /* @alternate */ -webkit-mask: url(/shipyard-styleguide/assets/arrows/down-edaefb70e5ad9e2336d3383b45e0feffdc6c131e8a37b546536fbeeff1e1023f.svg) no-repeat center;
+      mask: url(/shipyard-styleguide/assets/arrows/down-edaefb70e5ad9e2336d3383b45e0feffdc6c131e8a37b546536fbeeff1e1023f.svg) no-repeat center; }
       .input-error .input-select-container::after {
         background-color: #e06158; }
     .input-select-container:hover::after {
@@ -1185,8 +1185,8 @@ svg, path, circle, polyline {
     width: 8px;
     height: 8px;
     margin: -4px 0 0 -4px;
-    /* @alternate */ -webkit-mask: url(//assets/checkmark-bae886c5087ee11e725e4d56b6001f672151c45c92444db3a78ada4af018bcf3.svg) no-repeat center;
-    mask: url(//assets/checkmark-bae886c5087ee11e725e4d56b6001f672151c45c92444db3a78ada4af018bcf3.svg) no-repeat center; }
+    /* @alternate */ -webkit-mask: url(/shipyard-styleguide/assets/checkmark-bae886c5087ee11e725e4d56b6001f672151c45c92444db3a78ada4af018bcf3.svg) no-repeat center;
+    mask: url(/shipyard-styleguide/assets/checkmark-bae886c5087ee11e725e4d56b6001f672151c45c92444db3a78ada4af018bcf3.svg) no-repeat center; }
 
 .input-switch, .input-switch-secondary {
   outline: none;
