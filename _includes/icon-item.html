@@ -1,0 +1,7 @@
+<li class="col col-50 sm:col-20 mb-10 sm:mb-20 md:mb-30 tooltip-data tooltip-data-top" data-tooltip="{{ include.tooltip | default: include.name }}">
+  <div class="box h-80 sm:h-100">
+    <svg class="icon icon-{{ include.name }} {{ include.class }}" preserveAspectRatio="xMinYMin meet">
+      <use xlink:href="{% asset icons.svg @path %}#{{ include.name }}"></use>
+    </svg>
+  </div>
+</li>
