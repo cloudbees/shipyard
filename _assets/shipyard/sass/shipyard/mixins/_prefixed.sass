@@ -1,0 +1,24 @@
+@mixin appearance($value)
+  -webkit-appearance: $value
+  -moz-appearance: $value
+  appearance: $value
+
+@mixin backdrop-filter($value)
+  -webkit-backdrop-filter: $value
+  backdrop-filter: $value
+
+@mixin mask($value)
+  -webkit-mask: $value
+  mask: $value
+
+@mixin placeholder
+  &::placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content

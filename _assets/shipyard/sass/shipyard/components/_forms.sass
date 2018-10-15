@@ -1,0 +1,30 @@
+.label
+  font-weight: $bold
+  display: block
+  margin: 0 0 10px
+  &-note
+    color: $text-color-light
+    margin: -10px 0 10px
+    font-size: $font-size-sm
+    font-weight: $medium
+
++component('input')
+  &-group
+    +clearfix
+    padding: 15px 0
+    position: relative
+    &-border
+      padding-bottom: 30px
+      margin-bottom: 15px
+      border-bottom: 2px solid $border-color-light
+
+  &-description
+    font-size: 14px
+    margin: 5px 0 0
+    color: $text-color-lighter
+
+  &-box
+    background: $border-color-light
+    border-radius: 4px
+    +respond-to(padding, (all: 10px 15px, sm: 15px 20px))
+    margin: 0

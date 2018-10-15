@@ -1,0 +1,52 @@
+$sizes: (sm: 18px, md: 20px, lg: 22px, xl: 24px)
+
++component('input-switch')
+  outline: none
+  cursor: pointer
+  position: relative
+  display: inline-block
+  border-radius: 50px
+  background-clip: initial
+  +width-height(36px, 20px)
+  &, &:hover, &:focus
+    +btn-color($red, $border-color: transparent)
+  &:checked
+    &, &:hover, &:focus
+      &:not(:disabled)
+        +btn-color($green, $border-color: transparent)
+
+  &-secondary
+    +extend
+    +btn-color($border-color, $border-color: transparent)
+    &:hover, &:focus
+      &:not(:disabled)
+        +btn-color($border-color-dark, $border-color: transparent)
+
+  &-warning
+    &:checked
+      &, &:not(:disabled)
+        +btn-color($yellow-dark, $border-color: transparent)
+        &:hover, &:focus
+          +btn-color(darken($yellow-dark, 5%), $border-color: transparent)
+
+  // Checkbox Switch: White Dot
+  &::after
+    top: 0
+    left: 0
+    content: ''
+    display: block
+    position: absolute
+    border-radius: 50%
+    background-color: #fff
+    transition: transform 300ms ease
+    +width-height(16px)
+  &:checked::after
+    transform: translatex(100%)
+
+  // Checkbox Switch: Sizes
+  +all-media-sizes
+    @each $name, $size in $sizes
+      &-#{$name}
+        +width-height($size * 2 - 4px, $size)
+        &::after
+          +width-height($size - 4px)

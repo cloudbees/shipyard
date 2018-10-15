@@ -1,0 +1,28 @@
+{
+  "name": "@cloudbees/shipyard",
+  "version": "0.0.3",
+  "main": "sass/shipyard.sass",
+  "scripts": {
+    "build": "webpack --mode=development",
+    "build:dist": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudbees/shipyard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cloudbees/shipyard/issues"
+  },
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "extract-loader": "^3.0.0",
+    "file-loader": "^2.0.0",
+    "filemanager-webpack-plugin": "^2.0.5",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "svg-sprite-loader": "^4.1.2",
+    "webpack": "^4.20.2",
+    "webpack-cli": "^3.1.2"
+  }
+}

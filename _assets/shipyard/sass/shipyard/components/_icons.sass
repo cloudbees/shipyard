@@ -1,0 +1,104 @@
+svg, path, circle, polyline
+  transition: fill 300ms ease, stroke 300ms ease, opacity 300ms ease
+
++component('icon')
+  fill: currentColor
+  display: inline-block
+  transition: fill 300ms ease, stroke 300ms ease, opacity 300ms ease, transform 300ms ease
+  overflow: visible
+  line-height: 1
+  transform-origin: center center
+  +width-height(1em)
+
+  // Icons w/ Strokes
+  &-outline
+    stroke: currentColor
+    &, &-inverse
+      fill: transparent
+      stroke-width: 2px
+      stroke-linecap: round
+      stroke-linejoin: round
+    &-inverse
+      stroke: #fff
+
+  // Status Icons
+  &-fail,
+  &-success
+    +width-height(8px)
+  &-paused,
+  &-error-xs
+    +width-height(4px)
+  &-error
+    +width-height(2px, 8px)
+  &-waiting
+    +width-height(12px, 2px)
+  &-running
+    +width-height(8px)
+    animation: rotate 1.5s linear 0s infinite
+  &-waiting
+    &-dot-1
+      animation: bounce 5s ease-in-out 0s infinite
+    &-dot-2
+      animation: bounce 5s ease-in-out 100ms infinite
+    &-dot-3
+      animation: bounce 5s ease-in-out 200ms infinite
+
+  &-slack,
+  &-github,
+  &-gitlab,
+  &-hipchat,
+  &-webhook,
+  &-invision,
+  &-bitbucket
+    +width-height(16px)
+
+  &-card
+    +width-height(16px, 14px)
+
+  &-lock
+    +width-height(12px, 14px)
+
+  &-arrow-up,
+  &-arrow-down
+    @extend .icon-outline
+    +width-height(10px, 6px)
+
+  &-arrow-left,
+  &-arrow-right
+    @extend .icon-outline
+    +width-height(6px, 10px)
+
+  &-check
+    @extend .icon-outline
+    +width-height(8px)
+
+  &-plus
+    @extend .icon-outline
+    +width-height(6px)
+
+  // Icon: Sizes
+  $sizes: (xxs: 8px, xs: 10px, sm: 12px, md: 16px, lg: 24px, xl: 32px)
+  +all-media-sizes
+    @each $size, $value in $sizes
+      &-#{$size}
+        +width-height($value)
+
+  &-btn
+    position: relative
+    display: inline-block
+    border: 2px solid $gray
+    border-radius: 50%
+    text-align: center
+    transition: border-color 300ms ease
+    @each $size, $value in (xs: 16px, sm: 24px, md: 32px, lg: 40px, xl: 48px)
+      &-#{$size}
+        +width-height($value)
+    a:hover &
+      border-color: darken($gray, 12%)
+
+    &-inverse
+      &, a:hover &
+        border-color: #fff
+
+  &-inverse
+    fill: #fff

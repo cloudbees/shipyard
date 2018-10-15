@@ -1,0 +1,15 @@
+@mixin width-height($width, $height: null)
+  width: $width
+  height: if($height, $height, $width)
+
+@mixin border-radius($radius: $border-radius)
+  border-radius: $radius
+
+@mixin box-shadow($value: $box-shadow)
+  box-shadow: $value
+
+@mixin clearfix
+  &::after
+    clear: both
+    content: ""
+    display: table

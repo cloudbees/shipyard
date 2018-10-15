@@ -1,0 +1,33 @@
+// Font: Family
+$font-family: Helvetica, Arial, sans-serif !default
+$font-monospace: monospace !default
+
+// Font: Weights
+$normal: 300 !default
+$italic: 400 !default
+$medium: 500 !default
+$medium-italic: 600 !default
+$bold: 700 !default
+$bold-italic: 800 !default
+
+// Font: Sizes
+$font-sizes: (xxs: 12px, xs: 13px, sm: 14px, md: 16px, lg: 18px, xl: 20px, xxl: 22px, xxxl: 24px)
+$font-size: map-get($font-sizes, md) !default
+$font-size-xxxl: map-get($font-sizes, xxxl) !default
+$font-size-xxl: map-get($font-sizes, xxl) !default
+$font-size-xl: map-get($font-sizes, xl) !default
+$font-size-lg: map-get($font-sizes, lg) !default
+$font-size-sm: map-get($font-sizes, sm) !default
+$font-size-xs: map-get($font-sizes, xs) !default
+$font-size-xxs: map-get($font-sizes, xxs) !default
+$font: $normal 16px / 1.6 $font-family !default
+
+// Text Colors
+$text-color-base: saturate(darken($gray, 35%), 40%)
+$text-color-darkest: text-color(1) !default
+$text-color-darker: text-color(.9) !default
+$text-color-dark: text-color(.8) !default
+$text-color-normal: text-color(.7) !default
+$text-color-light: text-color(.6) !default
+$text-color-lighter: text-color(.5) !default
+$text-color-lightest: text-color(.4) !default

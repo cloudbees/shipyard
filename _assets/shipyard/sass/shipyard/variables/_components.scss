@@ -1,0 +1,84 @@
+$component-defaults: (
+  header: (
+    background: #fff,
+    color: $text-color-light,
+    box-shadow: $box-shadow,
+    logo: (
+      font-weight: $bold
+    ),
+    list: (
+      font-weight: $medium
+    )
+  ),
+  input: (
+    required-asterisk: (
+      top: 4px,
+      right: 5px,
+      line-height: 16px,
+      font-weight: $bold,
+      color: darken($purple, 13%)
+    ),
+    required-asterisk-error: (
+      color: #fff
+    ),
+    required-corner: (
+      top: 2px,
+      right: 2px,
+      border-width: 12px,
+      border-top-color: $border-color-light,
+      border-right-color: $border-color-light
+    ),
+    required-corner-error: (
+      border-top-color: $red,
+      border-right-color: $red
+    )
+  ),
+  form-error: (
+    container: (
+      color: #fff,
+      background: $red,
+      border-radius: 5px,
+      text-shadow: 0 1px 1px rgba($gray-darkest, .1)
+    ),
+    text: (
+      font-weight: $bold
+    ),
+    item: (
+      color: #fff,
+      font-weight: $medium
+    )
+  ),
+  note: (
+    background: $gray-lighter,
+    border-radius: $border-radius,
+    info: (
+      color: $blue-darkest,
+      background: $blue-lighter
+    ),
+    success: (
+      color: $green-darkest,
+      background: $green-lighter
+    ),
+    warning: (
+      color: $yellow-darkest,
+      background: $yellow-lighter
+    )
+  ),
+  code: (
+    color: $purple-dark,
+    font-size: $font-size-sm,
+    font-family: $font-monospace,
+    background: darken($gray-lightest, 3%),
+    border: 1px solid darken($gray-lighter, 5%)
+  ),
+  tooltip: (
+    color: #fff,
+    padding: 10px 15px,
+    font-weight: $normal,
+    font-size: $font-size,
+    background: $gray-darker
+  )
+) !default;
+
+$component-options: () !default;
+$components: map-merge-options($component-defaults, $component-options);

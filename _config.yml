@@ -50,3 +50,4 @@ defaults:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - _assets/shipyard/dist

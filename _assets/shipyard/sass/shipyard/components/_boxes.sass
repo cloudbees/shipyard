@@ -1,0 +1,26 @@
+.box
+  &, &-link
+    background: #fff
+    +box-shadow
+
+  &, &-link, &-secondary
+    display: block
+    border-radius: 5px
+    transition: color 300ms ease, background-color 300ms ease, border-color 300ms ease, box-shadow 300ms ease
+
+  &-secondary
+    background: $gray-lighter
+
+  &-link
+    color: $blue
+    cursor: pointer
+    &:hover, &:active, &-active
+      color: $blue-dark
+      outline: none
+      box-shadow: 0 0 4px 1px rgba($blue,.5)
+    &-selected,
+    &-selected:hover,
+    &-selected:active
+      outline: none
+      cursor: default
+      box-shadow: 0 0 4px 1px rgba(darken($green, 5%),.75)
