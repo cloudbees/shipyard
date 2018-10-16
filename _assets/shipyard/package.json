@@ -1,6 +1,6 @@
 {
   "name": "@cloudbees/shipyard",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "sass/shipyard.sass",
   "scripts": {
     "build": "webpack --mode=development",
