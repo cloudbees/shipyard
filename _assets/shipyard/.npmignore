@@ -1,2 +1,5 @@
 .sass-cache
 .npmignore
+webpack.config.js
+yarn.lock
+*.tgz
