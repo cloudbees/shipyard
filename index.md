@@ -4,24 +4,18 @@ title: Shipyard
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'shipyard-framework', '~> {% shipyard_version %}'
+```
+npm install --save @cloudbees/shipyard
 ```
 
-Then add this line to your application's CSS file(s):
+## Styles
 
-```css
-@import "shipyard"
-```
+The SASS source files are available for import at `@cloudbees/shipyard//sass/shipyard.sass`
 
-Then add this line to your application's JavaScript file(s):
+You can also consume the styles via a pre-built CSS file at `@cloudbees/shipyard/dist/shipyard.css`
 
-```javascript
-//= require shipyard
-```
+## Icons
 
-## Jekyll Tools
-- `shipyard_css_classes`
-- `site.env`
+The individual SVG icons can be found at `@cloudbees/shipyard/icons/*.svg`.
+
+We also provide a pre-built icons sprite file at `@cloudbees/shipyard/dist/icons.svg`
