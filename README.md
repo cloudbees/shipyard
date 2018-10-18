@@ -1,23 +1,14 @@
 # Shipyard Styleguide
 
-This repository consists of 2 parts,
-
-  - The styleguide (the root of this repository)
-  - The shipyard package (`_assets/shipyard`)
-
-## Doing work
-
 At it's core, the styleguide is a fairly standard [jekyll](https://jekyllrb.com/) site.
 
 **Once you have a relatively recent ruby version available and [`yarn`](https://yarnpkg.com) installed.**
-
-Out of the box you should be able to:
 
   - clone this repository
   - install the required ruby gems with `bundle install`
   - run `bundle exec jekyll serve`
 
-After this, you should have a working styleguide locally at http://127.0.0.1:4000/shipyard/.
+After this, you should have a working styleguide locally at http://127.0.0.1:4000/shipyard/
 
 As you make changes to any of the files (including the shipyard package), it should auto rebuild and you should see your changes reflected on refresh.
 
@@ -35,7 +26,7 @@ The shipyard package is what we publish to npm.  This is how all of our consumin
 
 ## Development
 
-See our [contribution](CONTRIBUTING.md) documentation for details on how to submit pull requests and cut releases.
+See our [contribution](CONTRIBUTING.md) documentation for details on how we expect pull requests and how to cut releases.
 
 ## License
 
