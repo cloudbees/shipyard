@@ -26,7 +26,7 @@ This should give you a release branch off develop and some relevant instructions
 
 This is when you should:
   - Bump the version number in `package.json`
-  - Run `npm build:dist`
+  - Run `yarn build:dist`
 
 Once you've done this and committed these changes to the release branch, you are ready to run:
 
