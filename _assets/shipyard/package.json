@@ -1,6 +1,6 @@
 {
   "name": "@cloudbees/shipyard",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "MIT",
   "main": "sass/shipyard.sass",
   "scripts": {
