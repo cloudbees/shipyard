@@ -7,7 +7,7 @@ This repository consists of 2 parts.
 
 ### The styleguide
 
-At it's core, the styleguide is a fairly standard [jekyll]() site.
+At it's core, the styleguide is a fairly standard [jekyll](https://jekyllrb.com/) site.
 
 Out of the box you should be able to:
 
@@ -19,7 +19,7 @@ After this, you should have a working styleguide locally.  As you make changes t
 
 #### A note on Ruby helper usage
 
-Currently, there are many places where we are using custom ruby helpers in order to generate html for the styleguide.  This is a relic of this package being used only in jekyll and rails applications.  It is our desire to move towards utilizing [jekyll includes]() moving forward, and transition the ruby based helpers into includes.  You can see examples of this in how we are currently rendering our icons.  This will allow a wider range of contribution along with providing a clearer path to understand the expected HTML structure for certain components.  We consider HTML > Ruby in this context.
+Currently, there are many places where we are using custom ruby helpers in order to generate html for the styleguide.  This is a relic of this package being used only in jekyll and rails applications.  It is our desire to move towards utilizing [jekyll includes](https://jekyllrb.com/docs/includes/) moving forward, and transition the ruby based helpers into includes.  You can see examples of this in how we are currently rendering our icons.  This will allow a wider range of contribution along with providing a clearer path to understand the expected HTML structure for certain components.  We consider HTML > Ruby in this context.
 
 ### The shipyard package
 
@@ -39,7 +39,7 @@ All pull requests should be submitted against the `develop` branch.
 
 We strive for [semantic versioning](https://semver.org/) for our version number assignment, and utilize the [git flow](https://github.com/nvie/gitflow) tool to execute releases in the repository.
 
-You can initialize git flow once it is installed with
+You can initialize git flow on your local machine once it is installed with
 
 ```
 $> git flow init -d
