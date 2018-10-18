@@ -20,4 +20,4 @@ You can see further documentation of how to actually use the styles by taking a 
 
 ## License
 
-The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+The package is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
