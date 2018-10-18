@@ -18,6 +18,10 @@ We also produce a pre-built css file and a pre-built svg icon sprite file that c
 
 You can see further documentation of how to actually use the styles by taking a look at [the styleguide](https://cloudbees.github.io/shipyard).
 
+## Development
+
+See our [contribution](CONTRIBUTING.md) documentation.
+
 ## License
 
 The package is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
