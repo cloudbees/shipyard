@@ -1,6 +1,30 @@
-# Pull Requests
+# Branching
 
-All pull requests should be submitted against the `develop` branch.
+## Changes to just the styleguide
+
+Changes to _just_ the styleguide that do not involve changing the shipyard package are safe to base directly on master.
+
+You can create a new branch based on master with
+
+```
+git checkout -b changes-to-just-the-styleguide master
+```
+
+This will create you a branch based on master, and when you're ready to merge it you can create a pull request from `changes-to-just-the-styleguide` into `master`
+
+## Changes that involve changing the shipyard package (along with the styleguide)
+
+When you are making changes that require you to also update the shipyard package, those should be be based on `develop`.  In the [git flow]() branching model that we're using, new changes should always go into `develop` to await release.
+
+To do that you can do
+
+```
+git checkout -b changes-to-the-shipyard-package develop
+```
+
+This will create a branch based on `develop`, and when you're ready to merge it you can create a pull request from `changes-to-the-shipyard-package` into `develop` (this is the default merge target).
+
+Feel free to change the styleguide along with the shipyard package, as this is a good way to version them together.
 
 # Releases
 
