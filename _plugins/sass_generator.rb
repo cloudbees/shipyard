@@ -5,7 +5,7 @@ module Jekyll
   class SassOutputGenerator < Generator
     def generate(site)
       @shipyard_size = 0
-      @stylesheets_path = '../assets/stylesheets/'
+      @stylesheets_path = '_assets/'
       sass = load_sass_files
       site.config['sass_output'] = sass
       site.data.merge!(sass_output: sass)
@@ -16,7 +16,7 @@ module Jekyll
     def load_sass_files
       Dir["#{@stylesheets_path}**/*.sass"].sort.map do |file|
         dir = File.dirname(file)
-        sass = %(@import "shipyard/core"\n)
+        sass = %(@import "shipyard"\n)
         sass += File.read(file)
         compact_css = render(sass, :compact, dir)
         compressed_css = render(sass, :compressed, dir)
@@ -30,6 +30,7 @@ module Jekyll
           .gsub(/,([^\n])/, ",\n\\1") # Add new lines
 
         @shipyard_size = gzip_size if file.include?('_shipyard.sass')
+
         {
           'file' => file.gsub(@stylesheets_path, ''),
           'sass' => sass,
@@ -49,7 +50,7 @@ module Jekyll
         sass,
         syntax: :sass,
         style: style,
-        load_paths: [Shipyard::stylesheets_path, dir]
+        load_paths: ['_assets/shipyard/sass/', dir]
       ).render
     end
   end

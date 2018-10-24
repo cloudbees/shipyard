@@ -10,8 +10,6 @@ module Shipyard
           s['file'].include? context['page']['sass_file']
         }
 
-        return '' if sass.nil?
-
         size = sass['gzip_size']
         case
         when size >= 1000 then %(#{(size / 1000.0).round(1)} <span class="text-lightest">kb</span>)
