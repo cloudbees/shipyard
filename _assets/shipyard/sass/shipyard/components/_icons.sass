@@ -24,16 +24,16 @@ svg, path, circle, polyline
   // Status Icons
   &-fail,
   &-success
-    +width-height(8px)
+    +width-height(10px)
   &-paused,
   &-error-xs
-    +width-height(4px)
+    +width-height(14px)
   &-error
     +width-height(2px, 8px)
   &-waiting
-    +width-height(12px, 2px)
+    +width-height(16px, 6px)
   &-running
-    +width-height(8px)
+    +width-height(10px)
     animation: rotate 1.5s linear 0s infinite
   &-waiting
     &-dot-1
@@ -75,6 +75,14 @@ svg, path, circle, polyline
   &-plus
     @extend .icon-outline
     +width-height(6px)
+
+  &-gear
+    @extend .icon-outline
+    +width-height(16px)
+
+  &-restart
+    @extend .icon-outline
+    +width-height(22px)
 
   // Icon: Sizes
   $sizes: (xxs: 8px, xs: 10px, sm: 12px, md: 16px, lg: 24px, xl: 32px)
