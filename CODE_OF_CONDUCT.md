@@ -65,11 +65,6 @@ Project maintainers who do not follow or enforce the Code of Conduct in good
 faith may face temporary or permanent repercussions as determined by other
 members of the project's leadership.
 
-## Project Maintainers
-
-* Marko Locher (Codeship Inc.) <<marko@codeship.com>>
-* Ethan Jones (Codeship Inc.) <<ethan@codeship.com>>
-
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4,
