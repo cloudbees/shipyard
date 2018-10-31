@@ -1,0 +1,40 @@
+---
+navigation:
+- name: Environments
+  url: /
+- name: Pipelines
+  url: /
+- name: Builds
+  url: /
+- name: Members
+  url: /
+- name: Settings
+  url: /
+---
+<html lang="en" class="{% shipyard_css_classes %}">
+  <head>
+    <meta charset="utf-8" />
+    <title>{{ page.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    {% asset fonts.css media=screen %}
+    {% asset layouts/core.css media=screen %}
+  </head>
+  <body class="bg-gray-lightest">
+    <header class="cb-header">
+      <div class="container">
+        <h6><a href="{{ site.baseurl }}/">CloudBees Core</a></h6>
+        <ul>
+          {% for link in layout.navigation %}
+            <li>
+              <a href="#">
+                {% include icon.html name="github" class="white" %}
+                <span class="hidden">{{ link.name }}</span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </header>
+    <div class="container">{{ content }}</div>
+  </body>
+</html>

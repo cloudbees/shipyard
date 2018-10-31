@@ -1,0 +1,48 @@
+-
+  name: mothership
+  source: codeship/mothership
+  last_build:
+    time_ago: 5 minutes ago
+    committer: codebyro
+-
+  name: shipyard
+  source: cloudbees/shipyard
+  last_build:
+    time_ago: 5 minutes ago
+    committer: codebyro
+-
+  name: jet
+  source: codeship/jet
+  last_build:
+    time_ago: 5 minutes ago
+    committer: codebyro
+-
+  name: api
+  source: codeship/api
+  last_build:
+    time_ago: 5 minutes ago
+    committer: codebyro
+-
+  name: fleet-control
+  source: codeship/fleet-control
+  last_build:
+    time_ago: 5 minutes ago
+    committer: codebyro
+-
+  name: documentation
+  source: cloudbees/documentation
+  last_build:
+    time_ago: 5 minutes ago
+    committer: codebyro
+-
+  name: container-ship
+  source: codeship/container-ship
+  last_build:
+    time_ago: 5 minutes ago
+    committer: codebyro
+-
+  name: ohhh-buoy
+  source: codeship/ohhh-buoy
+  last_build:
+    time_ago: 5 minutes ago
+    committer: codebyro

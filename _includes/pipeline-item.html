@@ -1,0 +1,9 @@
+<li class="col col-100 sm:col-50 mb-10 sm:mb-15 md:mb-20 lg:mb-30">
+  <a href="{{ site.baseurl }}" class="box-link h-60 sm:h-80 p-20 pt-15 no-underline">
+    <h4 class="sm:text-lg">{{ pipeline.name }}</h4>
+    <span class="text-xs sm:text-sm text-light">
+      Last build {{ pipeline.last_build.time_ago }}
+      by {{ pipeline.last_build.committer }}
+    </span>
+  </a>
+</li>

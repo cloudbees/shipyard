@@ -1,0 +1,19 @@
+@import "shipyard-options"
+@import "shipyard"
+
+body
+  @extend .body
+  padding-top: 70px
+
+a
+  @extend .link
+
+header
+  position: fixed
+  top: 0
+  left: 0
+  background: $blue
+  color: #fff
+  +respond-to(width, (all: 100%, sm: 64px))
+  +respond-to(height, (all: 48px, sm: 100%))
+  +respond-to(left, (sm: 0))
