@@ -1,4 +1,5 @@
 ---
+baseurl: /examples/core/pipelines/
 navigation:
 - name: Environments
   url: /
@@ -20,13 +21,15 @@ navigation:
     {% asset layouts/core/core.css media=screen %}
   </head>
   <body class="bg-gray-lightest">
-    <header class="cb-header">
+    <header class="fixed">
       <div class="container">
-        <h6><a href="{{ site.baseurl }}/">CloudBees Core</a></h6>
+        <h6>
+          <a href="{{ site.baseurl }}{{ layout.baseurl }}" class="block">CloudBees Core</a>
+        </h6>
         <ul>
           {% for link in layout.navigation %}
-            <li>
-              <a href="#">
+            <li class="mb-5">
+              <a href="#" class="block bg-red">
                 {% include icon.html name="github" class="white" %}
                 <span class="hidden">{{ link.name }}</span>
               </a>
