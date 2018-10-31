@@ -22,21 +22,19 @@ navigation:
   </head>
   <body class="bg-gray-lightest">
     <header class="fixed">
-      <div class="container">
-        <h6>
-          <a href="{{ site.baseurl }}{{ layout.baseurl }}" class="block">CloudBees Core</a>
-        </h6>
-        <ul>
-          {% for link in layout.navigation %}
-            <li class="mb-5">
-              <a href="#" class="block bg-red">
-                {% include icon.html name="github" class="white" %}
-                <span class="hidden">{{ link.name }}</span>
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+      <h6>
+        <a href="{{ site.baseurl }}{{ layout.baseurl }}" class="block">CloudBees Core</a>
+      </h6>
+      <ul class="hidden sm:block">
+        {% for link in layout.navigation %}
+          <li class="mb-5">
+            <a href="#" class="block align-center h-44 relative ease-300ms">
+              {% include icon.html name="github" class="white center h-24 w-24" %}
+              <span class="hidden">{{ link.name }}</span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
     </header>
     <div class="container">{{ content }}</div>
   </body>
