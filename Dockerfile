@@ -9,3 +9,6 @@ RUN npm install --global surge
 RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 COPY . .
+
+RUN bundle install
+RUN bundle exec jekyll build

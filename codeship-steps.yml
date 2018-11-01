@@ -1,17 +1,8 @@
-- type: serial
-  name: setup
+- type: parallel
   steps:
-    - service: app
-      name: install bundle
-      command: bundle install
-    - service: app
-      name: build site
-      command: bundle exec jekyll build
-    - type: parallel
-      steps:
-      - name: percy
-        service: app
-        command: percy snapshot _site/
-      - name: preview
-        service: app
-        command: ./deploy_preview.sh
+  - name: percy
+    service: app
+    command: percy snapshot _site/
+  - name: preview
+    service: app
+    command: ./deploy_preview.sh
