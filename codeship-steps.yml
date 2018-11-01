@@ -12,5 +12,5 @@
     service: package
     command: tar -tvf $(npm pack)
   - name: deploy styleguide
-    service: gh-pages
+    service: github-pages
     command: sh ./ci/deploy_styleguide.sh
