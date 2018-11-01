@@ -1,0 +1,3 @@
+app:
+  build: .
+  encrypted_env_file: secrets.encrypted
