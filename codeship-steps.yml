@@ -6,7 +6,7 @@
   - name: preview
     service: testing
     command: sh ./ci/deploy_preview.sh
-- type: manual
+- type: serial
   steps:
   - name: publish to npm
     service: package
