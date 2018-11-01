@@ -1,8 +1,11 @@
 testing:
-  build: ./ci/Dockerfile.testing
+  build:
+    dockerfile: ./ci/Dockerfile.testing
   encrypted_env_file: secrets.encrypted
 package:
-  build: ./ci/Dockerfile.package
+  build:
+    dockerfile: ./ci/Dockerfile.package
   encrypted_env_file: secrets.encrypted
 github-pages:
-  build: ./ci/Dockerfile.gh-pages
+  build:
+    dockerfile: ./ci/Dockerfile.github-pages
