@@ -13,8 +13,6 @@ branch=$(tr '/' '-' <<<"$branch")
 surge="cloudbees-shipyard-${branch}.surge.sh"
 surge_url="https://${surge}"
 
-yarn install
-
 if ! deployment=$(curl -s \
                   -X POST \
                   -H "Authorization: bearer ${user_access_token}" \
@@ -22,17 +20,17 @@ if ! deployment=$(curl -s \
                   -H "Content-Type: application/json" \
                   "https://api.github.com/repos/${repo}/deployments"); then
   echo "POSTing deployment status failed, exiting (not failing build)" 1>&2
-  exit 0
+  exit 1
 fi
 
 if ! deployment_id=$(echo "${deployment}" | jq '.id'); then
   echo "Could not extract deployment ID from API response, exiting (not failing build)"
-  exit 0
+  exit 2
 fi
 
 if ! surge ./_site/ "${surge}"; then
   echo "Deployment of the preview failed, exiting (not failing build)" 1>&2
-  exit 0
+  exit 3
 fi
 
 if ! curl -s \
@@ -43,5 +41,5 @@ if ! curl -s \
   "https://api.github.com/repos/codeship/mothership/deployments/$deployment_id/statuses" \
   > /dev/null ; then
   echo "POSTing deployment status failed, exiting (not failing build)" 1>&2
-  exit 0
+  exit 4
 fi

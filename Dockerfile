@@ -1,7 +1,7 @@
 FROM starefossen/ruby-node:2-10-slim
 
 RUN apt-get update
-RUN apt-get install -y build-essential
+RUN apt-get install -y build-essential jq
 
 RUN gem install percy-cli
 RUN npm install --global surge
@@ -11,4 +11,5 @@ WORKDIR /usr/src/app
 COPY . .
 
 RUN bundle install
+RUN yarn install
 RUN bundle exec jekyll build
