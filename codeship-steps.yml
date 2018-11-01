@@ -2,7 +2,7 @@
   steps:
   - name: percy
     service: app
-    command: echo "do percy cli stuff"
+    command: percy snapshot _site/
   - name: preview
     service: app
     command: ./deploy_preview.sh
