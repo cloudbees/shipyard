@@ -5,4 +5,4 @@
     command: echo "do percy cli stuff"
   - name: preview
     service: app
-    command: ./deploy_preview
+    command: ./deploy_preview.sh
