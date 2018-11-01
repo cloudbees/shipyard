@@ -38,7 +38,7 @@ if ! curl -s \
   -H "Authorization: bearer ${user_access_token}" \
   -d "{ \"state\": \"success\", \"environment_url\": \"${surge_url}\" }" \
   -H "Content-Type: application/json" \
-  "https://api.github.com/repos/codeship/mothership/deployments/$deployment_id/statuses" \
+  "https://api.github.com/repos/${repo}/deployments/${deployment_id}/statuses" \
   > /dev/null ; then
   echo "POSTing deployment status failed, exiting (not failing build)" 1>&2
   exit 4
