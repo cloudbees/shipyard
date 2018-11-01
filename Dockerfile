@@ -1,4 +1,4 @@
-FROM ruby-node:2-10-slim
+FROM starefossen/ruby-node:2-10-slim
 
 RUN gem install percy-cli
 RUN npm install --global surge
