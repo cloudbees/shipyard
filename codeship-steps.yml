@@ -1,8 +1,11 @@
 - type: serial
+  name: setup
   steps:
     - service: app
+      name: install bundle
       command: bundle install
     - service: app
+      name: build site
       command: bundle exec jekyll build
     - type: parallel
       steps:
