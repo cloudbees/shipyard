@@ -4,13 +4,13 @@ set -eu
 
 repo="cloudbees/shipyard"
 user_access_token=${GITHUB_DEPLOY_USER_ACCESS_TOKEN:?"Missing GITHUB_DEPLOY_USER_ACCESS_TOKEN environment variable"}
-
 if ! branch=$(git symbolic-ref --short HEAD 2>/dev/null); then
   branch=${CI_BRANCH:?"Could not read branch from either local checkout nor environment variable CI_BRANCH"}
 fi
-branch=$(tr '/' '-' <<<"$branch")
 
-surge="cloudbees-shipyard-${branch}.surge.sh"
+sanitized_repo=$(echo $repo | sed "s/\//-/g")
+sanitized_branch=$(echo $branch | sed "s/\//-/g")
+surge="${sanitized_repo}-${sanitized_branch}.surge.sh"
 surge_url="https://${surge}"
 
 if ! deployment=$(curl -s \
