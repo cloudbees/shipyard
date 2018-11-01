@@ -1,3 +1,8 @@
-app:
-  build: .
+test:
+  build: ./ci/Dockerfile.test
   encrypted_env_file: secrets.encrypted
+package:
+  build: ./ci/Dockerfile.package
+  encrypted_env_file: secrets.encrypted
+github-pages:
+  build: ./ci/Dockerfile.gh-pages

@@ -1,0 +1,8 @@
+FROM node:10-slim
+
+RUN mkdir /usr/src/shipyard
+WORKDIR /usr/src/shipyard
+COPY ./_assets/shipyard .
+
+RUN yarn install
+RUN yarn build:dist
