@@ -6,11 +6,11 @@
   - name: preview
     service: testing
     command: sh ./ci/deploy_preview.sh
-- type: serial
+- type: parallel
   steps:
   - name: publish to npm
     service: package
-    command: tar -tvf $(npm pack)
+    command: "tar -tvf `npm pack`"
   - name: deploy styleguide
     service: github-pages
     command: sh ./ci/deploy_styleguide.sh
