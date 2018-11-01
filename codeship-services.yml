@@ -1,5 +1,5 @@
-test:
-  build: ./ci/Dockerfile.test
+testing:
+  build: ./ci/Dockerfile.testing
   encrypted_env_file: secrets.encrypted
 package:
   build: ./ci/Dockerfile.package
