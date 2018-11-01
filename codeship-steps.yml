@@ -1,8 +1,14 @@
-- type: parallel
+- type: serial
   steps:
-  - name: percy
-    service: app
-    command: percy snapshot _site/
-  - name: preview
-    service: app
-    command: ./deploy_preview.sh
+    - service: app
+      command: bundle install
+    - service: app
+      command: bundle exec jekyll build
+    - type: parallel
+      steps:
+      - name: percy
+        service: app
+        command: percy snapshot _site/
+      - name: preview
+        service: app
+        command: ./deploy_preview.sh
