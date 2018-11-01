@@ -5,6 +5,3 @@ testing:
 package:
   build:
     dockerfile: ./ci/Dockerfile.package
-github-pages:
-  build:
-    dockerfile: ./ci/Dockerfile.github-pages
