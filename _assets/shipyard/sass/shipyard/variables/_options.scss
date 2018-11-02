@@ -53,7 +53,7 @@ $shipyard-defaults: (
   // Shipyard: Line-Height Utility
   line-height: (
     prefix: 'leading',
-    responsive: false,
+    responsive: true,
     values: (
       'none': 1,
       'tight': 1.2,
