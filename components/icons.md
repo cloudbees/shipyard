@@ -51,7 +51,7 @@ If you need to style several paths inside of the icon, it's important to make su
 {: .section-description }
 
 <ul class="icon-list col-container">
-  {% include icon-item.html name="bitbucket-white" class="center icon-xl" %}
+  <!-- {% include icon-item.html name="bitbucket-white" class="center icon-xl" %} -->
   {% include icon-item.html name="bitbucket" class="center gray icon-xl" %}
   {% include icon-item.html name="bitbucket-color" class="center icon-xl" %}
   {% include icon-item.html name="campfire-color" class="center icon-xl" %}
