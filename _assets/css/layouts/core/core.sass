@@ -3,7 +3,8 @@
 
 body
   @extend .body
-  padding-top: 70px
+  +respond-to(padding-top, (all: 48px + 8px, sm: 20px))
+  +respond-to(padding-left, (all: 0, sm: 64px))
 
 a
   @extend .link

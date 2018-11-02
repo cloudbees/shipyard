@@ -10,11 +10,14 @@ $shipyard-options: (
     )
   ),
   height: (
+    responsive: true,
     values: (
       '4': 4px,
       '16': 16px,
       '24': 24px,
+      '28': 28px,
       '32': 32px,
+      '36': 36px,
       '44': 44px,
       '48': 48px,
       '50': 50px,
@@ -24,15 +27,19 @@ $shipyard-options: (
       '70': 70px,
       '80': 80px,
       '90': 90px,
-      '100': 100px
+      '100': 100px,
+      'auto': auto
     )
   ),
   width: (
+    responsive: true,
     values: (
       '4': 4px,
       '16': 16px,
       '24': 24px,
+      '28': 28px,
       '32': 32px,
+      '36': 36px,
       '44': 44px,
       '48': 48px,
       '50': 50px,
@@ -42,7 +49,8 @@ $shipyard-options: (
       '70': 70px,
       '80': 80px,
       '90': 90px,
-      '100': 100px
+      '100': 100px,
+      'auto': auto
     )
   )
 );
