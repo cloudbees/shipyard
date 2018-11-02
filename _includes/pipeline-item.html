@@ -1,6 +1,6 @@
 <li class="col col-100 sm:col-50 mb-10 sm:mb-15 md:mb-20 lg:mb-30">
   <a href="{{ site.baseurl }}" class="box-link h-56 md:h-80 p-20 pt-10 no-underline leading-normal">
-    <h4 class="text-md sm:text-lg">{{ pipeline.name }}</h4>
+    <h4 class="block text-md sm:text-lg ellipsis overflow-hidden white-space-nowrap">{{ pipeline.name }}</h4>
     <span class="block text-xs sm:text-sm text-light ellipsis overflow-hidden white-space-nowrap">
       Last build {{ pipeline.last_build.time_ago }}
       by {{ pipeline.last_build.committer }}

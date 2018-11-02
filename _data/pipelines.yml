@@ -46,3 +46,15 @@
   last_build:
     time_ago: 6 hours ago
     committer: codebyro
+-
+  name: cloudbees/core-frontend
+  source: cloudbees/core-frontend
+  last_build:
+    time_ago: 8 hours ago
+    committer: codebyro
+-
+  name: ryanjwilke/core-frontend
+  source: ryanjwilke/core-frontend
+  last_build:
+    time_ago: 8 hours ago
+    committer: codebyro
