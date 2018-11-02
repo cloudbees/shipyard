@@ -20,6 +20,8 @@ deployment=$(curl -s \
                   -H "Content-Type: application/json" \
                   "https://api.github.com/repos/${repo}/deployments")
 
+echo $deployment
+
 deployment_id=$(echo "${deployment}" | jq '.id')
 
 surge ./_site/ "${surge}"
