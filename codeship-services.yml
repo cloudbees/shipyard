@@ -1,0 +1,7 @@
+testing:
+  build:
+    dockerfile: ./ci/Dockerfile.testing
+  encrypted_env_file: ./ci/secrets.encrypted
+package:
+  build:
+    dockerfile: ./ci/Dockerfile.package
