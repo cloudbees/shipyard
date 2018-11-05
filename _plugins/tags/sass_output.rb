@@ -10,8 +10,6 @@ module Shipyard
           s['file'].include? context['page']['sass_file']
         }
 
-        return '' if sass.nil?
-
         output = sass['compressed_css']
         output.gsub! /{/, ' { '
         output.gsub! /}([^}])/, " }\n\\1" # Match closing brackets

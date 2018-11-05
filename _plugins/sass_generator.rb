@@ -5,7 +5,7 @@ module Jekyll
   class SassOutputGenerator < Generator
     def generate(site)
       @shipyard_size = 0
-      @stylesheets_path = '../assets/stylesheets/'
+      @stylesheets_path = '_assets/shipyard/sass/'
       sass = load_sass_files
       site.config['sass_output'] = sass
       site.data.merge!(sass_output: sass)
@@ -29,7 +29,8 @@ module Jekyll
           .gsub(/@keyframes[^{]*{[^}]*}/, '') # Remove keyframes
           .gsub(/,([^\n])/, ",\n\\1") # Add new lines
 
-        @shipyard_size = gzip_size if file.include?('_shipyard.sass')
+        @shipyard_size = gzip_size if file.include?('shipyard.sass')
+
         {
           'file' => file.gsub(@stylesheets_path, ''),
           'sass' => sass,
@@ -49,7 +50,7 @@ module Jekyll
         sass,
         syntax: :sass,
         style: style,
-        load_paths: [Shipyard::stylesheets_path, dir]
+        load_paths: ['_assets/shipyard/sass/', dir]
       ).render
     end
   end

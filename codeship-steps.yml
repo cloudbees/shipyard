@@ -1,0 +1,8 @@
+- type: parallel
+  steps:
+  - name: percy
+    service: testing
+    command: percy snapshot _site/
+  - name: preview
+    service: testing
+    command: sh ./ci/deploy_preview.sh

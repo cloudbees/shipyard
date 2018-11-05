@@ -10,8 +10,6 @@ module Shipyard
           s['file'].include? context['page']['sass_file']
         }
 
-        return '' if sass.nil?
-
         sass['declarations']
       end
     end

@@ -1,6 +1,5 @@
 title: Shipyard
 description: A sweet front-end framework
-baseurl: /shipyard
 url: https://cloudbees.github.io
 permalink: /:title
 sass:
