@@ -50,7 +50,19 @@ $shipyard-defaults: (
     values: (0, 5, 10, 15, 20, 25, 30, 33, 35, 40, 45, 50, 55, 60, 65, 66, 70, 75, 80, 85, 90, 95, 100)
   ),
 
-  // Shipyard: Height Component
+  // Shipyard: Line-Height Utility
+  line-height: (
+    prefix: 'leading',
+    responsive: true,
+    values: (
+      'none': 1,
+      'tight': 1.2,
+      'normal': 1.4,
+      'loose': 1.6
+    )
+  ),
+
+  // Shipyard: Height Utility
   height: (
     prefix: 'h',
     responsive: true,
@@ -64,7 +76,7 @@ $shipyard-defaults: (
     )
   ),
 
-  // Shipyard: Width Component
+  // Shipyard: Width Utility
   width: (
     prefix: 'w',
     responsive: true,
