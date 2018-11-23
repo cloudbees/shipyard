@@ -3,15 +3,89 @@ $shipyard-defaults: (
   // Shipyard: Color Utilities
   color: (
     prefix: null,
-    responsive: false,
+    responsive: true,
     values: $shipyard-colors
   ),
 
-  // Shipyard: Color Utilities
+  border-color: (
+    prefix: 'border',
+    responsive: true,
+    values: $shipyard-colors
+  ),
+
   background-color: (
     prefix: 'bg',
-    responsive: false,
+    responsive: true,
     values: $shipyard-colors
+  ),
+
+  background-image: (
+    prefix: 'bg',
+    responsive: false,
+    values: null
+  ),
+
+  border-style: (
+    prefix: 'border',
+    responsive: false,
+    values: (
+      '': solid,
+      'solid': solid,
+      'none': none
+    )
+  ),
+
+  border-width: (
+    prefix: 'border',
+    responsive: true,
+    values: (
+      '': 1px,
+      'thick': 2px,
+      'none': 0,
+      't': 1px 0 0,
+      'b': 0 0 1px,
+      'l': 0 0 0 1px,
+      'l-2': 0 0 0 2px,
+      'r': 0 1px 0 0,
+      'y': 0 1px,
+      'x': 1px 0,
+    )
+  ),
+
+  border-top-width: (
+    prefix: 'border',
+    values: (
+      'y': 1px,
+      't': 1px,
+      't-none': 0,
+    )
+  ),
+
+  border-left-width: (
+    prefix: 'border',
+    values: (
+      'x': 1px,
+      'l': 1px,
+      'l-none': 0,
+    )
+  ),
+
+  border-right-width: (
+    prefix: 'border',
+    values: (
+      'x': 1px,
+      'r': 1px,
+      'r-none': 0,
+    )
+  ),
+
+  border-bottom-width: (
+    prefix: 'border',
+    values: (
+      'y': 1px,
+      'b': 1px,
+      'b-none': 0,
+    )
   ),
 
   // Shipyard: Box-Shadow Utility
