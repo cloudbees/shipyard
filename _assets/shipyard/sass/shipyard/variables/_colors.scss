@@ -107,5 +107,8 @@ $shipyard-colors: (
   'text-normal': rgba(#162b44, .7),
   'text-light': rgba(#162b44, .6),
   'text-lighter': rgba(#162b44, .5),
-  'text-lightest': rgba(#162b44, .4)
+  'text-lightest': rgba(#162b44, .4),
+
+  // Shipyard: Transparent Color
+  'transparent': transparent
 ) !default;
