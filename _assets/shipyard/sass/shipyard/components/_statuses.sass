@@ -173,8 +173,7 @@
     &-skipped
       transform: translatex(0.5px)
     &-running
-      +width-height(16px)
-      margin: -8px 0 0 -8px
+      +status-icon-center(16px)
 
   // Status: Icons (Large)
   &-lg-icon
@@ -185,8 +184,7 @@
       +width-height(10px, 2px)
       margin: -1px 0 0 -5px
     &-running
-      +width-height(24px)
-      margin: -12px 0 0 -12px
+      +status-icon-center(26px)
 
   // Status: Icons (X-Large)
   &-xl-icon
@@ -196,7 +194,7 @@
     &-waiting
       +status-icon-center(12px, 2px)
     &-running
-      +status-icon-center(30px)
+      +status-icon-center(34px)
 
 +component('text')
   &-skipped
