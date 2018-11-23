@@ -11,7 +11,7 @@ sass_file: shipyard/components/_buttons
 Shipyard gives you more buttons than you can shake a stick at.
 {: .section-description }
 
-<div class="mb-20">
+<div class="mb-16">
   <button class="btn mr-10">Default</button>
   <button class="btn btn-primary mr-10">Primary</button>
   <button class="btn btn-primary-dark mr-10">Primary Dark</button>
@@ -37,7 +37,7 @@ Shipyard gives you more buttons than you can shake a stick at.
 Useful when you have a button on a darker background.
 {: .section-description }
 
-<div class="mb-20">
+<div class="mb-16">
   <button class="btn btn-secondary mr-10">Secondary</button>
   <button class="btn btn-secondary-dark mr-10">Secondary Dark</button>
   <button class="btn btn-secondary-link">Secondary Link</button>
@@ -55,7 +55,7 @@ Useful when you have a button on a darker background.
 Useful when you have a button on a darker background.
 {: .section-description }
 
-<div class="box-secondary p-10 sm:p-15 md:p-20 lg:p-30 bg-gray-dark mb-20">
+<div class="box-secondary p-10 sm:p-15 md:p-16 lg:p-24 bg-gray-dark mb-16">
   <button class="btn btn-inverse mr-10">Inverse</button>
   <button class="btn btn-inverse-secondary">Inverse Secondary</button>
 </div>
@@ -71,7 +71,7 @@ Useful when you have a button on a darker background.
 Rounded buttons utilize the [border-radius utility](/utilities/border-radius), and are useful when you want a button with completely rounded corners.
 {: .section-description }
 
-<div class="mb-20">
+<div class="mb-16">
   <button class="btn rounded-pill mr-10">Default</button>
   <button class="btn btn-primary rounded-pill mr-10">Primary</button>
   <button class="btn btn-cta rounded-pill mr-10">CTA</button>
@@ -89,7 +89,7 @@ Rounded buttons utilize the [border-radius utility](/utilities/border-radius), a
 Useful when you have a button that triggers an asynchronous action.
 {: .section-description }
 
-<div class="mb-20">
+<div class="mb-16">
   <button class="btn btn-loading mr-10">Default</button>
   <button class="btn btn-primary btn-loading mr-10">Primary</button>
   <button class="btn btn-cta btn-loading mr-10">CTA</button>
@@ -108,7 +108,7 @@ Useful when you have a button that triggers an asynchronous action.
 Often really useful on mobile screens or in combination with other grids.
 {: .section-description }
 
-<div class="mb-20">
+<div class="mb-16">
   <button class="btn btn-full">Save Changes</button>
 </div>
 
@@ -122,7 +122,7 @@ Often really useful on mobile screens or in combination with other grids.
 The button classes can be applied to any type of html tag to achieve the desired result. The most common examples being the `button`, `a`, and `input` tags as seen in the example below.
 {: .section-description }
 
-<div class="mb-30">
+<div class="mb-24">
   <button class="btn">Button</button>
   <a href="#" class="btn">Link</a>
   <input type="button" class="btn" value="Input" />
@@ -141,7 +141,7 @@ The button classes can be applied to any type of html tag to achieve the desired
 ---
 
 ## Button Sizes (default: md)
-<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+<div class="p-10 sm:p-15 md:p-16 lg:p-24 align-center">
   <button class="btn btn-xxs">XX-Small</button>
   <button class="btn btn-xs">X-Small</button>
   <button class="btn btn-sm">Small</button>
@@ -151,7 +151,7 @@ The button classes can be applied to any type of html tag to achieve the desired
 </div>
 
 ## XX-Small, Responsive Buttons
-<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+<div class="p-10 sm:p-15 md:p-16 lg:p-24 align-center">
   <button class="btn btn-xxs">All Screens</button>
   <button class="btn sm:btn-xxs">Tablets</button>
   <button class="btn md:btn-xxs">Laptops</button>
@@ -160,7 +160,7 @@ The button classes can be applied to any type of html tag to achieve the desired
 </div>
 
 ## X-Small, Responsive Buttons
-<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+<div class="p-10 sm:p-15 md:p-16 lg:p-24 align-center">
   <button class="btn btn-xs">All Screens</button>
   <button class="btn sm:btn-xs">Tablets</button>
   <button class="btn md:btn-xs">Laptops</button>
@@ -169,7 +169,7 @@ The button classes can be applied to any type of html tag to achieve the desired
 </div>
 
 ## Small, Responsive Buttons
-<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+<div class="p-10 sm:p-15 md:p-16 lg:p-24 align-center">
   <button class="btn btn-sm">All Screens</button>
   <button class="btn sm:btn-sm">Tablets</button>
   <button class="btn md:btn-sm">Laptops</button>
@@ -178,7 +178,7 @@ The button classes can be applied to any type of html tag to achieve the desired
 </div>
 
 ## Medium, Responsive Buttons (Default Size)
-<div class="p-10 sm:p-15 md:p-20 lg:p-30 align-center">
+<div class="p-10 sm:p-15 md:p-16 lg:p-24 align-center">
   <button class="btn btn-md">All Screens</button>
   <button class="btn btn-sm sm:btn-md">Tablets</button>
   <button class="btn btn-sm md:btn-md">Laptops</button>

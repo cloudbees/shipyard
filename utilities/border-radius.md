@@ -2,7 +2,7 @@
 title: Border-Radius Utilities
 description: Shipyard's border-radius utilities are useful for connecting components together.
 sass_file: shipyard/utilities/_border-radius
-col_classes: col col-50 sm:col-20 mb-10
+col_classes: col col-50 sm:col-20 mb-8
 box_classes: pt-10 pb-10 text-sm bold align-center bg-gray-light gray-dark
 directions:
   -
@@ -84,7 +84,7 @@ The examples below demonstrate the utility classes on each breakpoint.
 ```
 
 {% for breakpoint in site.data.breakpoints %}
-  <h3 class="text-md text-light mt-30 mb-10" markdown="1">{{ breakpoint.label }} `.{{ 'rounded' | component_css_class: breakpoint.modifier }}`</h3>
+  <h3 class="text-md text-light mt-30 mb-8" markdown="1">{{ breakpoint.label }} `.{{ 'rounded' | component_css_class: breakpoint.modifier }}`</h3>
   <div class="col-container">
     {% for direction in page.directions %}
       <div class="{{ page.col_classes }}">

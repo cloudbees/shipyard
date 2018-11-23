@@ -7,15 +7,15 @@ title: Shipyard Forms
 ---
 
 <div class="col-container input-group">
-  <div class="col col-100 sm:col-33 mb-15 sm:mb-0">
+  <div class="col col-100 sm:col-33 mb-16 sm:mb-0">
     <label class="label">Textbox</label>
     <input type="text" class="input input-text" placeholder=".input-text" />
   </div>
-  <div class="col col-100 sm:col-33 mb-15 sm:mb-0">
+  <div class="col col-100 sm:col-33 mb-16 sm:mb-0">
     <label class="label">Textbox Read-Only</label>
     <input type="text" class="input input-text input-readonly" placeholder=".input-readonly" value="copy-paste-me" readonly />
   </div>
-  <div class="col col-100 sm:col-33 mb-15 sm:mb-0">
+  <div class="col col-100 sm:col-33 mb-16 sm:mb-0">
     <label class="label">Textbox Disabled</label>
     <input type="text" class="input input-text" placeholder=".input-text" disabled />
   </div>
@@ -84,14 +84,14 @@ title: Shipyard Forms
 
 ---
 
-<h2 class="mb-10">Input Boxes</h2>
+<h2 class="mb-8">Input Boxes</h2>
 <div class="input-box">
   <input type="text" class="input input-text" placeholder=".input .input-text" />
 </div>
 
 ---
 
-<h2 class="mb-10">Required Fields</h2>
+<h2 class="mb-8">Required Fields</h2>
 <div class="col-container">
   <div class="col col-50">
     <div class="input-required">
@@ -114,7 +114,7 @@ title: Shipyard Forms
 
 ---
 
-<h2 class="mb-10">Form Errors</h2>
+<h2 class="mb-8">Form Errors</h2>
 <div class="form-error-container">
   <ul class="form-error-list">
     <li class="form-error-item">
@@ -128,7 +128,7 @@ title: Shipyard Forms
     </li>
   </ul>
 </div>
-<div class="col-container mt-20 mb-20">
+<div class="col-container mt-20 mb-16">
   <div class="col col-50 input-error">
     <label class="label">Required Select Box</label>
     <div class="input-required">

@@ -9,7 +9,7 @@ options: [box-shadow, box-shadow-hover, box-shadow-active]
 ---
 
 {% for option in page.options -%}
-  <div class="{{ option }} bg-white rounded p-20 text-normal mb-20">
+  <div class="{{ option }} bg-white rounded p-16 text-normal mb-16">
     {{ option }}
   </div>
 {% endfor %}

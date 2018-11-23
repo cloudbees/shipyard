@@ -1,3 +1,19 @@
+$shipyard-positions: (
+  '': 0,
+  '-1': -1px,
+  '4': 4px,
+  '8': 8px,
+  '12': 12px,
+  '16': 16px,
+  '20': 20px,
+  '24': 24px,
+  '32': 32px,
+  '48': 48px,
+  '50\\%': 50%,
+  '-50\\%': -50%,
+  '100\\%': 100%
+) !default;
+
 $shipyard-defaults: (
 
   // Shipyard: Color Utilities
@@ -110,15 +126,6 @@ $shipyard-defaults: (
     xl: 1200px
   ),
 
-  // Shipyard: Margins (TODO: Deprecate this map)
-  margins: (
-    all: 10px,
-    sm: 20px,
-    md: 30px,
-    lg: 30px,
-    xl: 40px
-  ),
-
   // Shipyard: Grid Component
   grid: (
     prefix: 'col',
@@ -185,16 +192,16 @@ $shipyard-defaults: (
     prefix: 'm',
     responsive: true,
     variants: (t: top, b: bottom, l: left, r: right),
-    values: (
-      0: 0,
-      5: 5px,
-      10: 10px,
-      15: 15px,
-      20: 20px,
-      30: 30px,
-      40: 40px,
-      auto: auto
-    )
+    values: $shipyard-margin
+  ),
+
+  // TODO: This map is deprecated. Do not use the +responsive mixins anymore.
+  margins: (
+    all: 10px,
+    sm: 20px,
+    md: 30px,
+    lg: 30px,
+    xl: 40px
   ),
 
   // Shipyard: Padding Utilities
@@ -202,15 +209,14 @@ $shipyard-defaults: (
     prefix: 'p',
     responsive: true,
     variants: (t: top, b: bottom, l: left, r: right),
-    values: (
-      0: 0,
-      5: 5px,
-      10: 10px,
-      15: 15px,
-      20: 20px,
-      30: 30px,
-      40: 40px
-    )
+    values: $shipyard-padding
+  ),
+
+  // Shipyard: Max-Width Utility
+  max-width: (
+    prefix: 'max-w',
+    responsive: false,
+    values: (320, 400, 600, 1440)
   ),
 
   // Shipyard: Display Utilities
@@ -373,11 +379,49 @@ $shipyard-defaults: (
     )
   ),
 
-  // Shipyard: Position Utility
+  // Shipyard: Outline Utility
+  outline: (
+    prefix: 'outline',
+    responsive: false,
+    values: (none)
+  ),
+
+  // Shipyard: Pointer Events Utility
+  pointer-events: (
+    prefix: 'click',
+    responsive: true,
+    values: (none, auto)
+  ),
+
+  // Shipyard: Position Utilities
   position: (
     prefix: null,
     responsive: true,
-    values: (static, relative, absolute, fixed)
+    values: (static, relative, absolute, fixed, sticky)
+  ),
+
+  top: (
+    prefix: 'pin-t',
+    responsive: true,
+    values: $shipyard-positions
+  ),
+
+  left: (
+    prefix: 'pin-l',
+    responsive: true,
+    values: $shipyard-positions
+  ),
+
+  right: (
+    prefix: 'pin-r',
+    responsive: true,
+    values: $shipyard-positions
+  ),
+
+  bottom: (
+    prefix: 'pin-b',
+    responsive: true,
+    values: $shipyard-positions
   ),
 
   // Shipyard: Text-Overflow Utility
@@ -392,6 +436,7 @@ $shipyard-defaults: (
     prefix: 'ease',
     responsive: false,
     values: (
+      '0ms': none,
       '150ms': all 150ms ease,
       '300ms': all 300ms ease,
       '600ms': all 600ms ease
@@ -406,6 +451,20 @@ $shipyard-defaults: (
       rotate-45: rotate(45deg),
       rotate-90: rotate(90deg)
     )
+  ),
+
+  // Shipyard: User-Select Utility
+  user-select: (
+    prefix: 'select',
+    responsive: false,
+    values: (none, all, auto, text)
+  ),
+
+  // Shipyard: Vertical-Align Utility
+  vertical-align: (
+    prefix: 'v-align',
+    responsive: false,
+    values: (baseline, top, middle, bottom)
   ),
 
   // Shipyard: Visibilty Utility

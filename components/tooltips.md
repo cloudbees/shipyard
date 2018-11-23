@@ -13,7 +13,7 @@ directions: [top, bottom, right, left]
 Useful when you need tooltips with content that's a bit more complex than your average tooltip.
 {: .section-description }
 
-<div class="align-center mb-30">
+<div class="align-center mb-24">
   {% for direction in page.directions %}
     <button class="btn btn-secondary btn-margin tooltip-data tooltip-data-{{ direction }}" data-tooltip="What a lovely tooltip">{{ direction | capitalize }}</button>
   {% endfor %}
@@ -31,7 +31,7 @@ Useful when you need tooltips with content that's a bit more complex than your a
 Useful when the tooltip you're display will appear on a darker background.
 {: .section-description }
 
-<div class="align-center mb-30">
+<div class="align-center mb-24">
   {% for direction in page.directions %}
     <button class="btn btn-secondary btn-margin tooltip-data tooltip-data-light tooltip-data-{{ direction }}" data-tooltip="What a lovely tooltip">{{ direction | capitalize }}</button>
   {% endfor %}
@@ -47,7 +47,7 @@ Useful when the tooltip you're display will appear on a darker background.
 Useful when you need tooltips with content that's a bit more complex than your average tooltip.
 {: .section-description }
 
-<div class="align-center mb-30">
+<div class="align-center mb-24">
   {% for direction in page.directions %}
     <button class="btn btn-secondary btn-margin tooltip-parent">
       {{ direction | capitalize }}
@@ -75,7 +75,7 @@ Useful when you need tooltips with content that's a bit more complex than your a
 Useful when the tooltip you're display will appear on a darker background.
 {: .section-description }
 
-<div class="align-center mb-30">
+<div class="align-center mb-24">
   {% for direction in page.directions %}
     <button class="btn btn-secondary btn-margin tooltip-parent">
       {{ direction | capitalize }}

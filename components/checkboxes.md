@@ -16,7 +16,7 @@ labels:
 Useful when you want to group a series of checkboxes together on a single line.
 {: .section-description }
 
-<ul class="input-list mb-30">
+<ul class="input-list mb-24">
   {% for label in page.labels %}
     <li class="input-item-inline">
       <input id="checkbox-inline-{{ forloop.index }}" name="checkbox-list" type="checkbox" class="input input-checkbox" {% if forloop.index == 1 %}checked{% endif %} />
@@ -40,9 +40,9 @@ Useful when you want to group a series of checkboxes together on a single line.
 Useful when you want to group a series of checkboxes together in a list (stacked by default).
 {: .section-description }
 
-<div class="col-container mb-15 sm:mb-30">
-  <div class="col col-100 sm:col-50 mb-15 sm:mb-0">
-    <div class="rounded bg-white p-10 sm:p-15 md:p-20 lg:p-30">
+<div class="col-container mb-16 sm:mb-24">
+  <div class="col col-100 sm:col-50 mb-16 sm:mb-0">
+    <div class="rounded bg-white p-10 sm:p-15 md:p-16 lg:p-24">
       <ul class="input-list">
         {% for label in page.labels %}
           <li class="input-item">
@@ -54,7 +54,7 @@ Useful when you want to group a series of checkboxes together in a list (stacked
     </div>
   </div>
   <div class="col col-100 sm:col-50">
-    <div class="box-secondary p-10 sm:p-15 md:p-20 lg:p-30">
+    <div class="box-secondary p-10 sm:p-15 md:p-16 lg:p-24">
       <ul class="input-list">
         {% for label in page.labels %}
           <li class="input-item">
@@ -82,7 +82,7 @@ Useful when you want to group a series of checkboxes together in a list (stacked
 Useful when the checkboxes are displayed on a dark background.
 {: .section-description }
 
-<div class="box-secondary p-10 sm:p-15 md:p-20 lg:p-30 bg-gray-darker">
+<div class="box-secondary p-10 sm:p-15 md:p-16 lg:p-24 bg-gray-darker">
   <ul class="input-list">
     {% for label in page.labels %}
       <li class="input-item">
@@ -129,21 +129,21 @@ Useful when you want to the user to proceed with caution about the choices they'
 ---
 
 ## Checkboxes Nested in Buttons
-{: .mb-20 }
+{: .mb-16 }
 
-<button class="btn btn-secondary mr-10 mb-10">
+<button class="btn btn-secondary mr-10 mb-8">
   <input type="checkbox" class="input input-checkbox mr-5" />
   Unchecked
 </button>
-<button class="btn btn-secondary mr-10 mb-10">
+<button class="btn btn-secondary mr-10 mb-8">
   <input type="checkbox" class="input input-checkbox mr-5" checked />
   Checked
 </button>
-<button class="btn btn-cta mr-10 mb-10">
+<button class="btn btn-cta mr-10 mb-8">
   <input type="checkbox" class="input input-checkbox input-checkbox-inverse mr-5" />
   Inverse Unchecked
 </button>
-<button class="btn btn-cta mr-10 mb-10">
+<button class="btn btn-cta mr-10 mb-8">
   <input type="checkbox" class="input input-checkbox input-checkbox-inverse mr-5" checked />
   Inverse Checked
 </button>
@@ -168,7 +168,7 @@ Useful when you want to the user to proceed with caution about the choices they'
 Switches are useful when the user has a choice to toggle on and off. Note: For the best UX, please make sure that the switch saves immediately each time it changes state.
 {: .section-description }
 
-<div class="box h-60 mb-15 pt-20 pb-20 pl-15 pr-15 sm:pl-30 sm:pr-30">
+<div class="box h-60 mb-16 pt-20 pb-20 pl-15 pr-15 sm:pl-30 sm:pr-30">
   <div class="col-container-nowrap">
     <div class="components-checkboxes-switch-col col col-100 text-light ellipsis overflow-hidden white-space-nowrap">Praesent commodo cursus magna, vel scelerisque aenean eu leo quam pellentesque ornare sem lacinia quam.</div>
     <div class="col ml-15">
@@ -195,7 +195,7 @@ Switches are useful when the user has a choice to toggle on and off. Note: For t
 Useful when you don't need to draw attention to the bright-red, off state.
 {: .section-description }
 
-<div class="box h-60 mb-15 pt-20 pb-20 pl-15 pr-15 sm:pl-30 sm:pr-30">
+<div class="box h-60 mb-16 pt-20 pb-20 pl-15 pr-15 sm:pl-30 sm:pr-30">
   <div class="col-container-nowrap">
     <div class="components-checkboxes-switch-col col col-100 text-light ellipsis overflow-hidden white-space-nowrap">Praesent commodo cursus magna, vel scelerisque aenean eu leo quam pellentesque ornare sem lacinia quam.</div>
     <div class="col ml-15">
@@ -221,7 +221,7 @@ Useful when you don't need to draw attention to the bright-red, off state.
 Useful to communicate that your object is only partially connected, and it needs additional attention.
 {: .section-description }
 
-<div class="box h-60 mb-15 pt-20 pb-20 pl-15 pr-15 sm:pl-30 sm:pr-30">
+<div class="box h-60 mb-16 pt-20 pb-20 pl-15 pr-15 sm:pl-30 sm:pr-30">
   <div class="col-container-nowrap">
     <div class="components-checkboxes-switch-col col col-100 text-light ellipsis overflow-hidden white-space-nowrap">Praesent commodo cursus magna, vel scelerisque aenean eu leo quam pellentesque ornare sem lacinia quam.</div>
     <div class="col ml-15">

@@ -3,7 +3,7 @@ title: Padding Utilities
 description: Shipyard's padding utilities are useful for overriding the default padding in any component, and can be extremely useful in a wide array of situations.
 sass_file: shipyard/utilities/_padding
 box_classes: utilities-margin-padding-box box-secondary btn-sm medium text-light
-options: [0,5,10,15,20,30,40]
+options: [0,4,8,12,16,20,24,28,32]
 directions:
   -
     name: left
@@ -24,7 +24,7 @@ The examples below demonstrate how much padding will be added to the top and bot
 <div class="col-container">
   {% for option in page.options %}
     <div class="col align-center">
-      <div class="box-secondary medium text-light text-sm p-{{ option }} mb-10">.p-{{ option }}</div>
+      <div class="box-secondary medium text-light text-sm p-{{ option }} mb-8">.p-{{ option }}</div>
     </div>
   {% endfor %}
 </div>
@@ -38,7 +38,7 @@ The examples below demonstrate how much padding will be added to the top and bot
 <div class="col-container">
   {% for option in page.options %}
     <div class="col align-center">
-      <div class="box-secondary medium text-light text-sm pb-{{ option }} mb-10">.pb-{{ option }}</div>
+      <div class="box-secondary medium text-light text-sm pb-{{ option }} mb-8">.pb-{{ option }}</div>
       <div class="box-secondary medium text-light text-sm pt-{{ option }}">.pt-{{ option }}</div>
     </div>
   {% endfor %}
@@ -55,7 +55,7 @@ The examples below demonstrate how much padding will be added to the left and ri
     <div class="col">
       <div class="align-{{ direction.name }}">
         {% for option in page.options %}
-          <div class="{{ page.box_classes }} p{{ direction.css }}-{{ option }} mb-20">.p{{ direction.css }}-{{ option }}</div>
+          <div class="{{ page.box_classes }} p{{ direction.css }}-{{ option }} mb-16">.p{{ direction.css }}-{{ option }}</div>
         {% endfor %}
       </div>
     </div>

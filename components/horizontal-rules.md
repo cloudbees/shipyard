@@ -34,7 +34,7 @@ text_shades: [normal, light, lighter, lightest]
 ---
 
 ## Thin Horizontal Rules `.hr-thin`
-{: .mb-20 }
+{: .mb-16 }
 
 <div class="utilities-typography-hr-box-default">
   <hr class="utilities-typography-hr hr-thin" />

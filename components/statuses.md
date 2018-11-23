@@ -12,7 +12,7 @@ statuses: [skipped, waiting, running, success, paused, error, fail]
 Useful in tight spaces where it's still important to show status, but not important enough to compete for attention with other elements on the page.
 {: .section-description }
 
-<div class="mb-25">
+<div class="mb-24">
   <button tooltip="skipped" class="btn btn-secondary btn-xs rounded-pill mr-5">
     <span class="status status-skipped status-xs">
       {% include icon.html name='skipped' inline='true' class='icon-status-xs status-icon' %}
