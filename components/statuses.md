@@ -59,9 +59,9 @@ Useful when next to standard text where where it's important to show the status 
 {: .section-description }
 
 <div class="mb-24">
-  {% for status in page.statuses %}
+  {% for status in page.statuses -%}
     {% include status-icon.html status=status size="md" -%}
-  {% endfor %}
+  {% endfor -%}
 </div>
 
 ```html
@@ -78,11 +78,11 @@ Useful when next to standard text where where it's important to show the status 
 {: .section-description }
 
 <div class="col-container m-0 align-center mb-24 rounded overflow-hidden">
-  {% for status in page.statuses %}
+  {% for status in page.statuses -%}
     <div class="status-{{ status }}-bg p-20 pl-0 pr-0 col">
       {% include status-icon.html status=status size="md" class="status-inverse" -%}
     </div>
-  {% endfor %}
+  {% endfor -%}
 </div>
 
 ```html
@@ -98,33 +98,16 @@ Useful when next to standard text where where it's important to show the status 
 Useful when next to standard text where where it's important to show the status of a particular object.
 {: .section-description }
 
-<button tooltip="skipped" class="mr-5">
-  <span class="status status-skipped status-lg">{% icon :skipped, prefix: 'status-lg', class: 'status-icon' %}</span>
-</button>
-<button tooltip="waiting" class="mr-5">
-  <span class="status status-waiting status-lg">{% icon 'waiting', prefix: 'status-lg', class: 'status-icon' %}</span>
-</button>
-<button tooltip="running" class="mr-5">
-  <span class="status status-running status-lg">{% icon :running, prefix: 'status-lg', class: 'status-icon' %}</span>
-</button>
-<button tooltip="success" class="mr-5">
-  <span class="status status-success status-lg">{% icon :success, prefix: 'status-lg', class: 'status-icon' %}</span>
-</button>
-<button tooltip="paused" class="mr-5">
-  <span class="status status-paused status-lg">{% icon :paused, prefix: 'status-lg', class: 'status-icon' %}</span>
-</button>
-<button tooltip="error" class="mr-5">
-  <span class="status status-error status-lg">{% icon :error, prefix: 'status-lg', class: 'status-icon' %}</span>
-</button>
-<button tooltip="fail" class="mr-5">
-  <span class="status status-fail status-lg">{% icon :fail, prefix: 'status-lg', class: 'status-icon' %}</span>
-</button>
+<div class="mb-24">
+  {% for status in page.statuses -%}
+    {% include status-icon.html status=status size="lg" -%}
+  {% endfor -%}
+</div>
 
-```erb
+```html
 {%- for status in page.statuses %}
-<span class="status status-lg status-{{ status }}">
-  <%= icon :{{ status }}, prefix: 'status-lg', class: 'status-icon' %>
-</span>
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="lg" -%}
 {% endfor -%}
 ```
 
@@ -134,49 +117,18 @@ Useful when next to standard text where where it's important to show the status 
 Useful when next to standard text where where it's important to show the status of a particular object.
 {: .section-description }
 
-<div class="col-container m-0 align-center mb-30">
-  <div class="status-skipped-bg p-20 pl-0 pr-0 col rounded rounded-left" tooltip="skipped">
-    <span class="status status-inverse status-skipped status-lg">
-      {% icon :skipped, prefix: 'status-lg', class: 'status-icon' %}
-    </span>
-  </div>
-  <div class="status-waiting-bg p-20 pl-0 pr-0 col" tooltip="waiting">
-    <span class="status status-inverse status-waiting status-lg">
-      {% icon 'waiting', prefix: 'status-lg', class: 'status-icon' %}
-    </span>
-  </div>
-  <div class="status-running-bg p-20 pl-0 pr-0 col" tooltip="running">
-    <span class="status status-inverse status-running status-lg">
-      {% icon :running, prefix: 'status-lg', class: 'status-icon' %}
-    </span>
-  </div>
-  <div class="status-success-bg p-20 pl-0 pr-0 col" tooltip="success">
-    <span class="status status-inverse status-success status-lg">
-      {% icon :success, prefix: 'status-lg', class: 'status-icon' %}
-    </span>
-  </div>
-  <div class="status-paused-bg p-20 pl-0 pr-0 col" tooltip="paused">
-    <span class="status status-inverse status-paused status-lg">
-      {% icon :paused, prefix: 'status-lg', class: 'status-icon' %}
-    </span>
-  </div>
-  <div class="status-error-bg p-20 pl-0 pr-0 col" tooltip="error">
-    <span class="status status-inverse status-error status-lg">
-      {% icon :error, prefix: 'status-lg', class: 'status-icon' %}
-    </span>
-  </div>
-  <div class="status-fail-bg p-20 pl-0 pr-0 col rounded rounded-right" tooltip="fail">
-    <span class="status status-inverse status-fail status-lg">
-      {% icon :fail, prefix: 'status-lg', class: 'status-icon' %}
-    </span>
-  </div>
+<div class="col-container m-0 align-center mb-30 rounded overflow-hidden">
+  {% for status in page.statuses -%}
+    <div class="status-{{ status }}-bg p-20 pl-0 pr-0 col">
+      {% include status-icon.html status=status size="lg" class="status-inverse" -%}
+    </div>
+  {% endfor -%}
 </div>
 
-```erb
+```html
 {%- for status in page.statuses %}
-<span class="status status-inverse status-lg status-{{ status }}">
-  <%= icon :{{ status }}, prefix: 'status-lg', class: 'status-icon' %>
-</span>
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="lg" class="status-inverse" -%}
 {% endfor -%}
 ```
 
