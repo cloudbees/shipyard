@@ -20,6 +20,7 @@ $shipyard-defaults: (
   color: (
     prefix: null,
     responsive: true,
+    states: (hover),
     values: $shipyard-colors
   ),
 
