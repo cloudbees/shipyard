@@ -42,7 +42,7 @@ Useful when you want to group a series of radio buttons together in a list (stac
 
 <div class="col-container mb-16 sm:mb-24">
   <div class="col col-100 sm:col-50 mb-16 sm:mb-0">
-    <div class="rounded bg-white p-10 sm:p-15 md:p-16 lg:p-24">
+    <div class="rounded bg-white p-8 sm:p-16 md:p-16 lg:p-24">
       <ul class="input-list">
         {% for label in page.labels %}
           <li class="input-item">
@@ -54,7 +54,7 @@ Useful when you want to group a series of radio buttons together in a list (stac
     </div>
   </div>
   <div class="col col-100 sm:col-50">
-    <div class="box-secondary p-10 sm:p-15 md:p-16 lg:p-24">
+    <div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24">
       <ul class="input-list">
         {% for label in page.labels %}
           <li class="input-item">
@@ -82,7 +82,7 @@ Useful when you want to group a series of radio buttons together in a list (stac
 Useful when the radio buttons are displayed on a dark background.
 {: .section-description }
 
-<div class="box-secondary p-10 sm:p-15 md:p-16 lg:p-24 bg-gray-darker">
+<div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-gray-darker">
   <ul class="input-list">
     {% for label in page.labels %}
       <li class="input-item">
@@ -155,28 +155,28 @@ Yep, that's exactly what it sounds like. It behaves like a radio button but look
 ## Radio Buttons Nested in Buttons
 {: .mb-16 }
 
-<button class="btn btn-secondary mr-10 mb-8">
+<button class="btn btn-secondary mr-8 mb-8">
   <input type="radio" class="input input-radio mr-4" />
   Unchecked
 </button>
-<button class="btn btn-secondary mr-10 mb-8">
+<button class="btn btn-secondary mr-8 mb-8">
   <input type="radio" class="input input-radio mr-4" checked />
   Checked
 </button>
-<button class="btn btn-secondary mr-10 mb-8">
+<button class="btn btn-secondary mr-8 mb-8">
   <input type="radio" class="input input-radio-checkbox mr-4" checked />
   Checked w/ Icon
 </button>
-<button class="btn btn-cta mr-10 mb-8">
+<button class="btn btn-cta mr-8 mb-8">
   <input type="radio" class="input input-radio input-radio-inverse mr-4" />
   Inverse Unchecked
 </button>
-<button class="btn btn-cta mr-10 mb-8">
+<button class="btn btn-cta mr-8 mb-8">
   <input type="radio" class="input input-radio input-radio-inverse mr-4" checked />
   Inverse Checked
 </button>
-<button class="btn btn-cta mr-10 mb-8">
-  <input type="radio" class="input input-radio-checkbox input-radio-inverse mr-10" checked />
+<button class="btn btn-cta mr-8 mb-8">
+  <input type="radio" class="input input-radio-checkbox input-radio-inverse mr-8" checked />
   Inverse Checked w/ Icon
 </button>
 

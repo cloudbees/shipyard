@@ -2,7 +2,7 @@
 title: Shipyard Grid
 description: The Shipyard grid is a percentage-based, flexbox grid and is entirely responsive. Each class needs the foundational `.col` class in order to function properly, and also should be contained inside the `.col-container` as well.
 sass_file: shipyard/components/_grid
-container_classes: col-container mt-10 sm:mt-15 md:mt-20 mb-8 sm:mb-16 md:mb-16
+container_classes: col-container mt-8 sm:mt-16 md:mt-24 mb-8 sm:mb-16 md:mb-16
 box_classes: utilities-grid-box col-center box-secondary text-lighter text-sm bold align-center
 example_flex_columns: [10,20,25,33,50]
 example_sizes: [5,10,15,20,25,30,33,35,40,45,50,55,60,65,66,70,75,80,85,90,95,100]
@@ -207,7 +207,7 @@ Useful when the flow of the content should be different at a certain breakpoint.
       <span class="teal-darker inline md:hidden">top (mobile)</span>
       <span class="teal-darker hidden md:inline">bottom (desktop)</span>
     </div>
-    <div class="col-container mt-10 md:mt-15 mb-8 md:mb-16 flex-row md:flex-row-reverse">
+    <div class="col-container mt-8 md:mt-16 mb-8 md:mb-16 flex-row md:flex-row-reverse">
       <div class="col">
         <div class="{{ page.box_classes }} bg-blue-lighter">
           <span class="blue-darker inline md:hidden">left (mobile)</span>
