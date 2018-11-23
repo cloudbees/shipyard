@@ -27,12 +27,14 @@ $shipyard-defaults: (
   border-color: (
     prefix: 'border',
     responsive: true,
+    states: (hover),
     values: $shipyard-colors
   ),
 
   background-color: (
     prefix: 'bg',
     responsive: true,
+    states: (hover),
     values: $shipyard-colors
   ),
 
