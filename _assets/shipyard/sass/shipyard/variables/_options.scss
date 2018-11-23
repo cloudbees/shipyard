@@ -352,11 +352,12 @@ $shipyard-defaults: (
     prefix: 'rounded',
     responsive: true,
     values: (
-      '': 5px,
+      '': 4px,
       '0': 0,
       'xs': 2px,
       'sm': 3px,
-      'md': 5px,
+      'md': 4px,
+      'lg': 5px,
       'pill': 999px
     )
   ),

@@ -2,6 +2,6 @@
   {% asset "{{include.name}}.svg" @inline class="icon icon-{{include.name}} {{ include.class }}" %}
 {% else -%}
   <svg class="icon icon-{{ include.name }} {{ include.class }}" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="{% asset icons.svg @path %}#{{ include.name }}" />
+    <use xlink:href="{% asset icons.svg @path %}#{{ include.name }}"></use>
   </svg>
 {% endif -%}
