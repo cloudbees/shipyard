@@ -47,6 +47,12 @@
             .#{$breakpoint + '\\:' + utility-class($prefix, $class)}
               #{$name}: $value
 
+            // Print out the utility states for all screens
+            @if $utility-states
+              @each $state in $utility-states
+                .#{$breakpoint + '\\:' + $state + '\\:' + utility-class($prefix, $class) + ':' + $state}
+                  @extend .#{$breakpoint + '\\:' + utility-class($prefix, $class)}
+
           // Print out variants like: left, right, top, bottom
           @if $utility-variants
             @each $class, $value in $utility-values
