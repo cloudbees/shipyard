@@ -132,32 +132,32 @@ Useful when you want to the user to proceed with caution about the choices they'
 {: .mb-16 }
 
 <button class="btn btn-secondary mr-10 mb-8">
-  <input type="checkbox" class="input input-checkbox mr-5" />
+  <input type="checkbox" class="input input-checkbox mr-4" />
   Unchecked
 </button>
 <button class="btn btn-secondary mr-10 mb-8">
-  <input type="checkbox" class="input input-checkbox mr-5" checked />
+  <input type="checkbox" class="input input-checkbox mr-4" checked />
   Checked
 </button>
 <button class="btn btn-cta mr-10 mb-8">
-  <input type="checkbox" class="input input-checkbox input-checkbox-inverse mr-5" />
+  <input type="checkbox" class="input input-checkbox input-checkbox-inverse mr-4" />
   Inverse Unchecked
 </button>
 <button class="btn btn-cta mr-10 mb-8">
-  <input type="checkbox" class="input input-checkbox input-checkbox-inverse mr-5" checked />
+  <input type="checkbox" class="input input-checkbox input-checkbox-inverse mr-4" checked />
   Inverse Checked
 </button>
 
 ```html
 <!-- Secondary button with a checkbox in the unchecked state. -->
 <button class="btn btn-secondary">
-  <input type="checkbox" class="input input-checkbox mr-5" />
+  <input type="checkbox" class="input input-checkbox mr-4" />
   Button Text
 </button>
 
 <!-- CTA button with a checkbox in the checked state. -->
 <button class="btn btn-cta">
-  <input type="checkbox" class="input input-checkbox input-checkbox-inverse mr-5" checked />
+  <input type="checkbox" class="input input-checkbox input-checkbox-inverse mr-4" checked />
   Button Text
 </button>
 ```
@@ -250,19 +250,19 @@ Each size can be used or altered at any breakpoint.
 <ul class="input-list">
   <li class="input-item">
     <input id="small-switch-on-sm" type="checkbox" class="input input-switch input-switch-sm center-obj" checked />
-    <label for="small-switch-on-sm" class="text-sm text-light ml-5 medium">Small</label>
+    <label for="small-switch-on-sm" class="text-sm text-light ml-4 medium">Small</label>
   </li>
   <li class="input-item">
     <input id="small-switch-on-md" type="checkbox" class="input input-switch center-obj" checked />
-    <label for="small-switch-on-md" class="text-sm text-light ml-5 medium">Medium (Default)</label>
+    <label for="small-switch-on-md" class="text-sm text-light ml-4 medium">Medium (Default)</label>
   </li>
   <li class="input-item">
     <input id="small-switch-on-lg" type="checkbox" class="input input-switch input-switch-lg center-obj" checked />
-    <label for="small-switch-on-lg" class="text-sm text-light ml-5 medium">Large</label>
+    <label for="small-switch-on-lg" class="text-sm text-light ml-4 medium">Large</label>
   </li>
   <li class="input-item">
     <input id="small-switch-on-xl" type="checkbox" class="input input-switch input-switch-xl center-obj" checked />
-    <label for="small-switch-on-xl" class="text-sm text-light ml-5 medium">X-Large</label>
+    <label for="small-switch-on-xl" class="text-sm text-light ml-4 medium">X-Large</label>
   </li>
 </ul>
 
