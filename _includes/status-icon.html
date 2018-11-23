@@ -2,6 +2,12 @@
 {% assign icon_class = icon_class | append: " status-" | append: include.size | append: "-icon" -%}
 {% assign icon_class = icon_class | append: " status-" | append: include.size | append: "-icon-" | append: include.status -%}
 
+{% if include.status == "error" and include.size == "xs" or include.size == "sm" -%}
+  {% assign icon_name = "error-xs" -%}
+{% else -%}
+  {% assign icon_name = include.status -%}
+{% endif -%}
+
 <span class="status status-{{ include.status }} status-{{ include.size }} {{ include.class }}">
-  {% include icon.html name=include.status class=icon_class -%}
+  {% include icon.html name=icon_name class=icon_class -%}
 </span>
