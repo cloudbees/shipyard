@@ -25,7 +25,7 @@ title: Shipyard Modal Example
         <input type="radio" class="input input-radio-checkbox mr-8" />
         Yearly &mdash; $390
         <span class="btn btn-cta rounded-pill btn-xxs ml-8 uppercase">2 Months Free</span>
-        {% icon :tag, class: 'icon-inverse' %}
+        {% include icon.html name="tag" class="icon-inverse" %}
       </button>
       <p class="text-light mt-8 sm:mt-16" markdown="1">
         Your new subscription will be prorated on your next invoice. If you have any questions, don't hesitate to <a href="#" class="medium">contact our support team</a>.
@@ -70,7 +70,7 @@ title: Shipyard Modal Example
         </div>
         <div class="col align-right">
           <span class="btn-sm sm:btn-md white-space-nowrap p-0">
-            {% icon :lock, class: 'green-dark center-obj mr-4' %}
+            {% include icon.html name="lock" class="green-dark center-obj mr-4" %}
             <span class="text-sm text-lighter medium">Secure Server</span>
           </span>
         </div>
