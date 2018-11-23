@@ -21,8 +21,10 @@ $shipyard-defaults: (
 
   background-image: (
     prefix: 'bg',
-    responsive: false,
-    values: null
+    responsive: true,
+    values: (
+      'none': none
+    )
   ),
 
   border-style: (
