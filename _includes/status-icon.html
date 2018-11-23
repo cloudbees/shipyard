@@ -1,7 +1,7 @@
-{% assign icon_class = "icon-outline status-icon" %}
-{% assign icon_class = icon_class | append: " status-" | append: include.size | append: "-icon" %}
-{% assign icon_class = icon_class | append: " status-" | append: include.size | append: "-icon-" | append: include.status %}
+{% assign icon_class = "icon-outline status-icon" -%}
+{% assign icon_class = icon_class | append: " status-" | append: include.size | append: "-icon" -%}
+{% assign icon_class = icon_class | append: " status-" | append: include.size | append: "-icon-" | append: include.status -%}
 
 <span class="status status-{{ include.status }} status-{{ include.size }} {{ include.class }}">
-  {% include icon.html name=include.status class=icon_class %}
+  {% include icon.html name=include.status class=icon_class -%}
 </span>

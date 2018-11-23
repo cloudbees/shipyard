@@ -1,7 +1,7 @@
-{% if include.inline %}
+{% if include.inline -%}
   {% asset "{{include.name}}.svg" @inline class="icon icon-{{include.name}} {{ include.class }}" %}
-{% else %}
+{% else -%}
   <svg class="icon icon-{{ include.name }} {{ include.class }}" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="{% asset icons.svg @path %}#{{ include.name }}"></use>
+    <use xlink:href="{% asset icons.svg @path %}#{{ include.name }}" />
   </svg>
-{% endif %}
+{% endif -%}
