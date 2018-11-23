@@ -79,7 +79,7 @@ Useful when next to standard text where where it's important to show the status 
 
 <div class="col-container m-0 align-center mb-24 rounded overflow-hidden">
   {% for status in page.statuses -%}
-    <div class="status-{{ status }}-bg p-20 pl-0 pr-0 col">
+    <div class="status-{{ status }}-bg p-16 pl-0 pr-0 col">
       {% include status-icon.html status=status size="md" class="status-inverse" -%}
     </div>
   {% endfor -%}
@@ -119,7 +119,7 @@ Useful when next to standard text where where it's important to show the status 
 
 <div class="col-container m-0 align-center mb-24 rounded overflow-hidden">
   {% for status in page.statuses -%}
-    <div class="status-{{ status }}-bg p-20 pl-0 pr-0 col">
+    <div class="status-{{ status }}-bg p-16 pl-0 pr-0 col">
       {% include status-icon.html status=status size="lg" class="status-inverse" -%}
     </div>
   {% endfor -%}
