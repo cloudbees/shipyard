@@ -112,12 +112,15 @@ $shipyard-defaults: (
   // Shipyard: Box-Shadow Utility
   box-shadow: (
     prefix: 'box-shadow',
-    responsive: false,
+    responsive: true,
+    states: (hover),
     values: (
       '': 0 1px 2px rgba($gray-darkest, .08),
-      'none': none,
+      'left': -1px 0 3px rgba($gray-darkest, .2),
+      'right': 1px 0 3px rgba($gray-darkest, .2),
       'hover': 0 0 4px 1px rgba($blue, .5),
-      'active': 0 0 4px 1px rgba($green, .75)
+      'active': 0 0 4px 1px rgba($green, .75),
+      'none': none
     )
   ),
 
@@ -144,7 +147,16 @@ $shipyard-defaults: (
       'none': 1,
       'tight': 1.2,
       'normal': 1.4,
-      'loose': 1.6
+      'loose': 1.6,
+      '16': 16px,
+      '20': 20px,
+      '24': 24px,
+      '28': 28px,
+      '32': 32px,
+      '40': 40px,
+      '48': 48px,
+      '56': 56px,
+      '64': 64px
     )
   ),
 
@@ -179,8 +191,8 @@ $shipyard-defaults: (
   // Shipyard: Cursor Utility
   cursor: (
     prefix: 'cursor',
-    responsive: false,
-    values: (auto, pointer, default)
+    responsive: true,
+    values: (auto, pointer, default, ew-resize)
   ),
 
   // Shipyard: Center
@@ -375,6 +387,7 @@ $shipyard-defaults: (
     prefix: 'o',
     responsive: false,
     values: (
+      '100': 1,
       '90': .9,
       '80': .8,
       '70': .7,
@@ -457,8 +470,14 @@ $shipyard-defaults: (
     prefix: null,
     responsive: false,
     values: (
-      rotate-45: rotate(45deg),
-      rotate-90: rotate(90deg)
+      'translatex-0': translatex(0),
+      'translatey-0': translatey(0),
+      'translatex-100\\%': translatex(100%),
+      'translatey-100\\%': translatey(100%),
+      'translatey-4': translatey(4px),
+      'rotate-45': rotate(45deg),
+      'rotate-90': rotate(90deg),
+      'rotate-180': rotate(180deg) translate(50%, 50%)
     )
   ),
 
