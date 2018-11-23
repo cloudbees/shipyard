@@ -119,8 +119,12 @@
 
   &-xs
     +width-height(6px)
+    .icon-waiting
+      display: none
   &-sm
     +width-height(8px)
+    .icon-waiting
+      display: none
   &-md
     +width-height(16px)
   &-lg
@@ -160,8 +164,8 @@
 
   // Status: Icons (Medium)
   &-md-icon
-    margin: -3px 0 0 -3px
-    +width-height(6px)
+    margin: -4px 0 0 -4px
+    +width-height(8px)
     &-skipped
       transform: translatex(0.5px)
     &-waiting
@@ -172,9 +176,6 @@
     &-running
       +width-height(16px)
       margin: -8px 0 0 -8px
-    &-error
-      +width-height(2px, 6px)
-      margin: -3px 0 0 -1px
 
   // Status: Icons (Large)
   &-lg-icon
