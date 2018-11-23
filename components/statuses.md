@@ -14,7 +14,7 @@ Useful in tight spaces where it's still important to show status, but not import
 
 <div class="mb-24">
   {%- for status in page.statuses %}
-    <button tooltip="{{ status }}" class="btn btn-secondary btn-xs rounded-pill mr-4">
+    <button class="btn btn-secondary btn-xs rounded-pill mr-4">
       {% include status-icon.html status=status size="xs" -%}
       <span class="text-sm medium ml-4 text-{{ status }}">{{ status | capitalize }}</span>
     </button>
@@ -35,41 +35,19 @@ Useful in tight spaces where it's still important to show status, but not import
 Useful when next to standard text where where it's important to show the status of a particular object.
 {: .section-description }
 
-<button tooltip="skipped" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-skipped status-sm">{% icon :skipped, prefix: 'status-sm', class: 'status-icon' %}</span>
-  <span class="text-md medium ml-5 text-skipped">Skipped</span>
-</button>
-<button tooltip="waiting" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-waiting status-sm">{% icon 'waiting', prefix: 'status-sm', class: 'status-icon' %}</span>
-  <span class="text-md medium ml-5 text-waiting">Waiting</span>
-</button>
-<button tooltip="running" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-running status-sm">{% icon :running, prefix: 'status-sm', class: 'status-icon' %}</span>
-  <span class="text-md medium ml-5 text-running">Running</span>
-</button>
-<button tooltip="success" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-success status-sm">{% icon :success, prefix: 'status-sm', class: 'status-icon' %}</span>
-  <span class="text-md medium ml-5 text-success">Success</span>
-</button>
-<button tooltip="paused" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-paused status-sm">{% icon :paused, prefix: 'status-sm', class: 'status-icon' %}</span>
-  <span class="text-md medium ml-5 text-paused">Paused</span>
-</button>
-<button tooltip="error" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-error status-sm">{% icon :error_xs, prefix: 'status-sm', class: 'status-icon' %}</span>
-  <span class="text-md medium ml-5 text-error">Error</span>
-</button>
-<button tooltip="fail" class="btn btn-secondary btn-sm rounded-pill mr-5">
-  <span class="status status-fail status-sm">{% icon :fail, prefix: 'status-sm', class: 'status-icon' %}</span>
-  <span class="text-md medium ml-5 text-fail">Fail</span>
-</button>
+<div class="mb-24">
+  {%- for status in page.statuses %}
+    <button class="btn btn-secondary btn-sm rounded-pill mr-4">
+      {% include status-icon.html status=status size="sm" -%}
+      <span class="text-md medium ml-4 text-{{ status }}">{{ status | capitalize }}</span>
+    </button>
+  {% endfor -%}
+</div>
 
-```erb
+```html
 {%- for status in page.statuses %}
 <!-- Status: {{ status | capitalize }} -->
-<span class="status status-sm status-{{ status }}">
-  <%= icon :{{ status | replace: 'error', 'error_xs' }}, prefix: 'status-sm', class: 'status-icon' %>
-</span>
+{% include status-icon.html status=status size="sm" -%}
 <span class="text-{{ status }}">{{ status | capitalize }}</span>
 {% endfor -%}
 ```
