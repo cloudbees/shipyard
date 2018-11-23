@@ -4,10 +4,15 @@
 
 {% if include.status == "error" and include.size == "xs" or include.size == "sm" -%}
   {% assign icon_name = "error-xs" -%}
+  {% assign icon_inline = false -%}
+{% elsif include.status == "waiting" -%}
+  {% assign icon_name = "status/waiting" -%}
+  {% assign icon_inline = true -%}
 {% else -%}
   {% assign icon_name = include.status -%}
+  {% assign icon_inline = false -%}
 {% endif -%}
 
 <span class="status status-{{ include.status }} status-{{ include.size }} {{ include.class }}">
-  {% include icon.html name=icon_name class=icon_class -%}
+  {% include icon.html name=icon_name class=icon_class inline=icon_inline -%}
 </span>

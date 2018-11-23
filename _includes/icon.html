@@ -1,4 +1,4 @@
-{% if include.inline -%}
+{% if include.inline == true -%}
   {% asset "{{include.name}}.svg" @inline class="icon icon-{{include.name}} {{ include.class }}" %}
 {% else -%}
   <svg class="icon icon-{{ include.name }} {{ include.class }}" preserveAspectRatio="xMinYMin meet">

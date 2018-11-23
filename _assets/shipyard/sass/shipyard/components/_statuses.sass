@@ -46,15 +46,15 @@
       border-color: $blue-light
 
   &-running
-    color: $teal
+    color: $teal-dark
     border-color: $border-color-light
     &-bg
-      background-color: $teal
+      background-color: $teal-dark
     &.status-xs,
     &.status-sm
       border-color: $teal-light
       &::after
-        background-color: $teal
+        background-color: $teal-dark
     &.status-inverse
       color: #fff
       border-color: rgba(#fff,.3)
@@ -160,22 +160,21 @@
 
   // Status: Icons (Medium)
   &-md-icon
-    margin: -2px 0 0 -2px
-    +width-height(4px)
+    margin: -3px 0 0 -3px
+    +width-height(6px)
     &-skipped
-      margin-left: 0
-      transform: translatex(-.8px)
+      transform: translatex(0.5px)
     &-waiting
       stroke-width: 1.5
       +width-height(6px, 2px)
       margin: 0 0 0 -3px
       transform: translatey(-.5px)
     &-running
-      +width-height(12px)
-      margin: -6px 0 0 -6px
+      +width-height(14px)
+      margin: -7px 0 0 -7px
     &-success
-      margin-top: 0
-      transform: translatey(-1.7px)
+      // margin-top: 0
+      // transform: translatey(-3px)
     &-error
       +width-height(2px, 6px)
       margin: -3px 0 0 -1px
