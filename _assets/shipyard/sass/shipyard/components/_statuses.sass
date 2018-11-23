@@ -128,15 +128,18 @@
   &-md
     +width-height(16px)
     .icon-waiting
-      +width-height(12px)
-      margin: 0 0 0 1px
+      +status-icon-center(12px)
       stroke-width: 1.25
   &-lg
     +width-height(24px)
     background-color: transparent
+    .icon-waiting
+      +status-icon-center(16px)
   &-xl
     +width-height(32px)
     background-color: transparent
+    .icon-waiting
+      +status-icon-center(20px)
 
   // Status: Icons
   &-icon
