@@ -1,7 +1,7 @@
 ---
 title: Shipyard Statuses
 sass_file: shipyard/components/_statuses
-statuses: [skipped, waiting, running, success, paused, error, fail]
+statuses: [skipped, waiting, running, paused, warning, success, error, fail]
 ---
 
 {% include page-heading.html page=page %}

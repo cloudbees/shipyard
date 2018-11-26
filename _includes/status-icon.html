@@ -5,6 +5,9 @@
 {% if include.status == "error" and include.size == "xs" or include.size == "sm" -%}
   {% assign icon_name = "error-xs" -%}
   {% assign icon_inline = false -%}
+{% elsif include.status == "warning" -%}
+  {% assign icon_name = "success" -%}
+  {% assign icon_inline = false -%}
 {% elsif include.status == "waiting" -%}
   {% assign icon_name = "status/waiting" -%}
   {% assign icon_inline = true -%}
