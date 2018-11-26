@@ -2,52 +2,23 @@
 title: Border Utilities
 description: Useful when you need to add a border to any object.
 sass_file: shipyard/utilities/_border
-css:
-  col: col col-100 md:col-0 mb-8 md:mb-0
-  demo: align-center bg-white p-16
+examples: ['', '-x', '-y', '-t', '-b', '-r', '-l']
 ---
 
 {% include page-heading.html page=page %}
 
 ---
 
-<div class="col-container">
-  <div class="{{ page.css.col }}">
-    <div class="{{ page.css.demo }} border border-thin">
-      .border
+<div class="col-container mb-24">
+  {% for example in page.examples %}
+    <div class="col col-100 md:col-0 mb-8 md:mb-0">
+      <div class="align-center bg-white p-16 border-thin border-current gray-light {{ 'border' | append: example }}">
+        <span class="text-normal medium">
+          .{{ 'border' | append: example }}
+        </span>
+      </div>
     </div>
-  </div>
-  <div class="{{ page.css.col }}">
-    <div class="{{ page.css.demo }} border-x border-thin">
-      .border-x
-    </div>
-  </div>
-  <div class="{{ page.css.col }}">
-    <div class="{{ page.css.demo }} border-y border-thin">
-      .border-y
-    </div>
-  </div>
-  <div class="{{ page.css.col }}">
-    <div class="{{ page.css.demo }} border-t border-thin">
-      .border-t
-    </div>
-  </div>
-  <div class="{{ page.css.col }}">
-    <div class="{{ page.css.demo }} border-b border-thin">
-      .border-b
-    </div>
-  </div>
-
-  <div class="{{ page.css.col }}">
-    <div class="{{ page.css.demo }} border-r border-thin">
-      .border-r
-    </div>
-  </div>
-  <div class="{{ page.css.col }}">
-    <div class="{{ page.css.demo }} border-l border-thin">
-      .border-l
-    </div>
-  </div>
+  {% endfor %}
 </div>
 
 ```css
