@@ -26,9 +26,8 @@ $shipyard-defaults: (
 
   border-color: (
     prefix: 'border',
-    responsive: true,
-    states: (hover),
-    values: $shipyard-colors
+    responsive: false,
+    values: ('current': currentColor)
   ),
 
   background-color: (
