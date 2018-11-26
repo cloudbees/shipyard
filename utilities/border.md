@@ -1,7 +1,7 @@
 ---
 title: Border Utilities
 description: Useful when you need to add a border to any object.
-sass_file: shipyard/utilities/_border-width
+sass_file: shipyard/utilities/_border
 css:
   col: col col-100 md:col-0 mb-8 md:mb-0
   demo: align-center bg-white p-16
