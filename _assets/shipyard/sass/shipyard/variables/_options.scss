@@ -49,63 +49,21 @@ $shipyard-defaults: (
   border-style: (
     prefix: 'border',
     responsive: false,
+    states: ('last-child'),
+    variants: (t: top, b: bottom, l: left, r: right, x: (left, right), y: (top, bottom)),
     values: (
       '': solid,
-      'solid': solid,
-      'none': none
+      'none': none,
     )
   ),
 
   border-width: (
     prefix: 'border',
-    responsive: true,
+    responsive: false,
     values: (
-      '': 1px,
-      'thick': 2px,
       'none': 0,
-      't': 1px 0 0,
-      'b': 0 0 1px,
-      'l': 0 0 0 1px,
-      'l-2': 0 0 0 2px,
-      'r': 0 1px 0 0,
-      'y': 0 1px,
-      'x': 1px 0,
-    )
-  ),
-
-  border-top-width: (
-    prefix: 'border',
-    values: (
-      'y': 1px,
-      't': 1px,
-      't-none': 0,
-    )
-  ),
-
-  border-left-width: (
-    prefix: 'border',
-    values: (
-      'x': 1px,
-      'l': 1px,
-      'l-none': 0,
-    )
-  ),
-
-  border-right-width: (
-    prefix: 'border',
-    values: (
-      'x': 1px,
-      'r': 1px,
-      'r-none': 0,
-    )
-  ),
-
-  border-bottom-width: (
-    prefix: 'border',
-    values: (
-      'y': 1px,
-      'b': 1px,
-      'b-none': 0,
+      'thin': 1px,
+      'thick': 2px,
     )
   ),
 
