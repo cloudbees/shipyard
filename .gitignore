@@ -1,4 +1,5 @@
 .jekyll-cache
 .sass-cache
+_assets/shipyard/dist
 _site
 codeship.aes
