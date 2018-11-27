@@ -11,7 +11,7 @@ $shipyard-utility-defaults: (
   border-color: (
     prefix: 'border',
     responsive: false,
-    values: ('current': currentColor)
+    values: ('': currentColor)
   ),
 
   background-color: (
@@ -33,11 +33,16 @@ $shipyard-utility-defaults: (
     prefix: 'border',
     responsive: true,
     states: ('last-child'),
-    variants: (t: top, b: bottom, l: left, r: right, x: (left, right), y: (top, bottom)),
-    values: (
-      '': solid,
-      'none': none,
-    )
+    variants: (
+      t: top,
+      b: bottom,
+      l: left,
+      r: right,
+      a: (top, bottom, left, right),
+      x: (left, right),
+      y: (top, bottom)
+    ),
+    values: (solid, none)
   ),
 
   border-width: (
