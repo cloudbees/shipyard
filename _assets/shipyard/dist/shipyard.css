@@ -231,7 +231,7 @@ button {
     min-width: 24px; }
   .btn-sm {
     font-size: 14px;
-    padding: 0 16px;
+    padding: 0 12px;
     height: 32px;
     line-height: 28px;
     min-width: 32px; }
@@ -268,7 +268,7 @@ button {
       min-width: 24px; }
     .sm\:btn-sm {
       font-size: 14px;
-      padding: 0 16px;
+      padding: 0 12px;
       height: 32px;
       line-height: 28px;
       min-width: 32px; }
@@ -305,7 +305,7 @@ button {
       min-width: 24px; }
     .md\:btn-sm {
       font-size: 14px;
-      padding: 0 16px;
+      padding: 0 12px;
       height: 32px;
       line-height: 28px;
       min-width: 32px; }
@@ -342,7 +342,7 @@ button {
       min-width: 24px; }
     .lg\:btn-sm {
       font-size: 14px;
-      padding: 0 16px;
+      padding: 0 12px;
       height: 32px;
       line-height: 28px;
       min-width: 32px; }
@@ -379,7 +379,7 @@ button {
       min-width: 24px; }
     .xl\:btn-sm {
       font-size: 14px;
-      padding: 0 16px;
+      padding: 0 12px;
       height: 32px;
       line-height: 28px;
       min-width: 32px; }
