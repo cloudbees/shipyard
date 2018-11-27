@@ -180,6 +180,19 @@ $shipyard-utility-defaults: (
     )
   ),
 
+  // Shipyard: Min-Height & Width Utilities
+  min-height: (
+    prefix: 'min-h',
+    responsive: false,
+    values: ('none': none, '100\\%': 100%)
+  ),
+
+  min-width: (
+    prefix: 'min-w',
+    responsive: false,
+    values: ('none': none, '100\\%': 100%)
+  ),
+
   // Shipyard: Display Utilities
   display: (
     prefix: null,

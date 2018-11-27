@@ -7193,6 +7193,18 @@ svg, path, circle, polyline {
   .xl\:max-w-1440 {
     max-width: 1440px; } }
 
+.min-h-none {
+  min-height: none; }
+
+.min-h-100\% {
+  min-height: 100%; }
+
+.min-w-none {
+  min-width: none; }
+
+.min-w-100\% {
+  min-width: 100%; }
+
 .o-100 {
   opacity: 1; }
 
