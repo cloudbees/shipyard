@@ -64,8 +64,10 @@ The examples below demonstrate the utility classes at each size.
 </div>
 
 ```css
-.rounded { border-radius: 5px }
+.rounded { border-radius: 4px }
 .rounded-pill { border-radius: 999px }
+.rounded-lg { border-radius: 5px }
+.rounded-md { border-radius: 4px }
 .rounded-sm { border-radius: 3px }
 .rounded-xs { border-radius: 2px }
 .rounded-0 { border-radius: 0 }

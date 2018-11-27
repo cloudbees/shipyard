@@ -1,7 +1,7 @@
 @mixin btn($size: md, $position: relative, $bg: $gray)
   position: $position
   display: inline-block
-  border-radius: 5px
+  border-radius: $border-radius
   border: 0
   cursor: pointer
   transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease, opacity 300ms ease
@@ -33,28 +33,28 @@
 @mixin btn-size($size, $min-width: null)
   @if $size == xxs
     font-size: 12px
-    padding: 0 8px
+    padding: 0 4px
     +btn-size(20px)
   @else if $size == xs
     font-size: 12px
-    padding: 0 10px
-    +btn-size(30px)
+    padding: 0 8px
+    +btn-size(24px)
   @else if $size == sm
     font-size: 14px
-    padding: 0 15px
-    +btn-size(40px)
+    padding: 0 16px
+    +btn-size(32px)
   @else if $size == md
     font-size: 16px
-    padding: 0 20px
-    +btn-size(50px)
+    padding: 0 16px
+    +btn-size(40px)
   @else if $size == lg
     font-size: 18px
-    padding: 0 30px
-    +btn-size(60px)
+    padding: 0 24px
+    +btn-size(48px)
   @else if $size == xl
     font-size: 20px
-    padding: 0 35px
-    +btn-size(70px)
+    padding: 0 32px
+    +btn-size(56px)
   @else if type-of($size) == 'number'
     height: $size
     line-height: $size - 4px
