@@ -31,7 +31,7 @@ $shipyard-utility-defaults: (
 
   border-style: (
     prefix: 'border',
-    responsive: false,
+    responsive: true,
     states: ('last-child'),
     variants: (t: top, b: bottom, l: left, r: right, x: (left, right), y: (top, bottom)),
     values: (
