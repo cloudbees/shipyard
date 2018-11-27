@@ -7,7 +7,7 @@ title: Shipyard Modal Example
 <div class="modal-container z-200" modal="example-small">
   <div class="modal modal-sm modal-billing" role="dialog">
     <div class="modal-content">
-      <div class="modal-title-border mb-20 sm:mb-30">
+      <div class="modal-title-border mb-16 sm:mb-24">
         <div class="col-container">
           <h1 class="text-lg sm:text-xl col">Payment Period</h1>
           <p class="col text-light medium align-right hidden sm:block">
@@ -17,27 +17,27 @@ title: Shipyard Modal Example
           </p>
         </div>
       </div>
-      <button class="btn btn-cta btn-sm sm:btn-md mr-10 sm:mr-15 mb-10 sm:mb-0">
-        <input type="radio" class="input input-radio-checkbox input-radio-inverse mr-10" checked />
+      <button class="btn btn-cta btn-sm sm:btn-md mr-8 sm:mr-16 mb-8 sm:mb-0">
+        <input type="radio" class="input input-radio-checkbox input-radio-inverse mr-8" checked />
         Monthly &mdash; $39
       </button>
       <button class="btn btn-secondary-link btn-sm sm:btn-md">
-        <input type="radio" class="input input-radio-checkbox mr-10" />
+        <input type="radio" class="input input-radio-checkbox mr-8" />
         Yearly &mdash; $390
-        <span class="btn btn-cta rounded-pill btn-xxs ml-10 uppercase">2 Months Free</span>
-        {% icon :tag, class: 'icon-inverse' %}
+        <span class="btn btn-cta rounded-pill btn-xxs ml-8 uppercase">2 Months Free</span>
+        {% include icon.html name="tag" class="icon-inverse" %}
       </button>
-      <p class="text-light mt-10 sm:mt-15" markdown="1">
+      <p class="text-light mt-8 sm:mt-16" markdown="1">
         Your new subscription will be prorated on your next invoice. If you have any questions, don't hesitate to <a href="#" class="medium">contact our support team</a>.
       </p>
-      <div class="modal-title-border mt-30 mb-20 sm:mb-30">
+      <div class="modal-title-border mt-32 mb-16 sm:mb-24">
         <h1 class="text-lg sm:text-xl">Payment Info</h1>
       </div>
       <form>
         <div class="input-required">
           <input type="text" class="input input-text" placeholder="Card Number" />
         </div>
-        <div class="col-container mt-20">
+        <div class="col-container mt-24">
           <div class="col col-50 sm:col-33">
             <label class="label">Expiry Date</label>
             <div class="input-required">
@@ -50,7 +50,7 @@ title: Shipyard Modal Example
               <input type="text" class="input input-text" placeholder="3 or 4 digits" />
             </div>
           </div>
-          <div class="col col-100 sm:col-33 mt-20 sm:mt-0 mb-15 sm:mb-0">
+          <div class="col col-100 sm:col-33 mt-24 sm:mt-0 mb-16 sm:mb-0">
             <label class="label">Zip Code</label>
             <div class="input-required">
               <input type="text" class="input input-text" />
@@ -66,11 +66,11 @@ title: Shipyard Modal Example
             Save
             <span class="hidden sm:inline">&amp; Continue</span>
           </button>
-          <button class="btn btn-secondary btn-sm sm:btn-md ml-5 sm:ml-10" modal-close>Cancel</button>
+          <button class="btn btn-secondary btn-sm sm:btn-md ml-4 sm:ml-8" modal-close>Cancel</button>
         </div>
         <div class="col align-right">
           <span class="btn-sm sm:btn-md white-space-nowrap p-0">
-            {% icon :lock, class: 'green-dark center-obj mr-5' %}
+            {% include icon.html name="lock" class="green-dark center-obj mr-4" %}
             <span class="text-sm text-lighter medium">Secure Server</span>
           </span>
         </div>

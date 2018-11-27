@@ -1,14 +1,20 @@
+@function utility-values($name, $value: null)
+  $utility: map-get($shipyard-utility-options, $name)
+  $utility-values: map-get($utility, values)
+  @return if($value, map-get($utility-values, $value), $utility-values)
+
 @function utility-class($prefix, $class)
   @if $prefix
     $class: if($class == '', $prefix, "#{$prefix}-#{$class}")
   @return $class
 
 @mixin utility($name)
-  $utility: map-get($shipyard-options, $name)
+  $utility: map-get($shipyard-utility-options, $name)
 
   @if $utility != false
     $prefix: map-get($utility, prefix)
     $utility-values: map-get($utility, values)
+    $utility-states: map-get($utility, states)
     $utility-variants: map-get($utility, variants)
     $utility-is-responsive: map-get($utility, responsive)
 
@@ -18,13 +24,25 @@
       .#{utility-class($prefix, $class)}
         #{$name}: $value
 
+      // Print out the utility states for all screens
+      @if $utility-states
+        @each $state in $utility-states
+          .#{$state + '\\:' + utility-class($prefix, $class) + ':' + $state}
+            @extend .#{utility-class($prefix, $class)}
+
     // Print out variants like: left, right, top, bottom
     @if $utility-variants
       @each $class, $value in $utility-values
         $value: if($value, $value, $class)
-        @each $v-class, $v-prop in $utility-variants
-          .#{utility-class($prefix + $v-class, $class)}
-            #{$name}-#{$v-prop}: $value
+        @each $v-class, $v-props in $utility-variants
+          @if $name == border-style
+            .#{utility-class($prefix + '-' + $v-class, $class)}
+              @each $variant in $v-props
+                border-#{$variant}-style: $value
+          @else
+            .#{utility-class($prefix + $v-class, $class)}
+              @each $variant in $v-props
+                #{$name}-#{$variant}: $value
 
     // Print out other utility content
     @if $prefix
@@ -40,13 +58,25 @@
             .#{$breakpoint + '\\:' + utility-class($prefix, $class)}
               #{$name}: $value
 
+            // Print out the utility states for all screens
+            @if $utility-states
+              @each $state in $utility-states
+                .#{$breakpoint + '\\:' + $state + '\\:' + utility-class($prefix, $class) + ':' + $state}
+                  @extend .#{$breakpoint + '\\:' + utility-class($prefix, $class)}
+
           // Print out variants like: left, right, top, bottom
           @if $utility-variants
             @each $class, $value in $utility-values
               $value: if($value, $value, $class)
-              @each $v-class, $v-prop in $utility-variants
-                .#{$breakpoint + '\\:' + utility-class($prefix + $v-class, $class)}
-                  #{$name}-#{$v-prop}: $value
+              @each $v-class, $v-props in $utility-variants
+                @if $name == border-style
+                  .#{$breakpoint + '\\:' + utility-class($prefix + '-' + $v-class, $class)}
+                    @each $variant in $v-props
+                      border-#{$variant}-style: $value
+                @else
+                  .#{$breakpoint + '\\:' + utility-class($prefix + $v-class, $class)}
+                    @each $variant in $v-props
+                      #{$name}-#{$variant}: $value
 
           // Print out other utility content
           @if $prefix

@@ -2,7 +2,7 @@
 title: Shipyard Grid
 description: The Shipyard grid is a percentage-based, flexbox grid and is entirely responsive. Each class needs the foundational `.col` class in order to function properly, and also should be contained inside the `.col-container` as well.
 sass_file: shipyard/components/_grid
-container_classes: col-container mt-10 sm:mt-15 md:mt-20 mb-10 sm:mb-15 md:mb-20
+container_classes: col-container mt-8 sm:mt-16 md:mt-24 mb-8 sm:mb-16 md:mb-16
 box_classes: utilities-grid-box col-center box-secondary text-lighter text-sm bold align-center
 example_flex_columns: [10,20,25,33,50]
 example_sizes: [5,10,15,20,25,30,33,35,40,45,50,55,60,65,66,70,75,80,85,90,95,100]
@@ -110,7 +110,7 @@ Useful when you want to build a grid that works for any size of screen.
 
 <div class="{{ page.container_classes }}">
   {% for i in (1..7) %}
-    <div class="col col-100 sm:col-33 md:col-25 lg:col-0 mb-10 sm:mb-15 lg:mb-0">
+    <div class="col col-100 sm:col-33 md:col-25 lg:col-0 mb-8 sm:mb-16 lg:mb-0">
       <div class="{{ page.box_classes }}">
         <span class="block sm:hidden">100</span>
         <span class="hidden sm:block md:hidden">33</span>
@@ -170,7 +170,7 @@ Nested grids can be tricky to build and somewhat fragile by nature. For the best
     <div class="{{ page.box_classes }}">40</div>
   </div>
   <div class="col col-60">
-    <div class="{{ page.box_classes }} mb-10 sm:mb-15 md:mb-20">60</div>
+    <div class="{{ page.box_classes }} mb-8 sm:mb-16 md:mb-16">60</div>
     <div class="col-container">
       <div class="col"><div class="{{ page.box_classes }}">20</div></div>
       <div class="col"><div class="{{ page.box_classes }}">20</div></div>
@@ -207,7 +207,7 @@ Useful when the flow of the content should be different at a certain breakpoint.
       <span class="teal-darker inline md:hidden">top (mobile)</span>
       <span class="teal-darker hidden md:inline">bottom (desktop)</span>
     </div>
-    <div class="col-container mt-10 md:mt-15 mb-10 md:mb-15 flex-row md:flex-row-reverse">
+    <div class="col-container mt-8 md:mt-16 mb-8 md:mb-16 flex-row md:flex-row-reverse">
       <div class="col">
         <div class="{{ page.box_classes }} bg-blue-lighter">
           <span class="blue-darker inline md:hidden">left (mobile)</span>

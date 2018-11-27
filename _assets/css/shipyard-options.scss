@@ -1,12 +1,8 @@
-$font-family: 'museo-sans-rounded', 'Museo Sans Rounded', Arial, sans-serif;
-$font-monospace: 'Roboto Mono', monospace;
-
-$shipyard-options: (
-  font-weight: (
+$shipyard-utility-options: (
+  font-family: (
     values: (
-      normal: 300,
-      medium: 500,
-      bold: 700
+      'default': ('museo-sans-rounded', 'Museo Sans Rounded', Arial, sans-serif),
+      'monospace': ('Roboto Mono', monospace),
     )
   )
 );
