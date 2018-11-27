@@ -1,6 +1,7 @@
 @function utility-values($name, $value: null)
-  $values: map-get(map-get($shipyard-utility-options, $name), values)
-  @return if($value, map-get($values, $value), $values)
+  $utility: map-get($shipyard-utility-options, $name)
+  $utility-values: map-get($utility, values)
+  @return if($value, map-get($utility-values, $value), $utility-values)
 
 @function utility-class($prefix, $class)
   @if $prefix
