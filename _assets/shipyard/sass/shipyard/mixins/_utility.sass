@@ -68,9 +68,15 @@
           @if $utility-variants
             @each $class, $value in $utility-values
               $value: if($value, $value, $class)
-              @each $v-class, $v-prop in $utility-variants
-                .#{$breakpoint + '\\:' + utility-class($prefix + $v-class, $class)}
-                  #{$name}-#{$v-prop}: $value
+              @each $v-class, $v-props in $utility-variants
+                @if $name == border-style
+                  .#{$breakpoint + '\\:' + utility-class($prefix + '-' + $v-class, $class)}
+                    @each $variant in $v-props
+                      border-#{$variant}-style: $value
+                @else
+                  .#{$breakpoint + '\\:' + utility-class($prefix + $v-class, $class)}
+                    @each $variant in $v-props
+                      #{$name}-#{$variant}: $value
 
           // Print out other utility content
           @if $prefix
