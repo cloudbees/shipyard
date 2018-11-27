@@ -94,7 +94,9 @@ $shipyard-utility-defaults: (
       '24': 24px,
       '28': 28px,
       '32': 32px,
+      '36': 36px,
       '40': 40px,
+      '44': 44px,
       '48': 48px,
       '56': 56px,
       '64': 64px
@@ -105,28 +107,14 @@ $shipyard-utility-defaults: (
   height: (
     prefix: 'h',
     responsive: true,
-    values: (
-      '50': 50px,
-      '60': 60px,
-      '70': 70px,
-      '80': 80px,
-      '90': 90px,
-      '100': 100px
-    )
+    values: map-get($shipyard-options, width-height)
   ),
 
   // Shipyard: Width Utility
   width: (
     prefix: 'w',
     responsive: true,
-    values: (
-      '50': 50px,
-      '60': 60px,
-      '70': 70px,
-      '80': 80px,
-      '90': 90px,
-      '100': 100px
-    )
+    values: map-get($shipyard-options, width-height)
   ),
 
   // Shipyard: Cursor Utility
@@ -171,7 +159,7 @@ $shipyard-utility-defaults: (
   // Shipyard: Max-Width Utility
   max-width: (
     prefix: 'max-w',
-    responsive: false,
+    responsive: true,
     values: (
       '320': 320px,
       '400': 400px,
@@ -259,6 +247,7 @@ $shipyard-utility-defaults: (
   text-decoration: (
     prefix: null,
     responsive: false,
+    states: (hover),
     values: (
       'line-through': line-through,
       'underline': underline,
