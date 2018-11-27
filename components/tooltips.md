@@ -13,7 +13,7 @@ directions: [top, bottom, right, left]
 Useful when you need tooltips with content that's a bit more complex than your average tooltip.
 {: .section-description }
 
-<div class="align-center mb-30">
+<div class="align-center mb-24">
   {% for direction in page.directions %}
     <button class="btn btn-secondary btn-margin tooltip-data tooltip-data-{{ direction }}" data-tooltip="What a lovely tooltip">{{ direction | capitalize }}</button>
   {% endfor %}
@@ -31,7 +31,7 @@ Useful when you need tooltips with content that's a bit more complex than your a
 Useful when the tooltip you're display will appear on a darker background.
 {: .section-description }
 
-<div class="align-center mb-30">
+<div class="align-center mb-24">
   {% for direction in page.directions %}
     <button class="btn btn-secondary btn-margin tooltip-data tooltip-data-light tooltip-data-{{ direction }}" data-tooltip="What a lovely tooltip">{{ direction | capitalize }}</button>
   {% endfor %}
@@ -47,12 +47,12 @@ Useful when the tooltip you're display will appear on a darker background.
 Useful when you need tooltips with content that's a bit more complex than your average tooltip.
 {: .section-description }
 
-<div class="align-center mb-30">
+<div class="align-center mb-24">
   {% for direction in page.directions %}
     <button class="btn btn-secondary btn-margin tooltip-parent">
       {{ direction | capitalize }}
       <div class="tooltip tooltip-{{ direction }} z-50">
-        <h3 class="white text-md mb-5">Tooltip {{ direction | capitalize }}</h3>
+        <h3 class="white text-md mb-4">Tooltip {{ direction | capitalize }}</h3>
         <p class="white-70 text-sm">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus.</p>
       </div>
     </button>
@@ -75,12 +75,12 @@ Useful when you need tooltips with content that's a bit more complex than your a
 Useful when the tooltip you're display will appear on a darker background.
 {: .section-description }
 
-<div class="align-center mb-30">
+<div class="align-center mb-24">
   {% for direction in page.directions %}
     <button class="btn btn-secondary btn-margin tooltip-parent">
       {{ direction | capitalize }}
       <div class="tooltip tooltip-light tooltip-{{ direction }} z-50">
-        <h3 class="text-dark text-md mb-5">Tooltip {{ direction | capitalize }}</h3>
+        <h3 class="text-dark text-md mb-4">Tooltip {{ direction | capitalize }}</h3>
         <p class="text-light text-sm">Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus.</p>
       </div>
     </button>

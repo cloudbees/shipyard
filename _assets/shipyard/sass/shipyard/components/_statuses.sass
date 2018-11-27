@@ -46,20 +46,21 @@
       border-color: $blue-light
 
   &-running
-    color: $teal
+    color: $teal-dark
     border-color: $border-color-light
     &-bg
-      background-color: $teal
+      background-color: $teal-dark
     &.status-xs,
     &.status-sm
-      border-color: $teal-light
+      border-color: $teal
       &::after
-        background-color: $teal
+        background-color: $teal-dark
     &.status-inverse
       color: #fff
       border-color: rgba(#fff,.3)
       background-color: transparent
 
+  &-warning,
   &-paused
     color: $yellow-dark
     border-color: $yellow-dark
@@ -74,10 +75,10 @@
       background-color: transparent
 
   &-success
-    color: $green
-    border-color: $green
+    color: $green-dark
+    border-color: $green-dark
     &, &-bg
-      background-color: $green
+      background-color: $green-dark
     &.status-xs,
     &.status-sm
       border-color: transparent
@@ -94,10 +95,10 @@
       background-color: transparent
 
   &-error
-    color: $orange-dark
-    border-color: $orange-dark
+    color: $orange
+    border-color: $orange
     &, &-bg
-      background-color: $orange-dark
+      background-color: $orange
     &.status-xs,
     &.status-sm
       border-color: transparent
@@ -119,16 +120,27 @@
 
   &-xs
     +width-height(6px)
+    .icon-waiting
+      display: none
   &-sm
     +width-height(8px)
+    .icon-waiting
+      display: none
   &-md
-    +width-height(14px)
+    +width-height(16px)
+    .icon-waiting
+      +status-icon-center(12px)
+      stroke-width: 1.25
   &-lg
-    +width-height(22px)
+    +width-height(24px)
     background-color: transparent
+    .icon-waiting
+      +status-icon-center(16px)
   &-xl
     +width-height(32px)
     background-color: transparent
+    .icon-waiting
+      +status-icon-center(20px)
 
   // Status: Icons
   &-icon
@@ -138,82 +150,52 @@
 
   // Status: Icons (X-Small)
   &-xs-icon
-    margin: -2px 0 0 -2px
-    +width-height(4px)
+    +status-icon-center(6px)
     &-skipped,
     &-waiting,
     &-running
       display: none
-    &-error-xs
-      fill: $orange-dark
+    &-error
+      fill: currentColor
 
   // Status: Icons (Small)
   &-sm-icon
-    margin: -3px 0 0 -3px
-    +width-height(6px)
+    +status-icon-center(8px)
     &-skipped,
     &-waiting,
     &-running
       display: none
-    &-error-xs
-      fill: $orange-dark
+    &-error
+      fill: currentColor
 
   // Status: Icons (Medium)
   &-md-icon
-    margin: -2px 0 0 -2px
-    +width-height(4px)
+    +status-icon-center(8px)
     &-skipped
-      margin-left: 0
-      transform: translatex(-.8px)
-    &-waiting
-      stroke-width: 1.5
-      +width-height(6px, 2px)
-      margin: 0 0 0 -3px
-      transform: translatey(-.5px)
+      transform: translatex(0.5px)
     &-running
-      +width-height(12px)
-      margin: -6px 0 0 -6px
-    &-success
-      margin-top: 0
-      transform: translatey(-1.7px)
-    &-error
-      +width-height(2px, 6px)
-      margin: -3px 0 0 -1px
+      +status-icon-center(16px)
 
   // Status: Icons (Large)
   &-lg-icon
-    margin: -3px 0 0 -3px
-    +width-height(6px)
+    +status-icon-center(10px)
     &-skipped
-      width: 3px
-      margin-left: -1px
+      margin-left: -4px
     &-waiting
       +width-height(10px, 2px)
       margin: -1px 0 0 -5px
     &-running
-      +width-height(20px)
-      margin: -10px 0 0 -10px
-    &-success
-      margin-top: -2px
-    &-error
-      +width-height(4px, 8px)
-      margin: -4px 0 0 -1px
+      +status-icon-center(26px)
 
   // Status: Icons (X-Large)
   &-xl-icon
-    +status-icon-center(8px)
+    +status-icon-center(12px)
     &-skipped
-      width: 4px
-      margin-left: -1px
+      margin-left: -5px
     &-waiting
       +status-icon-center(12px, 2px)
     &-running
-      +status-icon-center(30px)
-    &-success
-      margin-top: -3px
-    &-error
-      +width-height(4px, 10px)
-      margin: -5px 0 0 -1px
+      +status-icon-center(34px)
 
 +component('text')
   &-skipped
@@ -221,12 +203,13 @@
   &-waiting
     color: $blue
   &-running
-    color: $teal
-  &-paused
+    color: $teal-dark
+  &-paused,
+  &-warning
     color: $yellow-dark
   &-success
-    color: $green
+    color: $green-dark
   &-fail
     color: $red
   &-error
-    color: $orange-dark
+    color: $orange

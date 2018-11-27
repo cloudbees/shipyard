@@ -37,7 +37,7 @@ $component-defaults: (
     container: (
       color: #fff,
       background: $red,
-      border-radius: 5px,
+      border-radius: $border-radius,
       text-shadow: 0 1px 1px rgba($gray-darkest, .1)
     ),
     text: (

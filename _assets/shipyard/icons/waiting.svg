@@ -1,5 +1,0 @@
-<svg viewBox="0 0 16 6" class="icon-waiting icon-outline">
-  <circle class="icon-waiting-dot-1" vector-effect="non-scaling-stroke" cx="2" cy="2" r="1" />
-  <circle class="icon-waiting-dot-2" vector-effect="non-scaling-stroke" cx="7" cy="2" r="1"/>
-  <circle class="icon-waiting-dot-3" vector-effect="non-scaling-stroke" cx="12" cy="2" r="1"/>
-</svg>

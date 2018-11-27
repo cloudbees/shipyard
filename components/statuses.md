@@ -1,7 +1,7 @@
 ---
 title: Shipyard Statuses
 sass_file: shipyard/components/_statuses
-statuses: [skipped, waiting, running, success, paused, error, fail]
+statuses: [skipped, waiting, running, paused, warning, success, error, fail]
 ---
 
 {% include page-heading.html page=page %}
@@ -12,56 +12,165 @@ statuses: [skipped, waiting, running, success, paused, error, fail]
 Useful in tight spaces where it's still important to show status, but not important enough to compete for attention with other elements on the page.
 {: .section-description }
 
-<div class="mb-25">
-  <button tooltip="skipped" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-skipped status-xs">
-      {% include icon.html name='skipped' inline='true' class='icon-status-xs status-icon' %}
-    </span>
-    <span class="text-sm medium ml-5 text-skipped">Skipped</span>
-  </button>
-
-  <button tooltip="waiting" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-waiting status-xs">
-      {% include icon.html name='waiting' inline='true' class='icon-status-xs status-icon' %}
-    </span>
-    <span class="text-sm medium ml-5 text-waiting">Waiting</span>
-  </button>
-
-  <button tooltip="running" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-running status-xs">
-      {% include icon.html name='running' inline='true' class='icon-status-xs status-icon' %}
-    </span>
-    <span class="text-sm medium ml-5 text-running">Running</span>
-  </button>
-
-  <button tooltip="success" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-success status-xs">
-      {% include icon.html name='success' inline='true' class='icon-status-xs status-icon' %}
-    </span>
-    <span class="text-sm medium ml-5 text-success">Success</span>
-  </button>
-
-  <button tooltip="paused" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-paused status-xs">
-      {% include icon.html name='paused' inline='true' class='icon-status-xs status-icon' %}
-    </span>
-    <span class="text-sm medium ml-5 text-paused">Paused</span>
-  </button>
-
-  <button tooltip="error" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-error status-xs">
-      {% include icon.html name='error-xs' inline='true' class='icon-status-xs status-icon' %}
-    </span>
-    <span class="text-sm medium ml-5 text-error">Error</span>
-  </button>
-
-  <button tooltip="fail" class="btn btn-secondary btn-xs rounded-pill mr-5">
-    <span class="status status-fail status-xs">
-      {% include icon.html name='fail' inline='true' class='icon-status-xs status-icon' %}
-    </span>
-    <span class="text-sm medium ml-5 text-fail">Fail</span>
-  </button>
+<div class="mb-24">
+  {%- for status in page.statuses %}
+    <button class="btn btn-secondary btn-xs rounded-pill mr-4">
+      {% include status-icon.html status=status size="xs" -%}
+      <span class="text-sm medium ml-4 text-{{ status }}">{{ status | capitalize }}</span>
+    </button>
+  {% endfor -%}
 </div>
+
+```html
+{%- for status in page.statuses %}
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="xs" -%}
+<span class="text-{{ status }}">{{ status | capitalize }}</span>
+{% endfor -%}
+```
+
+---
+
+### Small Status Icons `.status-sm`
+Useful when next to standard text where where it's important to show the status of a particular object.
+{: .section-description }
+
+<div class="mb-24">
+  {%- for status in page.statuses %}
+    <button class="btn btn-secondary btn-sm rounded-pill mr-4">
+      {% include status-icon.html status=status size="sm" -%}
+      <span class="text-md medium ml-4 text-{{ status }}">{{ status | capitalize }}</span>
+    </button>
+  {% endfor -%}
+</div>
+
+```html
+{%- for status in page.statuses %}
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="sm" -%}
+<span class="text-{{ status }}">{{ status | capitalize }}</span>
+{% endfor -%}
+```
+
+---
+
+### Medium Status Icons `.status-md`
+Useful when next to standard text where where it's important to show the status of a particular object.
+{: .section-description }
+
+<div class="mb-24">
+  {% for status in page.statuses -%}
+    {% include status-icon.html status=status size="md" class="mr-4" -%}
+  {% endfor -%}
+</div>
+
+```html
+{%- for status in page.statuses %}
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="md" -%}
+{% endfor -%}
+```
+
+---
+
+### Medium, Inverse Status Icons `.status-inverse.status-md`
+Useful when next to standard text where where it's important to show the status of a particular object.
+{: .section-description }
+
+<div class="col-container m-0 align-center mb-24 rounded overflow-hidden">
+  {% for status in page.statuses -%}
+    <div class="status-{{ status }}-bg p-16 pl-0 pr-0 col">
+      {% include status-icon.html status=status size="md" class="status-inverse" -%}
+    </div>
+  {% endfor -%}
+</div>
+
+```html
+{%- for status in page.statuses %}
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="md" class="status-inverse" -%}
+{% endfor -%}
+```
+
+---
+
+### Large Status Icons `.status-lg`
+Useful when next to standard text where where it's important to show the status of a particular object.
+{: .section-description }
+
+<div class="mb-24">
+  {% for status in page.statuses -%}
+    {% include status-icon.html status=status size="lg" class="mr-4" -%}
+  {% endfor -%}
+</div>
+
+```html
+{%- for status in page.statuses %}
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="lg" -%}
+{% endfor -%}
+```
+
+---
+
+### Large, Inverse Status Icons `.status-inverse.status-lg`
+Useful when next to standard text where where it's important to show the status of a particular object.
+{: .section-description }
+
+<div class="col-container m-0 align-center mb-24 rounded overflow-hidden">
+  {% for status in page.statuses -%}
+    <div class="status-{{ status }}-bg p-16 pl-0 pr-0 col">
+      {% include status-icon.html status=status size="lg" class="status-inverse" -%}
+    </div>
+  {% endfor -%}
+</div>
+
+```html
+{%- for status in page.statuses %}
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="lg" class="status-inverse" -%}
+{% endfor -%}
+```
+
+---
+
+### X-Large Status Icons `.status-xl`
+Useful when next to standard text where where it's important to show the status of a particular object.
+{: .section-description }
+
+<div class="mb-24">
+  {% for status in page.statuses -%}
+    {% include status-icon.html status=status size="xl" class="mr-4" -%}
+  {% endfor -%}
+</div>
+
+```html
+{%- for status in page.statuses %}
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="xl" -%}
+{% endfor -%}
+```
+
+---
+
+### X-Large, Inverse Status Icons `.status-inverse.status-xl`
+Useful when next to standard text where where it's important to show the status of a particular object.
+{: .section-description }
+
+<div class="col-container m-0 align-center mb-24 rounded overflow-hidden">
+  {% for status in page.statuses -%}
+    <div class="status-{{ status }}-bg p-16 pl-0 pr-0 col">
+      {% include status-icon.html status=status size="xl" class="status-inverse" -%}
+    </div>
+  {% endfor -%}
+</div>
+
+```html
+{%- for status in page.statuses %}
+<!-- Status: {{ status | capitalize }} -->
+{% include status-icon.html status=status size="xl" class="status-inverse" -%}
+{% endfor -%}
+```
 
 ---
 

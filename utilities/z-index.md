@@ -12,7 +12,7 @@ sass_file: shipyard/utilities/_z-index
 Control the stack order (or three-dimensional positioning) of an element, regardless of it's order in the HTML.
 {: .section-description }
 
-<ul class="utilities-z-index-list relative mb-30">
+<ul class="utilities-z-index-list relative mb-24">
   <li class="utilities-z-index-item absolute bg-white z-50 align-center text-normal col-center">z-50</li>
   <li class="utilities-z-index-item absolute bg-gray-lighter z-40 align-center text-normal col-center">z-40</li>
   <li class="utilities-z-index-item absolute bg-gray-light z-30 align-center text-normal col-center">z-30</li>

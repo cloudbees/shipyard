@@ -3,7 +3,7 @@ title: Margin Utilities
 description: Shipyard's margin utilities are useful for overriding the default margin in any component, and can be extremely useful in a wide array of situations.
 sass_file: shipyard/utilities/_margin
 box_classes: utilities-margin-padding-box box-secondary btn-sm medium text-light
-options: [0,5,10,15,20,30,40]
+options: [0,4,8,12,16,20,24,28,32]
 directions:
   -
     name: left
@@ -58,7 +58,7 @@ The examples below demonstrate how much margin will be added to the left and rig
     <div class="col">
       <div class="align-{{ direction.name }}">
         {% for option in page.options %}
-          <div class="{{ page.box_classes }} m{{ direction.css }}-{{ option }} mb-20">.m{{ direction.css }}-{{ option }}</div>
+          <div class="{{ page.box_classes }} m{{ direction.css }}-{{ option }} mb-16">.m{{ direction.css }}-{{ option }}</div>
         {% endfor %}
       </div>
     </div>

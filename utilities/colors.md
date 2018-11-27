@@ -14,9 +14,9 @@ base_colors: [Black, White]
 ---
 
 {% for color in page.primary_colors %}
-  <ul class="col-container shade-list mb-30" shade-list>
+  <ul class="col-container shade-list mb-24" shade-list>
     {% for shade in page.shades %}
-      <li class="col col-50 sm:col-25 md:col-0 pl-5 pr-5 sm:pl-10 sm:pr-10 mb-10 sm:mb-20 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
+      <li class="col col-50 sm:col-25 md:col-0 pl-4 pr-4 sm:pl-8 sm:pr-8 mb-8 sm:mb-16 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
         <div class="shade-box box bg-{{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
           <div class="shade-color col-center text-xxl bold bg-{{ color | color_css_class: shade }}" shade-color></div>
           <p class="shade-text text-sm medium {{ color | color_css_class: shade }}">
@@ -28,10 +28,10 @@ base_colors: [Black, White]
   </ul>
 {% endfor %}
 
-<ul class="col-container shade-list mb-30" shade-list>
+<ul class="col-container shade-list mb-24" shade-list>
   {% assign shade = 'Base' %}
   {% for color in page.base_colors %}
-    <li class="col pl-5 pr-5 sm:pl-10 sm:pr-10 mb-10 sm:mb-20 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
+    <li class="col pl-4 pr-4 sm:pl-8 sm:pr-8 mb-8 sm:mb-16 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
       <div class="shade-box box bg-{{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
         <div class="shade-color col-center text-xxl bold bg-{{ color | color_css_class: shade }}" shade-color></div>
         <p class="shade-text text-sm medium {{ color | color_css_class: shade }}">
@@ -47,7 +47,7 @@ base_colors: [Black, White]
 <div class="col-container">
   <div class="col">
     <h3>Text Shades</h3>
-    <div class="box p-10 sm:p-15 md:p-20 lg:p-30 mt-10">
+    <div class="box p-8 sm:p-16 md:p-16 lg:p-24 mt-8">
       <ul class="list medium">
         {% for shade in page.text_shades %}
           <li class="text-{{ shade }}">.text-{{ shade }}</li>
@@ -57,7 +57,7 @@ base_colors: [Black, White]
   </div>
   <div class="col">
     <h3>Inverse Text Shades</h3>
-    <div class="box-secondary p-10 sm:p-15 md:p-20 lg:p-30 bg-gray-dark mt-10">
+    <div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-gray-dark mt-8">
       <ul class="list medium">
         {% for shade in page.white_shades %}
           <li class="white{{ '-' | append: shade | replace: '-100', '' }}">

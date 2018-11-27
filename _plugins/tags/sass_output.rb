@@ -7,7 +7,7 @@ module Shipyard
 
       def render(context)
         sass = context['site']['sass_output'].detect { |s|
-          s['file'].include? context['page']['sass_file']
+          s['file'].include? "#{context['page']['sass_file']}.sass"
         }
 
         output = sass['compressed_css']
@@ -17,8 +17,9 @@ module Shipyard
         output.gsub! /} }/, " }\n}" # Match @media closing brackets
         output.gsub! /([a-z0-9]*),\./, "\\1,\n." # Match each declaration
         output.gsub! /\),./, "),\n." # Match :not(...),.class
-        output.gsub! /([a-z]):(?!:|not|hover)/, '\1: \2' # Match CSS properties
-        output.gsub! /([a-z.]*)\\:/, '  \1:' # Clean up the responsive classes
+        output.gsub! /([a-z]):(?!:|not|hover|last-child)/, '\1: \2' # Match CSS properties
+        output.gsub! /\\/, '' # Clean up the percentage classes (e.g. w-100\% to w-100%)
+        output.gsub! /[.](sm|md|lg|xl):/, '  .\1:' # Clean up the responsive classes
         output.gsub! /;/, '; '
         output.gsub! /\n\z/, ''
         output
