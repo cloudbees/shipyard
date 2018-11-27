@@ -161,11 +161,18 @@ $shipyard-utility-defaults: (
     values: map-get($shipyard-options, padding)
   ),
 
-  // Shipyard: Max-Width Utility
+  // Shipyard: Max-Height & Width Utilities
+  max-height: (
+    prefix: 'max-h',
+    responsive: false,
+    values: (none)
+  ),
+
   max-width: (
     prefix: 'max-w',
     responsive: true,
     values: (
+      'none': none,
       '320': 320px,
       '400': 400px,
       '600': 600px,
