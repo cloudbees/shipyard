@@ -17,8 +17,10 @@
 - Margin
 - Max-Width
 - Opacity
+- Outline
 - Overflow
 - Padding
+- Pointer-Events
 - Position
 - Text-Align
 - Text-Decoration
@@ -27,6 +29,8 @@
 - Text-Transform
 - Transform
 - Transition
+- User-Select
+- Vertical-Align
 - Visibility
 - White-Space
 - Will-Change
