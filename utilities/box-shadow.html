@@ -4,33 +4,33 @@
     <title>Box-Shadow Utilities</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#20a5a8" />
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/application-a483594b46414938a22b382116fa4fd50475d0040b0adb932dbbaf77bf7ae61d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/assets/application-bbb609a02032e1b5824cd905074c202292dcaf8af35060401001f590d4ea9444.css">
   </head>
   <body>
     <header class="header z-100">
       <div class="container">
-        <h6 class="header-logo"><a href="/shipyard/">Shipyard</a></h6>
+        <h6 class="header-logo"><a href="/">Shipyard</a></h6>
         <button class="hamburger sm:hidden" shipyard="hamburger">
           <span class="hamburger-button">Menu</span>
         </button>
         <ul class="header-list">
           
             <li class="header-item ">
-              <a href="/shipyard/" class="header-link">Installation</a>
+              <a href="/" class="header-link">Installation</a>
             </li>
           
             <li class="header-item ">
-              <a href="/shipyard/methodology" class="header-link">Methodology</a>
+              <a href="/methodology" class="header-link">Methodology</a>
             </li>
           
             <li class="header-item ">
-              <a href="/shipyard/components/" class="header-link">Components</a>
+              <a href="/components/" class="header-link">Components</a>
             </li>
           
             <li class="header-item ">
-              <a href="/shipyard/utilities/" class="header-link">Utilities</a>
+              <a href="/utilities/" class="header-link">Utilities</a>
             </li>
           
           <li class="header-item header-item-cta">
@@ -43,32 +43,104 @@
 
 <hr />
 
-<div class="box-shadow bg-white rounded p-20 text-normal mb-20">
+<div class="box-shadow bg-white rounded p-16 text-normal mb-16">
     box-shadow
   </div>
-<div class="box-shadow-hover bg-white rounded p-20 text-normal mb-20">
+<div class="box-shadow-hover bg-white rounded p-16 text-normal mb-16">
     box-shadow-hover
   </div>
-<div class="box-shadow-active bg-white rounded p-20 text-normal mb-20">
+<div class="box-shadow-active bg-white rounded p-16 text-normal mb-16">
     box-shadow-active
   </div>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code></code></pre></div></div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nc">.box-shadow</span><span class="o">,</span>
+  <span class="nc">.hover</span><span class="nd">:box-shadow:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.08</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.box-shadow-left</span><span class="o">,</span>
+  <span class="nc">.hover</span><span class="nd">:box-shadow-left:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">-1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.box-shadow-right</span><span class="o">,</span>
+  <span class="nc">.hover</span><span class="nd">:box-shadow-right:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.box-shadow-hover</span><span class="o">,</span>
+  <span class="nc">.hover</span><span class="nd">:box-shadow-hover:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">37</span><span class="p">,</span><span class="m">154</span><span class="p">,</span><span class="m">213</span><span class="p">,</span><span class="m">0.5</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.box-shadow-active</span><span class="o">,</span>
+  <span class="nc">.hover</span><span class="nd">:box-shadow-active:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">36</span><span class="p">,</span><span class="m">194</span><span class="p">,</span><span class="m">107</span><span class="p">,</span><span class="m">0.75</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.box-shadow-none</span><span class="o">,</span>
+  <span class="nc">.hover</span><span class="nd">:box-shadow-none:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">576px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.sm</span><span class="nd">:box-shadow</span><span class="o">,</span>
+  <span class="nc">.sm</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.08</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:box-shadow-left</span><span class="o">,</span>
+  <span class="nc">.sm</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-left:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">-1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:box-shadow-right</span><span class="o">,</span>
+  <span class="nc">.sm</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-right:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:box-shadow-hover</span><span class="o">,</span>
+  <span class="nc">.sm</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-hover:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">37</span><span class="p">,</span><span class="m">154</span><span class="p">,</span><span class="m">213</span><span class="p">,</span><span class="m">0.5</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:box-shadow-active</span><span class="o">,</span>
+  <span class="nc">.sm</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-active:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">36</span><span class="p">,</span><span class="m">194</span><span class="p">,</span><span class="m">107</span><span class="p">,</span><span class="m">0.75</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:box-shadow-none</span><span class="o">,</span>
+  <span class="nc">.sm</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-none:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.md</span><span class="nd">:box-shadow</span><span class="o">,</span>
+  <span class="nc">.md</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.08</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:box-shadow-left</span><span class="o">,</span>
+  <span class="nc">.md</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-left:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">-1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:box-shadow-right</span><span class="o">,</span>
+  <span class="nc">.md</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-right:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:box-shadow-hover</span><span class="o">,</span>
+  <span class="nc">.md</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-hover:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">37</span><span class="p">,</span><span class="m">154</span><span class="p">,</span><span class="m">213</span><span class="p">,</span><span class="m">0.5</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:box-shadow-active</span><span class="o">,</span>
+  <span class="nc">.md</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-active:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">36</span><span class="p">,</span><span class="m">194</span><span class="p">,</span><span class="m">107</span><span class="p">,</span><span class="m">0.75</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:box-shadow-none</span><span class="o">,</span>
+  <span class="nc">.md</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-none:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">992px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.lg</span><span class="nd">:box-shadow</span><span class="o">,</span>
+  <span class="nc">.lg</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.08</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:box-shadow-left</span><span class="o">,</span>
+  <span class="nc">.lg</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-left:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">-1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:box-shadow-right</span><span class="o">,</span>
+  <span class="nc">.lg</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-right:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:box-shadow-hover</span><span class="o">,</span>
+  <span class="nc">.lg</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-hover:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">37</span><span class="p">,</span><span class="m">154</span><span class="p">,</span><span class="m">213</span><span class="p">,</span><span class="m">0.5</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:box-shadow-active</span><span class="o">,</span>
+  <span class="nc">.lg</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-active:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">36</span><span class="p">,</span><span class="m">194</span><span class="p">,</span><span class="m">107</span><span class="p">,</span><span class="m">0.75</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:box-shadow-none</span><span class="o">,</span>
+  <span class="nc">.lg</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-none:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">1200px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.xl</span><span class="nd">:box-shadow</span><span class="o">,</span>
+  <span class="nc">.xl</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">1px</span> <span class="m">2px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.08</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:box-shadow-left</span><span class="o">,</span>
+  <span class="nc">.xl</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-left:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">-1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:box-shadow-right</span><span class="o">,</span>
+  <span class="nc">.xl</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-right:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">1px</span> <span class="m">0</span> <span class="m">3px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.2</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:box-shadow-hover</span><span class="o">,</span>
+  <span class="nc">.xl</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-hover:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">37</span><span class="p">,</span><span class="m">154</span><span class="p">,</span><span class="m">213</span><span class="p">,</span><span class="m">0.5</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:box-shadow-active</span><span class="o">,</span>
+  <span class="nc">.xl</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-active:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">1px</span> <span class="n">rgba</span><span class="p">(</span><span class="m">36</span><span class="p">,</span><span class="m">194</span><span class="p">,</span><span class="m">107</span><span class="p">,</span><span class="m">0.75</span><span class="p">)</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:box-shadow-none</span><span class="o">,</span>
+  <span class="nc">.xl</span><span class="o">:</span>  <span class="nt">hover</span><span class="nd">:box-shadow-none:hover</span> <span class="p">{</span> <span class="nl">box-shadow</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <hr />
 
 <ul class="col-container">
   <li class="css-stat-item col col-10">
     <span class="text-sm medium text-lighter block">Gzipped Size</span>
-    <span class="text-xxxl bold text-darker"></span>
+    <span class="text-xxxl bold text-darker">403 <span class="text-lightest">B</span></span>
   </li>
   <li class="css-stat-item col col-10">
     <span class="text-sm medium text-lighter block">Declarations</span>
-    <span class="text-xxxl bold text-darker"></span>
+    <span class="text-xxxl bold text-darker">30</span>
   </li>
   <li class="css-stat-item col col-10">
     <span class="text-sm medium text-lighter block">Selectors</span>
-    <span class="text-xxxl bold text-darker"></span>
+    <span class="text-xxxl bold text-darker">60</span>
   </li>
 </ul>
 
@@ -76,6 +148,6 @@
     <footer class="align-center text-lightest">
       &copy; Shipyard Framework 2018
     </footer>
-    <script src="/shipyard/assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js"></script>
   </body>
 </html>

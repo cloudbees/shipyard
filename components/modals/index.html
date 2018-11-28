@@ -4,33 +4,33 @@
     <title>Shipyard Modals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#20a5a8" />
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/application-a483594b46414938a22b382116fa4fd50475d0040b0adb932dbbaf77bf7ae61d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/assets/application-bbb609a02032e1b5824cd905074c202292dcaf8af35060401001f590d4ea9444.css">
   </head>
   <body>
     <header class="header z-100">
       <div class="container">
-        <h6 class="header-logo"><a href="/shipyard/">Shipyard</a></h6>
+        <h6 class="header-logo"><a href="/">Shipyard</a></h6>
         <button class="hamburger sm:hidden" shipyard="hamburger">
           <span class="hamburger-button">Menu</span>
         </button>
         <ul class="header-list">
           
             <li class="header-item ">
-              <a href="/shipyard/" class="header-link">Installation</a>
+              <a href="/" class="header-link">Installation</a>
             </li>
           
             <li class="header-item ">
-              <a href="/shipyard/methodology" class="header-link">Methodology</a>
+              <a href="/methodology" class="header-link">Methodology</a>
             </li>
           
             <li class="header-item ">
-              <a href="/shipyard/components/" class="header-link">Components</a>
+              <a href="/components/" class="header-link">Components</a>
             </li>
           
             <li class="header-item ">
-              <a href="/shipyard/utilities/" class="header-link">Utilities</a>
+              <a href="/utilities/" class="header-link">Utilities</a>
             </li>
           
           <li class="header-item header-item-cta">
@@ -41,14 +41,14 @@
     </header>
     <div class="container"><h1>Shipyard Modals</h1>
 
-<p class="text-light text-lg mt-15">Modals are triggered by applying the following attribute to any button or link (e.g. <code class="language-html highlighter-rouge">modal-trigger="login"</code>).</p>
+<p class="text-light text-lg mt-16">Modals are triggered by applying the following attribute to any button or link (e.g. <code class="language-html highlighter-rouge">modal-trigger="login"</code>).</p>
 
 <hr />
 
 <div class="sm:col-container-nowrap">
   <div class="col col-100">
     <h3 class="col-100">Building Modals</h3>
-    <p class="text-light mb-15">Useful when you need to draw attention to information that requires additional action.</p>
+    <p class="text-light mb-16">Useful when you need to draw attention to information that requires additional action.</p>
   </div>
   <div class="col">
     <button class="btn btn-sm sm:btn-md btn-secondary white-space-nowrap" modal-trigger="example">Demo Modal</button>
@@ -72,7 +72,7 @@
 </code></pre></div></div>
 
 <div class="note note-warning "><p>
-    By default, modals don’t have a <code class="language-html highlighter-rouge">z-index</code> property applied so it is recommended to use the <a href="/shipyard/utilities/z-index">z-index utility classes</a> on the <code class="language-html highlighter-rouge">modal-container</code> element. We’ve chosen the highest possible value (i.e. <code class="language-html highlighter-rouge">.z-200</code>) for the purposes of our documentation.
+    By default, modals don’t have a <code class="language-html highlighter-rouge">z-index</code> property applied so it is recommended to use the <a href="/utilities/z-index">z-index utility classes</a> on the <code class="language-html highlighter-rouge">modal-container</code> element. We’ve chosen the highest possible value (i.e. <code class="language-html highlighter-rouge">.z-200</code>) for the purposes of our documentation.
   </p></div>
 
 <hr />
@@ -80,33 +80,58 @@
 <h2 id="css-output">CSS Output</h2>
 <p class="section-description">Here’s the raw CSS output if you’d like a peak under the hood.</p>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code></code></pre></div></div>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nc">.modal</span> <span class="p">{</span> <span class="nl">width</span><span class="p">:</span> <span class="m">100%</span><span class="p">;</span> <span class="nl">max-width</span><span class="p">:</span> <span class="m">800px</span><span class="p">;</span> <span class="nl">margin</span><span class="p">:</span> <span class="nb">auto</span> <span class="p">}</span>
+<span class="nc">.modal-sm</span> <span class="p">{</span> <span class="nl">max-width</span><span class="p">:</span> <span class="m">660px</span> <span class="p">}</span>
+<span class="nc">.modal-open</span> <span class="p">{</span> <span class="nl">overflow</span><span class="p">:</span> <span class="nb">hidden</span> <span class="p">}</span>
+<span class="nc">.modal-container</span> <span class="p">{</span> <span class="nl">top</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">right</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">bottom</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span><span class="p">;</span> <span class="nl">overflow</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span> <span class="nl">position</span><span class="p">:</span> <span class="nb">fixed</span><span class="p">;</span> <span class="nl">background</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">30</span><span class="p">,</span><span class="m">37</span><span class="p">,</span><span class="m">44</span><span class="p">,</span><span class="m">0.9</span><span class="p">);</span> <span class="nl">transition</span><span class="p">:</span> <span class="m">300ms</span> <span class="n">padding</span> <span class="n">ease</span><span class="p">;</span> <span class="nl">-webkit-overflow-scrolling</span><span class="p">:</span> <span class="n">touch</span> <span class="p">}</span>
+<span class="nc">.modal-content</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span> <span class="m">4px</span> <span class="m">0</span> <span class="m">0</span><span class="p">;</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span> <span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">576px</span><span class="p">)</span> <span class="p">{</span>
+<span class="nc">.modal-content</span> <span class="p">{</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">20px</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+<span class="nc">.modal-content</span> <span class="p">{</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">30px</span> <span class="p">}</span>
+<span class="p">}</span>
+<span class="nc">.modal-title</span><span class="o">,</span>
+<span class="nc">.modal-title-border</span> <span class="p">{</span> <span class="nl">line-height</span><span class="p">:</span> <span class="m">1</span><span class="p">;</span> <span class="nl">margin</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">15px</span> <span class="p">}</span>
+<span class="nc">.modal-title-border</span> <span class="p">{</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">10px</span><span class="p">;</span> <span class="nl">border-bottom</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="n">rgba</span><span class="p">(</span><span class="m">89</span><span class="p">,</span><span class="m">123</span><span class="p">,</span><span class="m">145</span><span class="p">,</span><span class="m">0.08</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.modal-ctas</span> <span class="p">{</span> <span class="nl">background</span><span class="p">:</span> <span class="m">#f2f5f7</span><span class="p">;</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span> <span class="m">0</span> <span class="m">4px</span> <span class="m">4px</span><span class="p">;</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">10px</span> <span class="m">15px</span> <span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">576px</span><span class="p">)</span> <span class="p">{</span>
+<span class="nc">.modal-ctas</span> <span class="p">{</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span> <span class="m">20px</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+<span class="nc">.modal-ctas</span> <span class="p">{</span> <span class="nl">padding</span><span class="p">:</span> <span class="m">15px</span> <span class="m">30px</span> <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
 
 <hr />
 
 <ul class="col-container">
   <li class="css-stat-item col col-10">
     <span class="text-sm medium text-lighter block">Gzipped Size</span>
-    <span class="text-xxxl bold text-darker"></span>
+    <span class="text-xxxl bold text-darker">369 <span class="text-lightest">B</span></span>
   </li>
   <li class="css-stat-item col col-10">
     <span class="text-sm medium text-lighter block">Declarations</span>
-    <span class="text-xxxl bold text-darker"></span>
+    <span class="text-xxxl bold text-darker">12</span>
   </li>
   <li class="css-stat-item col col-10">
     <span class="text-sm medium text-lighter block">Selectors</span>
-    <span class="text-xxxl bold text-darker"></span>
+    <span class="text-xxxl bold text-darker">13</span>
   </li>
 </ul>
 
 <div class="modal-container z-200 hidden" modal="example">
   <div class="modal" role="dialog">
     <div class="modal-content">
-      <div class="modal-title-border sm:mb-20">
+      <div class="modal-title-border sm:mb-16">
         <h1 class="text-lg sm:text-xl">Billing Info</h1>
       </div>
       <form>
-        <div class="col-container mb-20">
+        <div class="col-container mb-16">
           <div class="col">
             <label class="label">First Name</label>
             <div class="input-required">
@@ -120,8 +145,8 @@
             </div>
           </div>
         </div>
-        <div class="col-container mb-20">
-          <div class="col col-100 sm:col-50 mb-15 sm:mb-0">
+        <div class="col-container mb-16">
+          <div class="col col-100 sm:col-50 mb-16 sm:mb-0">
             <label class="label">Email Address</label>
             <input type="text" class="input input-text" />
           </div>
@@ -132,23 +157,23 @@
             </div>
           </div>
         </div>
-        <div class="col-container mb-20">
-          <div class="col col-100 mb-15">
+        <div class="col-container mb-16">
+          <div class="col col-100 mb-16">
             <label class="label">Billing Address</label>
             <input type="text" class="input input-text" placeholder="Company Name" />
           </div>
-          <div class="col col-100 mb-15">
+          <div class="col col-100 mb-16">
             <input type="text" class="input input-text" placeholder="Street Address" />
           </div>
-          <div class="col col-100 sm:col-33 mb-15">
+          <div class="col col-100 sm:col-33 mb-16">
             <div class="input-required">
               <input type="text" class="input input-text" placeholder="Postal Code" />
             </div>
           </div>
-          <div class="col col-50 sm:col-33 mb-15">
+          <div class="col col-50 sm:col-33 mb-16">
             <input type="text" class="input input-text" placeholder="City" />
           </div>
-          <div class="col col-50 sm:col-33 mb-15">
+          <div class="col col-50 sm:col-33 mb-16">
             <input type="text" class="input input-text" placeholder="State" />
           </div>
           <div class="col col-100">
@@ -165,13 +190,13 @@
             </div>
           </div>
         </div>
-        <div class="col-container mb-20">
+        <div class="col-container mb-16">
           <div class="col">
             <label class="label">Tax Information</label>
             <input type="text" class="input input-text" placeholder="VAT Number" />
           </div>
         </div>
-        <div class="col-container mb-15 sm:mb-0">
+        <div class="col-container mb-16 sm:mb-0">
           <div class="col">
             <label class="label">Additional Invoice Information</label>
             <p class="label-note">This information will appear on each invoice. Don't include any confidential financial information.</p>
@@ -187,24 +212,26 @@
             Save
             <span class="hidden sm:inline">&amp; Close</span>
           </button>
-          <button class="btn btn-secondary btn-sm sm:btn-md ml-5 sm:ml-10" modal-close="">Cancel</button>
+          <button class="btn btn-secondary btn-sm sm:btn-md ml-4 sm:ml-8" modal-close="">Cancel</button>
         </div>
         <div class="col align-right">
           <span class="btn-sm sm:btn-md white-space-nowrap p-0">
-            #<Shipyard::Jekyll::Icon:0x00007fd976d85f20>
-            <span class="text-sm text-lighter medium">Secure Server</span>
-          &lt;/span&gt;
-        &lt;/div&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+            <svg class="icon icon-lock green-dark center-obj mr-4" preserveAspectRatio="xMinYMin meet">
+    <use xlink:href="/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#lock"></use>
+  </svg>
 
-</Shipyard::Jekyll::Icon:0x00007fd976d85f20></span></div></div></div></div></div>
+            <span class="text-sm text-lighter medium">Secure Server</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 </div>
     <footer class="align-center text-lightest">
       &copy; Shipyard Framework 2018
     </footer>
-    <script src="/shipyard/assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js"></script>
   </body>
 </html>

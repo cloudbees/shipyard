@@ -4,33 +4,33 @@
     <title>Shipyard Modal Example</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#20a5a8" />
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/application-a483594b46414938a22b382116fa4fd50475d0040b0adb932dbbaf77bf7ae61d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/assets/application-bbb609a02032e1b5824cd905074c202292dcaf8af35060401001f590d4ea9444.css">
   </head>
   <body>
     <header class="header z-100">
       <div class="container">
-        <h6 class="header-logo"><a href="/shipyard/">Shipyard</a></h6>
+        <h6 class="header-logo"><a href="/">Shipyard</a></h6>
         <button class="hamburger sm:hidden" shipyard="hamburger">
           <span class="hamburger-button">Menu</span>
         </button>
         <ul class="header-list">
           
             <li class="header-item ">
-              <a href="/shipyard/" class="header-link">Installation</a>
+              <a href="/" class="header-link">Installation</a>
             </li>
           
             <li class="header-item ">
-              <a href="/shipyard/methodology" class="header-link">Methodology</a>
+              <a href="/methodology" class="header-link">Methodology</a>
             </li>
           
             <li class="header-item ">
-              <a href="/shipyard/components/" class="header-link">Components</a>
+              <a href="/components/" class="header-link">Components</a>
             </li>
           
             <li class="header-item ">
-              <a href="/shipyard/utilities/" class="header-link">Utilities</a>
+              <a href="/utilities/" class="header-link">Utilities</a>
             </li>
           
           <li class="header-item header-item-cta">
@@ -47,7 +47,10 @@
   <div class="modal modal-sm modal-billing" role="dialog">
     <div class="alert alert-success mb-0 rounded-top medium text-sm">
       We'd like to offer you
-      <span class="modal-downgrade-coupon code-inline bold"><span class="modal-downgrade-tag bg-green-dark mr-0 rounded-left">#<Shipyard::Jekyll::Icon:0x00007fd97abc8da0></span><span class="modal-downgrade-coupon-txt">50% OFF</span></span>
+      <span class="modal-downgrade-coupon code-inline bold"><span class="modal-downgrade-tag bg-green-dark mr-0 rounded-left"><svg class="icon icon-tag center-obj modal-downgrade-tag-icon" preserveAspectRatio="xMinYMin meet">
+    <use xlink:href="/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#tag"></use>
+  </svg>
+</span><span class="modal-downgrade-coupon-txt">50% OFF</span></span>
       one month if you decide to stay.
       <button class="alert-cta btn btn-cta btn-sm" modal-close>Apply Discount</button>
     </div>
@@ -55,7 +58,7 @@
       <div class="modal-title">
         <h1 class="text-lg sm:text-xl">Codeship Basic Downgrade</h1>
       </div>
-      <p class="text-light mb-20">
+      <p class="text-light mb-16">
         We'd appreciate it if you would take a moment to share your thoughts
         and experience on why Codeship wasn't a good fit for your team.
       </p>
@@ -95,10 +98,10 @@
       </form>
     </div>
     <div class="modal-ctas">
-      <button class="btn btn-caution btn-sm sm:btn-md mr-5 sm:mr-10" modal-close>
+      <button class="btn btn-caution btn-sm sm:btn-md mr-4 sm:mr-8" modal-close>
         <span class="hidden sm:inline">Confirm</span> Downgrade
       </button>
-      <button class="btn btn-cta btn-sm sm:btn-md mr-5 sm:mr-10" modal-close>Apply Discount</button>
+      <button class="btn btn-cta btn-sm sm:btn-md mr-4 sm:mr-8" modal-close>Apply Discount</button>
       <button class="btn btn-secondary btn-sm sm:btn-md" modal-close>Cancel</button>
     </div>
   </div>
@@ -107,6 +110,6 @@
     <footer class="align-center text-lightest">
       &copy; Shipyard Framework 2018
     </footer>
-    <script src="/shipyard/assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js" type="text/javascript"></script>
+    <script type="text/javascript" src="/assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js"></script>
   </body>
 </html>
