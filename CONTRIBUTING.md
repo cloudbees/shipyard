@@ -83,3 +83,7 @@ bundle exec jekyll build --baseurl /shipyard
 ```
 
 The additional `/shipyard` argument builds the styleguide so it can be hosted properly by GitHub Pages.
+
+Once you have produced a build under the `_site` directory, you can commit and push these files to the `gh-pages` branch to complete the deployment of the new styleguide.
+
+Because the `gh-pages` branch has only the static site committed, it is much easier to clone that specific branch to a different location and manage it independently from your main repository.
