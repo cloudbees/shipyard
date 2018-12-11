@@ -1,6 +1,5 @@
 #!/bin/bash
-
-set -eu
+set -eu # halt script on error
 
 repo="cloudbees/shipyard"
 user_access_token=${GITHUB_DEPLOY_USER_API_KEY:?"Missing GITHUB_DEPLOY_USER_API_KEY environment variable"}
