@@ -2,7 +2,7 @@ jekyll:
   build:
     dockerfile: ./_script/ci/Dockerfile
   cached: true
-  encrypted_env_file: _script/ci/codeship.env.encrypted
+  encrypted_env_file: ./_script/ci/codeship.env.encrypted
   environment:
     - JEKYLL_VERSION=3.8.5
     - JEKYLL_UID=1001
@@ -14,6 +14,6 @@ shipyard:
   build:
     dockerfile: ./_script/ci/Dockerfile
   cached: true
-  encrypted_env_file: _script/ci/codeship.env.encrypted
+  encrypted_env_file: ./_script/ci/codeship.env.encrypted
   volumes_from:
     - jekyll
