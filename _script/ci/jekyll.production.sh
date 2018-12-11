@@ -2,7 +2,7 @@
 set -e # halt script on error
 
 yarn install
-yarn build:dist
+(cd _assets/shipyard/; yarn build:dist)
 
 # Clone only the gh-pages branch
 git clone https://${GITHUB_DEPLOY_USER_API_KEY}@github.com/cloudbees/shipyard.git --branch gh-pages --single-branch _production/shipyard
