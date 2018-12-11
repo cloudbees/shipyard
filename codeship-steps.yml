@@ -22,10 +22,6 @@
       service: shipyard
       name: Surge Preview
       command: ./_script/ci/surge_preview.sh
-    -
-      service: shipyard
-      name: Test Deployment
-      command: ./_script/ci/github.sh
 -
   name: Review
   type: manual
