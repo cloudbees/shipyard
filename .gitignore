@@ -3,3 +3,4 @@
 _assets/shipyard/dist
 _site
 codeship.aes
+vendor/bundle

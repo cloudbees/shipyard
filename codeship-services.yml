@@ -1,5 +1,6 @@
 jekyll:
-  build: .
+  build:
+    dockerfile: ./_script/ci/Dockerfile
   cached: true
   encrypted_env_file: _script/ci/codeship.env.encrypted
   environment:
@@ -10,7 +11,8 @@ jekyll:
     - .:/srv/jekyll
 
 shipyard:
-  build: .
+  build:
+    dockerfile: ./_script/ci/Dockerfile
   cached: true
   encrypted_env_file: _script/ci/codeship.env.encrypted
   volumes_from:
