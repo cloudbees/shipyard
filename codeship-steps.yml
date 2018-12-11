@@ -1,26 +1,46 @@
 -
+  name: Build
+  type: parallel
+  steps:
+    -
+      service: jekyll
+      name: Jekyll Test
+      command: ./_script/ci/jekyll.test.sh
+    -
+      service: jekyll
+      name: Jekyll Production
+      command: ./_script/ci/jekyll.production.sh
+-
   name: Test
   type: parallel
   steps:
     -
-      service: testing
+      service: shipyard
+      name: HTML Proofer
+      command: ./_script/ci/htmlproofer.sh
+    -
+      service: shipyard
       name: Surge Preview
-      command: sh ./ci/deploy_preview.sh
+      command: ./_script/ci/surge_preview.sh
 -
   name: Review
   type: manual
-  exclude: master
+  exclude: ^(master|develop)
   steps:
     -
-      service: testing
+      service: shipyard
       name: Percy
-      command: percy snapshot --enable_javascript --widths "375,768,1280" _site/
+      command: ./_script/ci/percy.sh
 -
   name: Deploy
   type: parallel
-  tag: master
+  tag: ^(master|develop)
   steps:
     -
-      service: testing
+      service: shipyard
       name: Update Percy
-      command: percy snapshot --enable_javascript --widths "375,768,1280" _site/
+      command: ./_script/ci/percy.sh
+    -
+      service: shipyard
+      name: GitHub Pages
+      command: ./_script/ci/github.sh

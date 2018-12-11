@@ -68,7 +68,7 @@ Useful when you have a button on a darker background.
 ---
 
 ## Rounded Buttons
-Rounded buttons utilize the [border-radius utility](/utilities/border-radius), and are useful when you want a button with completely rounded corners.
+Rounded buttons utilize the [border-radius utility]({{ site.baseurl }}/utilities/border-radius), and are useful when you want a button with completely rounded corners.
 {: .section-description }
 
 <div class="mb-16">

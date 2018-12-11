@@ -1,5 +1,7 @@
 .jekyll-cache
 .sass-cache
+.jekyll-metadata
 _assets/shipyard/dist
 _site
 codeship.aes
+vendor/bundle

@@ -1,9 +1,8 @@
 #!/bin/bash
-
-set -eu
+set -eu # halt script on error
 
 repo="cloudbees/shipyard"
-user_access_token=${GITHUB_DEPLOY_USER_ACCESS_TOKEN:?"Missing GITHUB_DEPLOY_USER_ACCESS_TOKEN environment variable"}
+user_access_token=${GITHUB_DEPLOY_USER_API_KEY:?"Missing GITHUB_DEPLOY_USER_API_KEY environment variable"}
 if ! branch=$(git symbolic-ref --short HEAD 2>/dev/null); then
   branch=${CI_BRANCH:?"Could not read branch from either local checkout nor environment variable CI_BRANCH"}
 fi

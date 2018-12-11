@@ -7,7 +7,7 @@ module Shipyard
 
       def render(context)
         cssClasses = []
-        cssClasses << "env-#{context['site']['env']}"
+        cssClasses << "env-#{ENV['JEKYLL_ENV']}"
         cssClasses << context['page']['path'].tr('/','-').gsub(/[\.][a-z]*/, '')
         cssClasses.join ' '
       end
