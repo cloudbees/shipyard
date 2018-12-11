@@ -1,11 +1,9 @@
 #!/bin/bash
 set -e # halt script on error
 
-pwd
 (
-  cd _assets/shipyard/;
-  yarn install;
-  yarn build:dist;
+  cd _assets/shipyard/
+  yarn install
   chown -R jekyll:jekyll ./
 )
 
