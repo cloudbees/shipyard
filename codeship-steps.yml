@@ -21,7 +21,7 @@
     -
       service: shipyard
       name: Surge Preview
-      command: sh ./ci/deploy_preview.sh
+      command: ./_script/ci/surge_preview.sh
 -
   name: Review
   type: manual
@@ -30,7 +30,7 @@
     -
       service: shipyard
       name: Percy
-      command: percy snapshot --enable_javascript --widths "375,768,1280" _site/
+      command: ./_script/ci/percy.sh
 -
   name: Deploy
   type: parallel
@@ -39,7 +39,7 @@
     -
       service: shipyard
       name: Update Percy
-      command: percy snapshot --enable_javascript --widths "375,768,1280" _site/
+      command: ./_script/ci/percy.sh
     -
       service: shipyard
       name: GitHub Pages
