@@ -25,7 +25,7 @@
 -
   name: Review
   type: manual
-  exclude: develop
+  exclude: ^(master|develop)
   steps:
     -
       service: shipyard
@@ -34,7 +34,7 @@
 -
   name: Deploy
   type: parallel
-  tag: develop
+  tag: ^(master|develop)
   steps:
     -
       service: shipyard
