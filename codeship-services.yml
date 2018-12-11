@@ -1,7 +1,17 @@
-testing:
-  build:
-    dockerfile: ./ci/Dockerfile.testing
-  encrypted_env_file: ./ci/secrets.encrypted
-package:
-  build:
-    dockerfile: ./ci/Dockerfile.package
+jekyll:
+  build: .
+  cached: true
+  encrypted_env_file: codeship.env.encrypted
+  environment:
+    - JEKYLL_VERSION=3.8.5
+    - JEKYLL_UID=1001
+    - JEKYLL_GID=1001
+  volumes:
+    - .:/srv/jekyll
+
+shipyard:
+  build: .
+  cached: true
+  encrypted_env_file: codeship.env.encrypted
+  volumes_from:
+    - jekyll
