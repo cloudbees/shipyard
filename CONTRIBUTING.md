@@ -71,3 +71,19 @@ Once the release process is complete, and you're confident it is correct, you sh
 ```
 $> npm publish --access public
 ```
+
+## Publishing the styleguide
+
+Once you have published a new version of the npm package, it's time to update the styleguide.
+
+Make sure you have master checked out and run a jekyll build **with the baseurl flag set like so**.
+
+```
+bundle exec jekyll build --baseurl /shipyard
+```
+
+The additional `/shipyard` argument builds the styleguide so it can be hosted properly by GitHub Pages.
+
+Once you have produced a build under the `_site` directory, you can commit and push these files to the `gh-pages` branch to complete the deployment of the new styleguide.
+
+Because the `gh-pages` branch has only the static site committed, it is much easier to clone that specific branch to a different location and manage it independently from your main repository.

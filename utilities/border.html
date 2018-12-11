@@ -1,12 +1,12 @@
-<html lang="en" class="env- utilities-border">
+<html lang="en" class="env-production utilities-border">
   <head>
     <meta charset="utf-8" />
     <title>Border Utilities</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#20a5a8" />
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/fonts-196f31f91b382335f739bd2ed073b0f472af089c304a43190496df609ffb197d.css">
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/syntax-e3516b4439791d437ffaef80ea69a6ba44fe787936b05fff1a575dd56cd0854d.css">
-    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/application-bbb609a02032e1b5824cd905074c202292dcaf8af35060401001f590d4ea9444.css">
+    <link media="screen" rel="stylesheet" type="text/css" integrity="sha256-ykLyqEsmScn8zNFsxR+20fkVuioJiNMLkcO4TYcis2k=" crossorigin="anonymous" href="/shipyard/assets/fonts-ca42f2a84b2649c9fcccd16cc51fb6d1f915ba2a0988d30b91c3b84d8722b369.css">
+    <link media="screen" rel="stylesheet" type="text/css" integrity="sha256-QCZr3H/ZlbjN2u7as4F9ePzFrtGJsdaiOmgntDe3FIg=" crossorigin="anonymous" href="/shipyard/assets/syntax-40266bdc7fd995b8cddaeedab3817d78fcc5aed189b1d6a23a6827b437b71488.css">
+    <link media="screen" rel="stylesheet" type="text/css" integrity="sha256-L4QORr5qGYGakGuq7OTn3wpyZFIuRFxsWcFj99DG0VY=" crossorigin="anonymous" href="/shipyard/assets/application-2f840e46be6a19819a906baaece4e7df0a7264522e445c6c59c163f7d0c6d156.css">
   </head>
   <body>
     <header class="header z-100">
@@ -193,171 +193,112 @@
 
 <hr />
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nc">.rounded</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-0</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-xs</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">2px</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-sm</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">3px</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-md</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-lg</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">5px</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-pill</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">999px</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-top</span>  <span class="p">{</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-bottom</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-top-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-top-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-bottom-left</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-<span class="nc">.rounded-bottom-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-
-<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>   <span class="m">576px</span><span class="p">)</span>  <span class="p">{</span> 
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-0</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-xs</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">2px</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-sm</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">3px</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-md</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-lg</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">5px</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-pill</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">999px</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-top</span>  <span class="p">{</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-bottom</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-top-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-top-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-bottom-left</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.sm</span><span class="o">:</span> <span class="nt">rounded-bottom-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
- <span class="p">}</span>
-
-
-<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>   <span class="m">768px</span><span class="p">)</span>  <span class="p">{</span> 
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-0</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-xs</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">2px</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-sm</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">3px</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-md</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-lg</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">5px</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-pill</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">999px</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-top</span>  <span class="p">{</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-bottom</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-top-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-top-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-bottom-left</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.md</span><span class="o">:</span> <span class="nt">rounded-bottom-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
- <span class="p">}</span>
-
-
-<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>   <span class="m">992px</span><span class="p">)</span>  <span class="p">{</span> 
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-0</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-xs</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">2px</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-sm</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">3px</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-md</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-lg</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">5px</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-pill</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">999px</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-top</span>  <span class="p">{</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-bottom</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-top-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-top-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-bottom-left</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.lg</span><span class="o">:</span> <span class="nt">rounded-bottom-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
- <span class="p">}</span>
-
-
-<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>   <span class="m">1200px</span><span class="p">)</span>  <span class="p">{</span> 
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-0</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-xs</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">2px</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-sm</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">3px</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-md</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">4px</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-lg</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">5px</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-pill</span>  <span class="p">{</span>  <span class="nl">border-radius</span><span class="p">:</span>  <span class="m">999px</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-top</span>  <span class="p">{</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-bottom</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-top-left</span>  <span class="p">{</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-top-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-bottom-left</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-right-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
-  <span class="nc">.xl</span><span class="o">:</span> <span class="nt">rounded-bottom-right</span>  <span class="p">{</span>  <span class="nl">border-top-left-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-top-right-radius</span><span class="p">:</span>  <span class="m">0</span><span class="p">;</span>  <span class="nl">border-bottom-left-radius</span><span class="p">:</span>  <span class="m">0</span>  <span class="p">}</span>
-
- <span class="p">}</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nc">.border-none</span><span class="o">,</span>
+<span class="nc">.last-child</span><span class="nd">:border-none:last-child</span> <span class="p">{</span> <span class="nl">border-width</span><span class="p">:</span> <span class="m">0</span> <span class="p">}</span>
+<span class="nc">.border-thin</span> <span class="p">{</span> <span class="nl">border-width</span><span class="p">:</span> <span class="m">1px</span> <span class="p">}</span>
+<span class="nc">.border-thick</span> <span class="p">{</span> <span class="nl">border-width</span><span class="p">:</span> <span class="m">2px</span> <span class="p">}</span>
+<span class="nc">.border-solid</span><span class="o">,</span>
+<span class="nc">.last-child</span><span class="nd">:border-solid:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+<span class="nc">.border-none</span><span class="o">,</span>
+<span class="nc">.last-child</span><span class="nd">:border-none:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="nc">.border-t-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+<span class="nc">.border-b-solid</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+<span class="nc">.border-l-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+<span class="nc">.border-r-solid</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+<span class="nc">.border-a-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+<span class="nc">.border-x-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+<span class="nc">.border-y-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+<span class="nc">.border-t-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="nc">.border-b-none</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="nc">.border-l-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="nc">.border-r-none</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="nc">.border-a-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="nc">.border-x-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="nc">.border-y-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">576px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.sm</span><span class="nd">:border-solid</span><span class="o">,</span>
+  <span class="nc">.sm</span><span class="nd">:last-child:border-solid:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-none</span><span class="o">,</span>
+  <span class="nc">.sm</span><span class="nd">:last-child:border-none:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-t-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-b-solid</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-l-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-r-solid</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-a-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-x-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-y-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-t-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-b-none</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-l-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-r-none</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-a-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-x-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.sm</span><span class="nd">:border-y-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">768px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.md</span><span class="nd">:border-solid</span><span class="o">,</span>
+  <span class="nc">.md</span><span class="nd">:last-child:border-solid:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-none</span><span class="o">,</span>
+  <span class="nc">.md</span><span class="nd">:last-child:border-none:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-t-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-b-solid</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-l-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-r-solid</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-a-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-x-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-y-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-t-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-b-none</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-l-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-r-none</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-a-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-x-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.md</span><span class="nd">:border-y-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">992px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.lg</span><span class="nd">:border-solid</span><span class="o">,</span>
+  <span class="nc">.lg</span><span class="nd">:last-child:border-solid:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-none</span><span class="o">,</span>
+  <span class="nc">.lg</span><span class="nd">:last-child:border-none:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-t-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-b-solid</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-l-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-r-solid</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-a-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-x-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-y-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-t-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-b-none</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-l-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-r-none</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-a-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-x-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.lg</span><span class="nd">:border-y-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span>  <span class="m">1200px</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nc">.xl</span><span class="nd">:border-solid</span><span class="o">,</span>
+  <span class="nc">.xl</span><span class="nd">:last-child:border-solid:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-none</span><span class="o">,</span>
+  <span class="nc">.xl</span><span class="nd">:last-child:border-none:last-child</span> <span class="p">{</span> <span class="nl">border-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-t-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-b-solid</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-l-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-r-solid</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-a-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-x-solid</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-y-solid</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">solid</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">solid</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-t-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-b-none</span> <span class="p">{</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-l-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-r-none</span> <span class="p">{</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-a-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-x-none</span> <span class="p">{</span> <span class="nl">border-left-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-right-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+  <span class="nc">.xl</span><span class="nd">:border-y-none</span> <span class="p">{</span> <span class="nl">border-top-style</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span> <span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">none</span> <span class="p">}</span>
+<span class="p">}</span>
 </code></pre></div></div>
 
 <hr />
@@ -381,6 +322,6 @@
     <footer class="align-center text-lightest">
       &copy; Shipyard Framework 2018
     </footer>
-    <script type="text/javascript" src="/shipyard/assets/application-97485768e1d63e63e3adecd1b96ec9642767cce96b42fe8d479ae0aa7ba647c8.js"></script>
+    <script type="text/javascript" integrity="sha256-1GmHfsUW2R4BXqI5kmQqCGNDiCxQmkKzAH+Zp38V83E=" crossorigin="anonymous" src="/shipyard/assets/application-d469877ec516d91e015ea23992642a086343882c509a42b3007f99a77f15f371.js"></script>
   </body>
 </html>
