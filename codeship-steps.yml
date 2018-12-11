@@ -20,6 +20,7 @@
       command: ./_script/ci/htmlproofer.sh
     -
       service: shipyard
+      exclude: ^(master|develop)
       name: Surge Preview
       command: ./_script/ci/surge_preview.sh
 -
