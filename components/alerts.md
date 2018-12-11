@@ -12,20 +12,20 @@ sass_file: shipyard/components/_alerts
 Useful when you want to display an alert for a predetermined amount of time.
 {: .section-description }
 
-{% alert :success, :dismissible, id: 'timed-alert-5s', class: 'alert-closed' %}
+<div id="timed-alert-5s" class="alert alert-success alert-dismissible alert-closed">
   Pack your bags! You'll be on the next flight to Hawaii.
   <span class="alert-timer alert-timer-on" data-duration="5"></span>
-{% endalert %}
+</div>
 
-{% alert :success, :dismissible, id: 'timed-alert-10s', class: 'alert-closed' %}
+<div id="timed-alert-10s" class="alert alert-success alert-dismissible alert-closed">
   Pack your bags! You'll be on the next flight to Tahiti.
   <span class="alert-timer alert-timer-on" data-duration="10"></span>
-{% endalert %}
+</div>
 
-{% alert :success, :dismissible, id: 'timed-alert-15s', class: 'alert-closed' %}
+<div id="timed-alert-15s" class="alert alert-success alert-dismissible alert-closed">
   Pack your bags! You'll be on the next flight to Corsica.
   <span class="alert-timer alert-timer-on" data-duration="15"></span>
-{% endalert %}
+</div>
 
 <button class="btn btn-primary mr-8" alert-trigger="#timed-alert-5s">5 Seconds</button>
 <button class="btn btn-primary mr-8" alert-trigger="#timed-alert-10s">10 Seconds</button>
@@ -37,10 +37,10 @@ Useful when you want to display an alert for a predetermined amount of time.
 Used to display notes, tips, and other non-critical information.
 {: .section-description }
 
-{% alert :dismissible %}
+<div class="alert alert-dismissible">
   Ten other people are also viewing tickets for <a href="#">this flight</a>.
   Use the code <code class="code-inline">Travel_Light_2017</code> before you book your flight.
-{% endalert %}
+</div>
 
 ---
 
@@ -48,11 +48,11 @@ Used to display notes, tips, and other non-critical information.
 Used to display notes, tips, and other non-critical information.
 {: .section-description }
 
-{% alert %}
+<div class="alert">
   Ten other people are also viewing tickets for <a href="#">this flight</a>.
   Use the code <code class="code-inline">Travel_Light_2017</code> before you book your flight.
   <button class="btn btn-sm alert-cta">Call to Action</button>
-{% endalert %}
+</div>
 
 ---
 
@@ -60,11 +60,11 @@ Used to display notes, tips, and other non-critical information.
 Useful when drawing attention to non-critical information or actions we want the user to take.
 {: .section-description }
 
-{% alert :info %}
+<div class="alert alert-info">
   Ten other people are also viewing tickets for <a href="#">this flight</a>.
   Use the code <code class="code-inline">Travel_Light_2017</code> before you book your flight.
   <button class="btn btn-sm alert-cta">Call to Action</button>
-{% endalert %}
+</div>
 
 ---
 
@@ -72,11 +72,11 @@ Useful when drawing attention to non-critical information or actions we want the
 Useful when drawing attention to interactions that have produced successful results.
 {: .section-description }
 
-{% alert :success %}
+<div class="alert alert-success">
   Pack your bags! You'll be on the next flight to Hawaii.
   Use the code <code class="code-inline">Travel_Light_2017</code> on your next flight. In the meantime you can <a href="#">invite a friend</a> to this flight.
   <button class="btn btn-sm alert-cta">Call to Action</button>
-{% endalert %}
+</div>
 
 ---
 
@@ -84,11 +84,11 @@ Useful when drawing attention to interactions that have produced successful resu
 Useful when drawing attention to critical, time-sensitive information &mdash; even if nothing has gone wrong.
 {: .section-description }
 
-{% alert :warning %}
+<div class="alert alert-warning">
   There are only 2 seats left on this flight! We recommend to <a href="#">book your tickets</a> as soon as possible.
   Use the code <code class="code-inline">Travel_Light_2017</code> before you book your flight.
   <button class="btn btn-sm alert-cta">Call to Action</button>
-{% endalert %}
+</div>
 
 ---
 
@@ -96,11 +96,11 @@ Useful when drawing attention to critical, time-sensitive information &mdash; ev
 Useful when drawing attention to something that has gone critically wrong.
 {: .section-description }
 
-{% alert :error %}
+<div class="alert alert-error">
   This flight is now sold out. Let's get you on the <a href="#">next flight to Kauai</a>.
   We hope the code <code class="code-inline">Travel_Light_2017</code> will be useful for your next flight.
   <button class="btn btn-sm alert-cta">Call to Action</button>
-{% endalert %}
+</div>
 
 ---
 

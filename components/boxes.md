@@ -12,9 +12,9 @@ sass_file: shipyard/components/_boxes
 Useful when needing to draw extra attention to a particular group of content.
 {: .section-description }
 
-{% box %}
+<div class="box">
   <p>Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-{% endbox %}
+</div>
 
 ---
 
@@ -22,9 +22,9 @@ Useful when needing to draw extra attention to a particular group of content.
 Useful when linking important components to another page or another group of content.
 {: .section-description }
 
-{% box :link %}
+<div class="box box-link">
   <p>Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-{% endbox %}
+</div>
 
 ---
 
@@ -32,9 +32,9 @@ Useful when linking important components to another page or another group of con
 Useful when linking important components to another page or another group of content.
 {: .section-description }
 
-{% box :link, :link_active %}
+<div class="box box-link box-link-active">
   <p>Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-{% endbox %}
+</div>
 
 ---
 
@@ -42,9 +42,9 @@ Useful when linking important components to another page or another group of con
 Useful when highlighting a linked box that's been selected by the user.
 {: .section-description }
 
-{% box :link, :link_selected %}
+<div class="box box-link box-link-selected">
   <p>Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-{% endbox %}
+</div>
 
 ---
 
@@ -52,9 +52,9 @@ Useful when highlighting a linked box that's been selected by the user.
 Useful when connecting secondary information to the default box styles.
 {: .section-description }
 
-{% box :secondary %}
+<div class="box box-secondary">
   <p>Donec id elit non mi porta gravida at eget metus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
-{% endbox %}
+</div>
 
 ---
 
