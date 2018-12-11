@@ -4,6 +4,7 @@ set -e # halt script on error
 (
   cd _assets/shipyard/
   yarn install
+  yarn build:dist
   chown -R jekyll:jekyll ./
 )
 
