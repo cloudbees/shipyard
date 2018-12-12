@@ -18,8 +18,8 @@ base_colors: [Black, White]
     {% for shade in page.shades %}
       <li class="col col-50 sm:col-25 md:col-0 pl-4 pr-4 sm:pl-8 sm:pr-8 mb-8 sm:mb-16 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
         <div class="shade-box box bg-color {{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
-          <div class="shade-color col-center bg-color {{ color | color_css_class: shade }}">
-            <div class="shade-hex text-xxl bold" shade-color></div>
+          <div class="shade-color col-center bg-color {{ color | color_css_class: shade }}" shade-color>
+            <div class="shade-hex text-xxl bold"></div>
           </div>
           <p class="shade-text text-sm medium {{ color | color_css_class: shade }}">
             .{{ color | color_css_class: shade }}
@@ -35,7 +35,9 @@ base_colors: [Black, White]
   {% for color in page.base_colors %}
     <li class="col pl-4 pr-4 sm:pl-8 sm:pr-8 mb-8 sm:mb-16 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
       <div class="shade-box box bg-color {{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
-        <div class="shade-color col-center text-xxl bold bg-color {{ color | color_css_class: shade }}" shade-color></div>
+        <div class="shade-color col-center bg-color {{ color | color_css_class: shade }}" shade-color>
+          <div class="shade-hex text-xxl bold"></div>
+        </div>
         <p class="shade-text text-sm medium {{ color | color_css_class: shade }}">
           .{{ color | color_css_class }}
         </p>

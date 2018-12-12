@@ -1,7 +1,7 @@
 class ShadeColor extends Shipyard {
   constructor (el) {
     super(el)
-    this.html(this.rgbToHex(this.css('background-color')))
+    this.el.children[0].innerHTML = this.rgbToHex(this.css('background-color'))
   }
 
   rgbToHex (rgb) {
