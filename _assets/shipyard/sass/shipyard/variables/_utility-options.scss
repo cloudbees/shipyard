@@ -244,13 +244,13 @@ $shipyard-utility-defaults: (
   // Shipyard: Min-Height & Width Utilities
   min-height: (
     prefix: 'min-h',
-    responsive: false,
+    responsive: true,
     values: ('none': none, '100\\%': 100%)
   ),
 
   min-width: (
     prefix: 'min-w',
-    responsive: false,
+    responsive: true,
     values: ('none': none, '100\\%': 100%)
   ),
 
@@ -498,6 +498,7 @@ $shipyard-utility-defaults: (
   // Shipyard: Transform Utility
   transform: (
     prefix: null,
+    states: (hover),
     responsive: true,
     values: (
       'translate-0': translate(0),
