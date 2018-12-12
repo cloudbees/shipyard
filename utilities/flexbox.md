@@ -1,9 +1,11 @@
 ---
-title: Flex Direction Utilities
-sass_file: shipyard/utilities/_flex-direction
+title: Grid Utilities
+sass_file: shipyard/utilities/_flexbox
 ---
 
 {% include page-heading.html page=page %}
+
+---
 
 ```css
 {% sass_output -%}

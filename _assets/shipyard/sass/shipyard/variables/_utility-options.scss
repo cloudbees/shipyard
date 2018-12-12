@@ -384,18 +384,6 @@ $shipyard-utility-defaults: (
     values: (scroll: auto)
   ),
 
-  // Shipyard: Flex Direction Utility
-  flex-direction: (
-    prefix: 'flex',
-    responsive: true,
-    values: (
-      'row': row,
-      'row-reverse': row-reverse,
-      'col': column,
-      'col-reverse': column-reverse
-    )
-  ),
-
   // Shipyard: Border-Radius Utility
   border-radius: (
     prefix: 'rounded',
@@ -530,6 +518,68 @@ $shipyard-utility-defaults: (
     prefix: 'v-align',
     responsive: false,
     values: (baseline, top, middle, bottom)
+  ),
+
+  // Shipyard: Grid Utilities
+  justify-content: (
+    prefix: 'justify',
+    values: (
+      'center': center,
+      'start': start,
+      'end': end,
+      'flex-start': flex-start,
+      'flex-end': flex-end,
+      'left': left,
+      'right': right,
+      'space-between': space-between,
+      'space-around': space-around,
+      'space-evenly': space-evenly,
+      'stretch': stretch,
+      'inherit': inherit,
+      'initial': initial,
+      'unset': unset
+    )
+  ),
+
+  align-items: (
+    prefix: 'align-items',
+    responsive: false,
+    values: (left, right, center)
+  ),
+
+  flex-basis: (
+    prefix: 'flex-basis',
+    responsive: false,
+    values: (0)
+  ),
+
+  flex-grow: (
+    prefix: 'flex-grow',
+    responsive: false,
+    values: (1)
+  ),
+
+  flex-shrink: (
+    prefix: 'flex',
+    responsive: false,
+    values: (1)
+  ),
+
+  flex-direction: (
+    prefix: 'flex',
+    responsive: true,
+    values: (
+      'row': row,
+      'row-reverse': row-reverse,
+      'col': column,
+      'col-reverse': column-reverse
+    )
+  ),
+
+  flex-wrap: (
+    prefix: 'flex',
+    responsive: false,
+    values: (wrap, nowrap)
   ),
 
   // Shipyard: Visibilty Utility
