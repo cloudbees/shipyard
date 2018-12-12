@@ -22,40 +22,6 @@ hr
   @extend .text-light
   @extend .mb-16
 
-// Utilities: Colors
-+component('shade')
-  &-list
-    +respond-to(margin-left, (all: -5px, sm: -10px))
-    +respond-to(margin-right, (all: -5px, sm: -10px))
-  &-item
-    text-align: center
-  &-box
-    height: 165px
-    padding: 5px
-    white-space: nowrap
-    &:hover
-      cursor: default
-    &:not(:hover)
-      background: #fff !important
-    &.bg-white
-      background: $gray-darkest !important
-  &-color
-    height: 120px
-    border-radius: 2px 2px 0 0
-    transition: 300ms color ease
-  &-hex
-    +when('box:hover')
-      color: #fff
-    +when('light:hover, white:hover')
-      color: $text-darker
-  &-text
-    line-height: 40px
-    transition: 300ms color ease
-    +when('box:hover')
-      color: rgba(#fff,.7)
-    +when('light:hover')
-      color: $text-lighter
-
 +component('utilities-margin-padding')
   &-box
     line-height: 40px

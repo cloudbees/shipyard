@@ -14,7 +14,7 @@ base_colors: [black, white]
 ---
 
 {% for color in page.primary_colors %}
-  <ul class="col-container shade-list mb-24" shade-list>
+  <ul class="col-container mb-24" shade-list>
     {% for shade in page.shades %}
       {% assign color-shade = color | append: '-' | append: shade | replace: '-base', '' %}
       {% include color-shade.html box-color="white" color=color-shade text-color="text-dark" hover-text-color="text-lighter" %}
@@ -22,7 +22,7 @@ base_colors: [black, white]
   </ul>
 {% endfor %}
 
-<ul class="col-container shade-list mb-24" shade-list>
+<ul class="col-container mb-24" shade-list>
   {% include color-shade.html box-color="white" color="black" text-color="white" hover-text-color="white-70" %}
   {% include color-shade.html box-color="black" color="white" text-color="black" hover-text-color="black-70" %}
 </ul>
