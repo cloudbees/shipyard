@@ -57,6 +57,12 @@ $shipyard-utility-defaults: (
     values: ('': currentColor)
   ),
 
+  stroke: (
+    prefix: 'stroke',
+    responsive: false,
+    values: ('': currentColor)
+  ),
+
   border-color: (
     prefix: 'border',
     responsive: false,

@@ -17,8 +17,10 @@ base_colors: [Black, White]
   <ul class="col-container shade-list mb-24" shade-list>
     {% for shade in page.shades %}
       <li class="col col-50 sm:col-25 md:col-0 pl-4 pr-4 sm:pl-8 sm:pr-8 mb-8 sm:mb-16 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
-        <div class="shade-box box bg-{{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
-          <div class="shade-color col-center text-xxl bold bg-{{ color | color_css_class: shade }}" shade-color></div>
+        <div class="shade-box box bg-color {{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
+          <div class="shade-color col-center bg-color {{ color | color_css_class: shade }}">
+            <div class="shade-hex text-xxl bold" shade-color></div>
+          </div>
           <p class="shade-text text-sm medium {{ color | color_css_class: shade }}">
             .{{ color | color_css_class: shade }}
           </p>
@@ -32,8 +34,8 @@ base_colors: [Black, White]
   {% assign shade = 'Base' %}
   {% for color in page.base_colors %}
     <li class="col pl-4 pr-4 sm:pl-8 sm:pr-8 mb-8 sm:mb-16 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
-      <div class="shade-box box bg-{{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
-        <div class="shade-color col-center text-xxl bold bg-{{ color | color_css_class: shade }}" shade-color></div>
+      <div class="shade-box box bg-color {{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
+        <div class="shade-color col-center text-xxl bold bg-color {{ color | color_css_class: shade }}" shade-color></div>
         <p class="shade-text text-sm medium {{ color | color_css_class: shade }}">
           .{{ color | color_css_class }}
         </p>
@@ -57,7 +59,7 @@ base_colors: [Black, White]
   </div>
   <div class="col">
     <h3>Inverse Text Shades</h3>
-    <div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-gray-dark mt-8">
+    <div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-color gray-dark mt-8">
       <ul class="list medium">
         {% for shade in page.white_shades %}
           <li class="white{{ '-' | append: shade | replace: '-100', '' }}">
