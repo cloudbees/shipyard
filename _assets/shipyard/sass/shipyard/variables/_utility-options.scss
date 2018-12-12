@@ -47,7 +47,7 @@ $shipyard-utility-defaults: (
   color: (
     prefix: null,
     responsive: true,
-    states: (hover),
+    states: (hover, group-hover),
     values: $shipyard-colors
   ),
 

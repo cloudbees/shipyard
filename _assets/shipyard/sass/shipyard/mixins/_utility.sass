@@ -24,11 +24,15 @@
       .#{utility-class($prefix, $class)}
         #{$name}: $value
 
-      // Print out the utility states for all screens
+      // Print out the utility states for all screens (e.g. hover, focus, last-child, group-hover, etc)
       @if $utility-states
         @each $state in $utility-states
-          .#{$state + '\\:' + utility-class($prefix, $class) + ':' + $state}
-            @extend .#{utility-class($prefix, $class)}
+          @if $state == group-hover
+            .group:hover .#{$state + '\\:' + utility-class($prefix, $class)}
+              @extend .#{utility-class($prefix, $class)}
+          @else
+            .#{$state + '\\:' + utility-class($prefix, $class) + ':' + $state}
+              @extend .#{utility-class($prefix, $class)}
 
     // Print out variants like: left, right, top, bottom
     @if $utility-variants
@@ -58,11 +62,15 @@
             .#{$breakpoint + '\\:' + utility-class($prefix, $class)}
               #{$name}: $value
 
-            // Print out the utility states for all screens
+            // Print out the utility states for all breakpoints (e.g. hover, focus, last-child, group-hover, etc)
             @if $utility-states
               @each $state in $utility-states
-                .#{$breakpoint + '\\:' + $state + '\\:' + utility-class($prefix, $class) + ':' + $state}
-                  @extend .#{$breakpoint + '\\:' + utility-class($prefix, $class)}
+                @if $state == group-hover
+                  .group:hover .#{$breakpoint + '\\:' + $state + '\\:' + utility-class($prefix, $class)}
+                    @extend .#{$breakpoint + '\\:' + utility-class($prefix, $class)}
+                @else
+                  .#{$breakpoint + '\\:' + $state + '\\:' + utility-class($prefix, $class) + ':' + $state}
+                    @extend .#{$breakpoint + '\\:' + utility-class($prefix, $class)}
 
           // Print out variants like: left, right, top, bottom
           @if $utility-variants
