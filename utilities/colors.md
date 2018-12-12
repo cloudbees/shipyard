@@ -4,9 +4,9 @@ description: Shipyard includes **9 standard colors** by default, and each color 
 sass_file: shipyard/utilities/_colors
 white_shades: [100,90,80,70,60,50,40]
 text_shades: [darkest, darker, dark, normal, light, lighter, lightest]
-primary_colors: [Gray, Blue, Teal, Green, Yellow, Orange, Red, Coral, Purple]
-shades: [Lightest, Lighter, Light, Base, Dark, Darker, Darkest]
-base_colors: [Black, White]
+primary_colors: [gray, blue, teal, green, yellow, orange, red, coral, purple]
+shades: [lightest, lighter, light, base, dark, darker, darkest]
+base_colors: [black, white]
 ---
 
 {% include page-heading.html page=page %}
@@ -16,34 +16,15 @@ base_colors: [Black, White]
 {% for color in page.primary_colors %}
   <ul class="col-container shade-list mb-24" shade-list>
     {% for shade in page.shades %}
-      <li class="col col-50 sm:col-25 md:col-0 pl-4 pr-4 sm:pl-8 sm:pr-8 mb-8 sm:mb-16 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
-        <div class="shade-box box bg-color {{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
-          <div class="shade-color col-center bg-color {{ color | color_css_class: shade }}" shade-color>
-            <div class="shade-hex text-xxl bold"></div>
-          </div>
-          <p class="shade-text text-sm medium {{ color | color_css_class: shade }}">
-            .{{ color | color_css_class: shade }}
-          </p>
-        </div>
-      </li>
+      {% assign color-shade = color | append: '-' | append: shade | replace: '-base', '' %}
+      {% include color-shade.html box-color="white" color=color-shade text-color="text-dark" hover-text-color="text-lighter" %}
     {% endfor %}
   </ul>
 {% endfor %}
 
 <ul class="col-container shade-list mb-24" shade-list>
-  {% assign shade = 'Base' %}
-  {% for color in page.base_colors %}
-    <li class="col pl-4 pr-4 sm:pl-8 sm:pr-8 mb-8 sm:mb-16 shade-item shade-{{ shade | downcase }} shade-{{ color | color_css_class: shade }}">
-      <div class="shade-box box bg-color {{ color | color_css_class: shade }} shade-{{ shade | downcase | replace: 'er', '' | replace: 'est', '' }}">
-        <div class="shade-color col-center bg-color {{ color | color_css_class: shade }}" shade-color>
-          <div class="shade-hex text-xxl bold"></div>
-        </div>
-        <p class="shade-text text-sm medium {{ color | color_css_class: shade }}">
-          .{{ color | color_css_class }}
-        </p>
-      </div>
-    </li>
-  {% endfor %}
+  {% include color-shade.html box-color="white" color="black" text-color="white" hover-text-color="white-70" %}
+  {% include color-shade.html box-color="black" color="white" text-color="black" hover-text-color="black-70" %}
 </ul>
 
 ---
@@ -61,7 +42,7 @@ base_colors: [Black, White]
   </div>
   <div class="col">
     <h3>Inverse Text Shades</h3>
-    <div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-color gray-dark mt-8">
+    <div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-color gray-darker mt-8">
       <ul class="list medium">
         {% for shade in page.white_shades %}
           <li class="white{{ '-' | append: shade | replace: '-100', '' }}">

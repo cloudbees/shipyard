@@ -47,14 +47,14 @@ hr
     +when('box:hover')
       color: #fff
     +when('light:hover, white:hover')
-      color: $gray-darker
+      color: $text-darker
   &-text
     line-height: 40px
     transition: 300ms color ease
     +when('box:hover')
       color: rgba(#fff,.7)
     +when('light:hover')
-      color: rgba($gray-darker,.6)
+      color: $text-lighter
 
 +component('utilities-margin-padding')
   &-box
