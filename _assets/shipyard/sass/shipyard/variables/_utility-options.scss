@@ -1,11 +1,60 @@
 $shipyard-utility-defaults: (
 
+  // Animation Utilities
+  animation-name: (
+    prefix: 'animate',
+    responsive: false,
+    values: (inherit)
+  ),
+
+  animation-duration: (
+    prefix: 'animate',
+    responsive: false,
+    values: ()
+  ),
+
+  animation-direction: (
+    prefix: 'animate',
+    responsive: false,
+    values: (reverse, alternate, alternate-reverse)
+  ),
+
+  animation-timing-function: (
+    prefix: 'animate',
+    responsive: false,
+    values: (linear, ease)
+  ),
+
+  animation-fill-mode: (
+    prefix: 'animate-fill',
+    responsive: false,
+    values: (none, forwards, backwards)
+  ),
+
+  animation-delay: (
+    prefix: 'delay',
+    responsive: false,
+    values: ()
+  ),
+
+  animation-iteration-count: (
+    prefix: 'animate',
+    responsive: false,
+    values: (infinite)
+  ),
+
   // Shipyard: Color Utilities
   color: (
     prefix: null,
     responsive: true,
     states: (hover),
     values: $shipyard-colors
+  ),
+
+  fill: (
+    prefix: 'fill',
+    responsive: false,
+    values: ('': currentColor)
   ),
 
   border-color: (
@@ -16,9 +65,8 @@ $shipyard-utility-defaults: (
 
   background-color: (
     prefix: 'bg',
-    responsive: true,
-    states: (hover),
-    values: $shipyard-colors
+    responsive: false,
+    values: ('color': currentColor)
   ),
 
   background-image: (
@@ -68,6 +116,13 @@ $shipyard-utility-defaults: (
       'active': 0 0 4px 1px rgba($green, .75),
       'none': none
     )
+  ),
+
+  // Shipyard: Filter Utility
+  filter: (
+    prefix: 'filter',
+    responsive: false,
+    values: ()
   ),
 
   // Shipyard: Breakpoints
@@ -209,10 +264,10 @@ $shipyard-utility-defaults: (
 
   // Shipyard: Font-Family Utility
   font-family: (
-    prefix: null,
+    prefix: 'font',
     responsive: false,
     values: (
-      'sans-serif': sans-serif,
+      'default': sans-serif,
       'monospace': monospace
     )
   ),
