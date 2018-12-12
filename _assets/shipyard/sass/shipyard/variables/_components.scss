@@ -41,15 +41,15 @@ $component-defaults: (
     background: $gray-lighter,
     border-radius: $border-radius,
     info: (
-      color: $blue-darkest,
+      color: $blue-darker,
       background: $blue-lighter
     ),
     success: (
-      color: $green-darkest,
+      color: $green-darker,
       background: $green-lighter
     ),
     warning: (
-      color: $yellow-darkest,
+      color: $yellow-darker,
       background: $yellow-lighter
     )
   ),
