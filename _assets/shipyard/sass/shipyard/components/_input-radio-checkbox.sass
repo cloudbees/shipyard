@@ -18,7 +18,7 @@
     &:hover, .input:hover ~ &
       color: $blue-dark
     +when('radio:checked ~, checkbox:checked ~')
-      color: $green-dark
+      color: $green-darker
     +when('radio-caution:checked ~, checkbox-caution:checked ~')
       color: $red-dark
 
@@ -31,7 +31,7 @@
         opacity: 1
       +when('radio:checked ~, checkbox:checked ~')
         opacity: 1
-        color: lighten($green, 10%)
+        color: $green
 
   &-checkbox, &-radio
     top: -1px
@@ -53,7 +53,7 @@
     // Input: Checked State
     &:checked
       &, .btn:hover &
-        +btn-color($green)
+        +btn-color($green-dark)
 
       // Input: Checked State Icon
       &::after
@@ -77,7 +77,7 @@
           opacity: 1
           +btn-color(#fff)
           &::after
-            +icon-color($green-dark)
+            +icon-color($green-darker)
 
   // Radio Button
   &-radio

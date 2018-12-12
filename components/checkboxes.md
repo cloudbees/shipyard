@@ -82,7 +82,7 @@ Useful when you want to group a series of checkboxes together in a list (stacked
 Useful when the checkboxes are displayed on a dark background.
 {: .section-description }
 
-<div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-gray-darker">
+<div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-color gray-darkest">
   <ul class="input-list">
     {% for label in page.labels %}
       <li class="input-item">
