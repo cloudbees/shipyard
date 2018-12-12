@@ -5,6 +5,9 @@
   right: 0
   position: fixed
   transition: height 250ms ease, background-color 250ms ease
+  background: #fff
+  color: $text-color-light
+  box-shadow: $box-shadow
   +respond-to(overflow, (all: hidden, sm: visible))
   +respond-to(height, (all: 50px, sm: 60px, md: 70px))
   +respond-to(text-align, (all: center, sm: left))
@@ -13,6 +16,7 @@
     height: 100%
 
   +sub-component('logo')
+    font-weight: $bold
     display: inline-block
     +respond-to(margin, (all: 0 auto, sm: 0))
     +respond-to(font-size, (all: 20px, sm: 24px))
@@ -21,6 +25,7 @@
       color: $blue-darkest
 
   +sub-component('list')
+    font-weight: $medium
     +respond-to(float, (sm: right))
     +respond-to(margin-right, (sm: -15px))
 

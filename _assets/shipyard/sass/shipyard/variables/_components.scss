@@ -1,15 +1,4 @@
 $component-defaults: (
-  header: (
-    background: #fff,
-    color: $text-color-light,
-    box-shadow: $box-shadow,
-    logo: (
-      font-weight: $bold
-    ),
-    list: (
-      font-weight: $medium
-    )
-  ),
   input: (
     required-asterisk: (
       top: 4px,
