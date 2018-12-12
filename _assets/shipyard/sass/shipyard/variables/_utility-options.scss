@@ -122,7 +122,7 @@ $shipyard-utility-defaults: (
   filter: (
     prefix: 'filter',
     responsive: false,
-    values: ()
+    values: (none, inherit)
   ),
 
   // Shipyard: Breakpoints
