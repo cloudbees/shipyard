@@ -3,7 +3,7 @@ title: Border Utilities
 description: Useful when you need to add a border to any object.
 sass_file: shipyard/utilities/_border
 examples: ['-a', '-x', '-y', '-t', '-b', '-r', '-l']
-css: align-center bg-white p-16 border gray-light
+css: align-center bg-white p-16 gray-light
 ---
 
 {% include page-heading.html page=page %}
@@ -28,7 +28,7 @@ Useful for adding 1px borders to any object.
 
 ```html
 {% for example in page.examples -%}
-<div class="border border-thin {{ 'border' | append: example | append: '-solid' }}"><!-- .{{ 'border' | append: example | append: '-solid' }} --></div>
+<div class="border-thin {{ 'border' | append: example | append: '-solid' }}"><!-- .{{ 'border' | append: example | append: '-solid' }} --></div>
 {% endfor -%}
 ```
 
@@ -52,7 +52,7 @@ Useful for adding 2px borders to any object.
 
 ```html
 {% for example in page.examples -%}
-<div class="border border-thick {{ 'border' | append: example | append: '-solid' }}"><!-- .{{ 'border' | append: example | append: '-solid' }} --></div>
+<div class="border-thick {{ 'border' | append: example | append: '-solid' }}"><!-- .{{ 'border' | append: example | append: '-solid' }} --></div>
 {% endfor -%}
 ```
 
