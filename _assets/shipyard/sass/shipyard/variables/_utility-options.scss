@@ -403,7 +403,7 @@ $shipyard-utility-defaults: (
   opacity: (
     prefix: 'o',
     responsive: false,
-    states: (group-hover),
+    states: (hover, group-hover),
     values: (
       '100': 1,
       '90': .9,
