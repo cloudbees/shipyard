@@ -16,7 +16,7 @@ kramdown:
       css: class
       wrap: true
       disable: false
-      css_class: 'code-block'
+      css_class: 'code-block mt-16 mb-16'
     span:
       css: class
       wrap: true
