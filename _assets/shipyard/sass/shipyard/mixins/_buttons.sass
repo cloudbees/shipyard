@@ -1,4 +1,4 @@
-@mixin btn($size: md, $position: relative, $bg: $gray)
+@mixin btn($size: md, $position: relative, $bg: $gray-dark, $bg-hover: $gray-darker)
   position: $position
   display: inline-block
   border-radius: $border-radius
@@ -14,7 +14,7 @@
   text-decoration: none
   +btn-size($size)
   +btn-color($bg, #fff)
-  +btn-hover(darken($bg, 10%), #fff)
+  +btn-hover($bg-hover, #fff)
 
 @mixin btn-color($color, $text-color: null, $border-color: null)
   background-color: $color

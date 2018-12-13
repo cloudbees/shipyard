@@ -1,24 +1,78 @@
 $shipyard-utility-defaults: (
 
+  // Animation Utilities
+  animation-name: (
+    prefix: 'animate',
+    responsive: false,
+    values: (inherit)
+  ),
+
+  animation-duration: (
+    prefix: 'animate',
+    responsive: false,
+    values: ()
+  ),
+
+  animation-direction: (
+    prefix: 'animate',
+    responsive: false,
+    values: (reverse, alternate, alternate-reverse)
+  ),
+
+  animation-timing-function: (
+    prefix: 'animate',
+    responsive: false,
+    values: (linear, ease)
+  ),
+
+  animation-fill-mode: (
+    prefix: 'animate-fill',
+    responsive: false,
+    values: (none, forwards, backwards)
+  ),
+
+  animation-delay: (
+    prefix: 'delay',
+    responsive: false,
+    values: ()
+  ),
+
+  animation-iteration-count: (
+    prefix: 'animate',
+    responsive: false,
+    values: (infinite)
+  ),
+
   // Shipyard: Color Utilities
   color: (
     prefix: null,
     responsive: true,
-    states: (hover),
+    states: (hover, group-hover),
     values: $shipyard-colors
+  ),
+
+  fill: (
+    prefix: 'fill',
+    responsive: false,
+    values: ('': currentColor)
+  ),
+
+  stroke: (
+    prefix: 'stroke',
+    responsive: false,
+    values: ('': currentColor)
   ),
 
   border-color: (
     prefix: 'border',
     responsive: false,
-    values: ('': currentColor)
+    values: ('color': currentColor)
   ),
 
   background-color: (
     prefix: 'bg',
-    responsive: true,
-    states: (hover),
-    values: $shipyard-colors
+    responsive: false,
+    values: ('color': currentColor)
   ),
 
   background-image: (
@@ -61,12 +115,24 @@ $shipyard-utility-defaults: (
     responsive: true,
     states: (hover),
     values: (
-      '': 0 1px 2px rgba($gray-darkest, .08),
-      'left': -1px 0 3px rgba($gray-darkest, .2),
-      'right': 1px 0 3px rgba($gray-darkest, .2),
+      '': 0 1px 2px rgba($black, .08),
+      'left': -1px 0 3px rgba($black, .2),
+      'right': 1px 0 3px rgba($black, .2),
       'hover': 0 0 4px 1px rgba($blue, .5),
-      'active': 0 0 4px 1px rgba($green, .75),
+      'active': 0 0 4px 1px rgba($green-dark, .5),
       'none': none
+    )
+  ),
+
+  // Shipyard: Filter Utility
+  filter: (
+    prefix: 'filter',
+    responsive: false,
+    values: (
+      'none': none,
+      'inherit': inherit,
+      'drop-shadow': drop-shadow(0 1px 0 rgba($black, .1)),
+      'drop-shadow-sm': drop-shadow(0 1px 1px rgba($black, .1))
     )
   ),
 
@@ -183,13 +249,13 @@ $shipyard-utility-defaults: (
   // Shipyard: Min-Height & Width Utilities
   min-height: (
     prefix: 'min-h',
-    responsive: false,
+    responsive: true,
     values: ('none': none, '100\\%': 100%)
   ),
 
   min-width: (
     prefix: 'min-w',
-    responsive: false,
+    responsive: true,
     values: ('none': none, '100\\%': 100%)
   ),
 
@@ -209,10 +275,10 @@ $shipyard-utility-defaults: (
 
   // Shipyard: Font-Family Utility
   font-family: (
-    prefix: null,
+    prefix: 'font',
     responsive: false,
     values: (
-      'sans-serif': sans-serif,
+      'default': sans-serif,
       'monospace': monospace
     )
   ),
@@ -285,8 +351,8 @@ $shipyard-utility-defaults: (
     prefix: 'text-shadow',
     responsive: false,
     values: (
-      '': 0 1px 0 rgba(#000,.1),
-      'sm': 0 1px 1px rgba(#000, .1)
+      '': 0 1px 0 rgba($black, .1),
+      'sm': 0 1px 1px rgba($black, .1)
     )
   ),
 
@@ -323,18 +389,6 @@ $shipyard-utility-defaults: (
     values: (scroll: auto)
   ),
 
-  // Shipyard: Flex Direction Utility
-  flex-direction: (
-    prefix: 'flex',
-    responsive: true,
-    values: (
-      'row': row,
-      'row-reverse': row-reverse,
-      'col': column,
-      'col-reverse': column-reverse
-    )
-  ),
-
   // Shipyard: Border-Radius Utility
   border-radius: (
     prefix: 'rounded',
@@ -354,6 +408,7 @@ $shipyard-utility-defaults: (
   opacity: (
     prefix: 'o',
     responsive: false,
+    states: (hover, group-hover),
     values: (
       '100': 1,
       '90': .9,
@@ -436,6 +491,7 @@ $shipyard-utility-defaults: (
   // Shipyard: Transform Utility
   transform: (
     prefix: null,
+    states: (hover),
     responsive: true,
     values: (
       'translate-0': translate(0),
@@ -467,6 +523,68 @@ $shipyard-utility-defaults: (
     prefix: 'v-align',
     responsive: false,
     values: (baseline, top, middle, bottom)
+  ),
+
+  // Shipyard: Flexbox Utilities
+  justify-content: (
+    prefix: 'justify',
+    values: (
+      'center': center,
+      'start': start,
+      'end': end,
+      'flex-start': flex-start,
+      'flex-end': flex-end,
+      'left': left,
+      'right': right,
+      'space-between': space-between,
+      'space-around': space-around,
+      'space-evenly': space-evenly,
+      'stretch': stretch,
+      'inherit': inherit,
+      'initial': initial,
+      'unset': unset
+    )
+  ),
+
+  align-items: (
+    prefix: 'align-items',
+    responsive: false,
+    values: (left, right, center)
+  ),
+
+  flex-basis: (
+    prefix: 'flex-basis',
+    responsive: false,
+    values: (0)
+  ),
+
+  flex-grow: (
+    prefix: 'flex-grow',
+    responsive: false,
+    values: (1)
+  ),
+
+  flex-shrink: (
+    prefix: 'flex',
+    responsive: false,
+    values: (1)
+  ),
+
+  flex-direction: (
+    prefix: 'flex',
+    responsive: true,
+    values: (
+      'row': row,
+      'row-reverse': row-reverse,
+      'col': column,
+      'col-reverse': column-reverse
+    )
+  ),
+
+  flex-wrap: (
+    prefix: 'flex',
+    responsive: false,
+    values: (wrap, nowrap)
   ),
 
   // Shipyard: Visibilty Utility

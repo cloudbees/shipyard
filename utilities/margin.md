@@ -2,7 +2,7 @@
 title: Margin Utilities
 description: Shipyard's margin utilities are useful for overriding the default margin in any component, and can be extremely useful in a wide array of situations.
 sass_file: shipyard/utilities/_margin
-box_classes: utilities-margin-padding-box box-secondary btn-sm medium text-light
+box_classes: leading-40 box-secondary btn-sm medium text-light
 options: [0,4,8,12,16,20,24,28,32]
 directions:
   -

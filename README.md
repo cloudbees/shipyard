@@ -6,7 +6,9 @@ At it's core, the styleguide is a fairly standard [jekyll](https://jekyllrb.com/
 
   - clone this repository
   - install the required ruby gems with `bundle install`
-  - run `bundle exec jekyll serve`
+  - run `bundle exec jekyll serve --livereload`
+
+Or you can skip all this if you have Docker installed by simply running `docker-compose up`.
 
 After this, you should have a working styleguide locally at http://127.0.0.1:4000/shipyard/
 

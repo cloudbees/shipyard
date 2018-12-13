@@ -1,6 +1,6 @@
 ---
-title: Flex Direction Utilities
-sass_file: shipyard/utilities/_flex-direction
+title: Animation Utilities
+sass_file: shipyard/utilities/_animation
 ---
 
 {% include page-heading.html page=page %}

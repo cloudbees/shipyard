@@ -12,13 +12,13 @@ sass_file: shipyard/components/_notes
 Used to display notes, tips, and other non-critical information.
 {: .section-description }
 
-{% note %}
+<div class="note">
   <p markdown="1">
     Ten other people are also viewing tickets for [this flight](#).
     Use the code `Travel_Light_2017` before you book your flight.
   </p>
   <button class="btn btn-sm note-cta">Call to Action</button>
-{% endnote %}
+</div>
 
 ---
 
@@ -26,13 +26,13 @@ Used to display notes, tips, and other non-critical information.
 Useful when drawing attention to non-critical information or actions we want the user to take.
 {: .section-description }
 
-{% note :info %}
+<div class="note note-info">
   <p markdown="1">
     Ten other people are also viewing tickets for [this flight](#).
     Use the code `Travel_Light_2017` before you book your flight.
   </p>
   <button class="btn btn-sm note-cta">Call to Action</button>
-{% endnote %}
+</div>
 
 ---
 
@@ -40,13 +40,13 @@ Useful when drawing attention to non-critical information or actions we want the
 Useful when drawing attention to interactions that have produced successful results.
 {: .section-description }
 
-{% note :success %}
+<div class="note note-success">
   <p markdown="1">
     Pack your bags! You'll be on the next flight to Hawaii.
     Use the code `Travel_Light_2017` on your next flight. In the meantime you can [invite a friend](#) to this flight.
   </p>
   <button class="btn btn-sm note-cta">Call to Action</button>
-{% endnote %}
+</div>
 
 ---
 
@@ -54,13 +54,13 @@ Useful when drawing attention to interactions that have produced successful resu
 Useful when drawing attention to critical information.
 {: .section-description }
 
-{% note :warning %}
+<div class="note note-warning">
   <p markdown="1">
     There are only 2 seats left on this flight! We recommend to [book your tickets](#) as soon as possible.
     Use the code `Travel_Light_2017` before you book your flight.
   </p>
   <button class="btn btn-sm note-cta">Call to Action</button>
-{% endnote %}
+</div>
 
 ---
 

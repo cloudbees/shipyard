@@ -39,14 +39,12 @@ Useful when you have a button on a darker background.
 
 <div class="mb-16">
   <button class="btn btn-secondary mr-8">Secondary</button>
-  <button class="btn btn-secondary-dark mr-8">Secondary Dark</button>
-  <button class="btn btn-secondary-link">Secondary Link</button>
+  <button class="btn btn-secondary blue hover:blue-dark">Secondary Link</button>
 </div>
 
 ```html
 <button class="btn btn-secondary">Secondary</button>
-<button class="btn btn-secondary-dark">Secondary Dark</button>
-<button class="btn btn-secondary-link">Secondary Link</button>
+<button class="btn btn-secondary blue hover:blue-dark">Secondary Link</button>
 ```
 
 ---
@@ -55,7 +53,7 @@ Useful when you have a button on a darker background.
 Useful when you have a button on a darker background.
 {: .section-description }
 
-<div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-gray-dark mb-16">
+<div class="box-secondary p-8 sm:p-16 md:p-16 lg:p-24 bg-color gray-darkest mb-16">
   <button class="btn btn-inverse mr-8">Inverse</button>
   <button class="btn btn-inverse-secondary">Inverse Secondary</button>
 </div>
@@ -68,7 +66,7 @@ Useful when you have a button on a darker background.
 ---
 
 ## Rounded Buttons
-Rounded buttons utilize the [border-radius utility](/utilities/border-radius), and are useful when you want a button with completely rounded corners.
+Rounded buttons utilize the [border-radius utility]({{ site.baseurl }}/utilities/border-radius), and are useful when you want a button with completely rounded corners.
 {: .section-description }
 
 <div class="mb-16">
@@ -95,7 +93,6 @@ Useful when you have a button that triggers an asynchronous action.
   <button class="btn btn-cta btn-loading mr-8">CTA</button>
   <button class="btn btn-caution btn-loading mr-8">Caution</button>
   <button class="btn btn-secondary btn-loading mr-8">Secondary</button>
-  <button class="btn btn-secondary-link btn-loading">Secondary Link</button>
 </div>
 
 ```html

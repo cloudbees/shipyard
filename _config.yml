@@ -16,7 +16,7 @@ kramdown:
       css: class
       wrap: true
       disable: false
-      css_class: 'code-block'
+      css_class: 'code-block mt-16 mb-16'
     span:
       css: class
       wrap: true
@@ -47,6 +47,13 @@ defaults:
 
 # Exclude from processing.
 exclude:
-  - Gemfile
-  - Gemfile.lock
+  - Gemfile*
   - _assets/shipyard/dist
+  - README.md
+  - _script/*
+  - docker*
+  - codeship-services.yml
+  - codeship-steps.yml
+  - yarn*
+  - ci
+  - vendor/bundle

@@ -8,11 +8,11 @@ text_shades: [normal, light, lighter, lightest]
 
 {% include page-heading.html page=page %}
 
-{% note :warning %}
+<div class="note note-warning">
   <p markdown="1">
     Please note that the code examples below are **not possible** without `hr { @extend .hr }` somewhere in your application's sass files. If you haven't done this, then you'll need to include the `.hr` class on every horizontal rule.
   </p>
-{% endnote %}
+</div>
 
 ---
 

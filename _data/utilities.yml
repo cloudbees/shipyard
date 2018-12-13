@@ -1,3 +1,4 @@
+- Animation
 - Background-Image
 - Border
 - Border-Radius
@@ -6,12 +7,13 @@
 - Colors
 - Cursor
 - Display
-- Flex-Direction
+- Filter
 - Float
 - Font-Size
 - Font-Style
 - Font-Family
 - Font-Weight
+- Flexbox
 - Height
 - Line-Height
 - Margin
