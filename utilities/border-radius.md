@@ -2,8 +2,11 @@
 title: Border-Radius Utilities
 description: Shipyard's border-radius utilities are useful for connecting components together.
 sass_file: shipyard/utilities/_border-radius
-col_classes: col col-50 sm:col-20 mb-8
-box_classes: pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark
+css:
+  example:
+    col: col col-50 sm:col-20 mb-8
+    box: pt-8 pb-8 text-sm bold align-center bg-color gray-lighter
+    text: text-dark
 directions:
   -
     label: all
@@ -46,20 +49,30 @@ The examples below demonstrate the utility classes at each size.
 {: .section-description }
 
 <div class="col-container">
-  <div class="{{ page.col_classes }}">
-    <div class="{{ page.box_classes }} rounded-pill">pill</div>
+  <div class="{{ page.css.example.col }}">
+    <div class="{{ page.css.example.box }} rounded-pill">
+      <span class="{{ page.css.example.text }}">pill</span>
+    </div>
   </div>
-  <div class="{{ page.col_classes }}">
-    <div class="{{ page.box_classes }} rounded">default</div>
+  <div class="{{ page.css.example.col }}">
+    <div class="{{ page.css.example.box }} rounded">
+      <span class="{{ page.css.example.text }}">default</span>
+    </div>
   </div>
-  <div class="{{ page.col_classes }}">
-    <div class="{{ page.box_classes }} rounded-sm">sm</div>
+  <div class="{{ page.css.example.col }}">
+    <div class="{{ page.css.example.box }} rounded-sm">
+      <span class="{{ page.css.example.text }}">sm</span>
+    </div>
   </div>
-  <div class="{{ page.col_classes }}">
-    <div class="{{ page.box_classes }} rounded-xs">xs</div>
+  <div class="{{ page.css.example.col }}">
+    <div class="{{ page.css.example.box }} rounded-xs">
+      <span class="{{ page.css.example.text }}">xs</span>
+    </div>
   </div>
-  <div class="{{ page.col_classes }}">
-    <div class="{{ page.box_classes }} rounded-0">0</div>
+  <div class="{{ page.css.example.col }}">
+    <div class="{{ page.css.example.box }} rounded-0">
+      <span class="{{ page.css.example.text }}">0</span>
+    </div>
   </div>
 </div>
 
@@ -89,9 +102,9 @@ The examples below demonstrate the utility classes on each breakpoint.
   <h3 class="text-md text-light mt-32 mb-8" markdown="1">{{ breakpoint.label }} `.{{ 'rounded' | component_css_class: breakpoint.modifier }}`</h3>
   <div class="col-container">
     {% for direction in page.directions %}
-      <div class="{{ page.col_classes }}">
-        <div class="{{ page.box_classes }} tooltip-data tooltip-data-top {{ 'rounded' | component_css_class: breakpoint.modifier }} {{ 'rounded' | component_css_class: breakpoint.modifier, direction.modifier }}" data-tooltip=".{{ 'rounded' | component_css_class: breakpoint.modifier, direction.modifier }}">
-          {{ direction.label }}
+      <div class="{{ page.css.example.col }}">
+        <div class="{{ page.css.example.box }} tooltip-data tooltip-data-top {{ 'rounded' | component_css_class: breakpoint.modifier }} {{ 'rounded' | component_css_class: breakpoint.modifier, direction.modifier }}" data-tooltip=".{{ 'rounded' | component_css_class: breakpoint.modifier, direction.modifier }}">
+          <span class="{{ page.css.example.text }}">{{ direction.label }}</span>
         </div>
       </div>
     {% endfor %}

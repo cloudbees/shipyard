@@ -42,35 +42,19 @@
 
   &-primary
     +btn-color($blue)
-    +btn-hover(darken($blue, 10%))
+    +btn-hover($blue-dark)
     &-dark
-      +btn-color(darken($blue, 7%))
-      +btn-hover(darken($blue, 12%))
+      +btn-color($blue-dark)
+      +btn-hover($blue-darker)
 
   &-secondary
-    +btn-color(transparent, $text-color-light, darken($gray-lightest, 7%))
-    +btn-hover(transparent, $text-color-dark, darken($gray-lightest, 17%))
+    +btn-color(transparent, $text-light, rgba($gray-darker,.2))
+    +btn-hover(transparent, $text-dark, rgba($gray-darker,.25))
     &.btn-loading
       &, &:hover, &:active
         &::after
           border-color: $border-color
           border-left-color: $teal-dark
-    &-link
-      +btn-color(transparent, $blue, darken($gray-lightest, 7%))
-      +btn-hover(transparent, $blue-dark, darken($gray-lightest, 17%))
-      &.btn-loading
-        &, &:hover, &:active
-          &::after
-            border-color: $border-color
-            border-left-color: $teal-dark
-    &-dark
-      +btn-color(transparent, darken($text-color-light, 5%), lighten($gray-light, 5%))
-      +btn-hover(transparent, darken($text-color-light, 20%), darken($gray-light, 5%))
-      &.btn-loading
-        &, &:hover, &:active
-          &::after
-            border-color: $border-color-lighter
-            border-left-color: $blue
 
   &-caution
     +btn-color($red-dark)
@@ -92,7 +76,7 @@
     user-select: none
     pointer-events: none
     &, &:hover, &:focus
-      +btn-color(lighten($gray-lighter, 1%), $text-color-lightest)
+      +btn-color(lighten($gray-lighter, 1%), $text-lightest)
     &:active
       animation: shake .35s infinite
 

@@ -1,15 +1,4 @@
 $component-defaults: (
-  header: (
-    background: #fff,
-    color: $text-color-light,
-    box-shadow: $box-shadow,
-    logo: (
-      font-weight: $bold
-    ),
-    list: (
-      font-weight: $medium
-    )
-  ),
   input: (
     required-asterisk: (
       top: 4px,
@@ -52,15 +41,15 @@ $component-defaults: (
     background: $gray-lighter,
     border-radius: $border-radius,
     info: (
-      color: $blue-darkest,
+      color: $blue-darker,
       background: $blue-lighter
     ),
     success: (
-      color: $green-darkest,
+      color: $green-darker,
       background: $green-lighter
     ),
     warning: (
-      color: $yellow-darkest,
+      color: $yellow-darker,
       background: $yellow-lighter
     )
   ),
@@ -70,13 +59,6 @@ $component-defaults: (
     font-family: $font-monospace,
     background: darken($gray-lightest, 3%),
     border: 1px solid darken($gray-lighter, 5%)
-  ),
-  tooltip: (
-    color: #fff,
-    padding: 10px 15px,
-    font-weight: $normal,
-    font-size: $font-size,
-    background: $gray-darker
   )
 ) !default;
 

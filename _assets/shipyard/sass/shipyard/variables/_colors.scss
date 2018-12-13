@@ -1,13 +1,42 @@
+// All colors are built with: https://www.colorbox.io/
+//
+// # All Tones
+// - Saturation Curve: easeOutSine
+// - Luminosity Curve: easeOutSine
+// - Saturation Rate: 100
+//
+// # Darker Tones (e.g. purple, red, pink)
+// - Saturation: 10-85
+// - Luminosity: 99-50
+//
+// # Mid Tones (e.g. blue, yellow, orange)
+// - Saturation: 15-100
+// - Luminosity: 99-40
+//
+// # Lighter Tones (e.g. teal, green)
+// - Saturation: 13-95
+// - Luminosity: 95-32
+
 $shipyard-colors: (
+  'current': currentColor,
+  'transparent': transparent,
+
   // Shipyard: Black
-  'black': #000,
-  'black-90': rgba(#000, .9),
-  'black-80': rgba(#000, .8),
-  'black-70': rgba(#000, .7),
-  'black-60': rgba(#000, .6),
-  'black-50': rgba(#000, .5),
-  'black-40': rgba(#000, .4),
-  'black-30': rgba(#000, .3),
+  // Hue: 208
+  'black': #1f272f,
+  'black-90': rgba(#1f272f, .9),
+  'black-80': rgba(#1f272f, .8),
+  'black-70': rgba(#1f272f, .7),
+  'black-60': rgba(#1f272f, .6),
+  'black-50': rgba(#1f272f, .5),
+  'black-40': rgba(#1f272f, .4),
+  'black-30': rgba(#1f272f, .3),
+  'black-10': rgba(#1f272f, .1),
+  'black-09': rgba(#1f272f, .09),
+  'black-08': rgba(#1f272f, .08),
+  'black-07': rgba(#1f272f, .07),
+  'black-06': rgba(#1f272f, .06),
+  'black-05': rgba(#1f272f, .05),
 
   // Shipyard: White
   'white': #fff,
@@ -18,91 +47,105 @@ $shipyard-colors: (
   'white-50': rgba(#fff, .5),
   'white-40': rgba(#fff, .4),
   'white-30': rgba(#fff, .3),
+  'white-10': rgba(#fff, .1),
+  'white-09': rgba(#fff, .09),
+  'white-08': rgba(#fff, .08),
+  'white-07': rgba(#fff, .07),
+  'white-06': rgba(#fff, .06),
+  'white-05': rgba(#fff, .05),
 
   // Shipyard: Gray
-  'gray': #788594,
-  'gray-light': #bac5d2,
-  'gray-lighter': #dfe6eb,
+  // Hue: 208
+  // Steps: 8
+  // Saturation: 4-35 (Quad - EaseInOut - 100%)
+  // Luminosity: 92-15 (Quad - EaseInOut)
+  'gray': #b9c3cb,
+  'gray-light': #d6dde2,
+  'gray-lighter': #e1e6eb,
   'gray-lightest': #f2f5f7,
-  'gray-dark': darken(#788594, 18%),
-  'gray-darker': #313a44,
-  'gray-darkest': #1e252c,
-  'gray-darkest-10': rgba(#1e252c, .1),
-  'gray-darkest-09': rgba(#1e252c, .09),
-  'gray-darkest-08': rgba(#1e252c, .08),
-  'gray-darkest-07': rgba(#1e252c, .07),
+  'gray-dark': #8a98a4,
+  'gray-darker': #576572,
+  'gray-darkest': #323d48,
 
   // Shipyard: Green
-  'green': #24c26b,
-  'green-light': #4bda8b,
-  'green-lighter': #79e7aa,
-  'green-lightest': #a4ebc4,
-  'green-dark': #0ca04e,
-  'green-darker': #027837,
-  'green-darkest': #005225,
+  // Hue: 147
+  'green': #35c877,
+  'green-light': #66e19d,
+  'green-lighter': #9eeec2,
+  'green-lightest': #d3f2e1,
+  'green-dark': #17a456,
+  'green-darker': #087a3c,
+  'green-darkest': #045227,
 
   // Shipyard: Blue
-  'blue': #259ad5,
-  'blue-light': #4bb7ec,
-  'blue-lighter': #79cef9,
-  'blue-lightest': #a4dffc,
-  'blue-dark': #0c7bb3,
-  'blue-darker': #025e8c,
+  // Hue: 200
+  'blue': #309ed5,
+  'blue-light': #62beec,
+  'blue-lighter': #9edbf9,
+  'blue-lightest': #d7f0fc,
+  'blue-dark': #107db3,
+  'blue-darker': #035e8c,
   'blue-darkest': #004466,
 
   // Shipyard: Teal
-  'teal': #20babd,
-  'teal-light': #44d3d5,
-  'teal-lighter': #6ee0e2,
-  'teal-lightest': #95e4e6,
-  'teal-dark': #0b989b,
-  'teal-darker': #027173,
-  'teal-darkest': #004b4d,
+  // Hue: 181
+  'teal': #35c5c8,
+  'teal-light': #66dfe1,
+  'teal-lighter': #9eedee,
+  'teal-lightest': #d3f2f2,
+  'teal-dark': #17a1a4,
+  'teal-darker': #08797a,
+  'teal-darkest': #045052,
 
   // Shipyard: Red
-  'red': #d54e44,
-  'red-light': #ec776f,
-  'red-lighter': #f9a49e,
-  'red-lightest': #fccdca,
-  'red-dark': #b33127,
-  'red-darker': #8c1f17,
-  'red-darkest': #66150f,
+  // Hue: 4
+  'red': #db564c,
+  'red-light': #ef837c,
+  'red-lighter': #f9b6b1,
+  'red-lightest': #fce5e3,
+  'red-dark': #bf362c,
+  'red-darker': #9f241b,
+  'red-darkest': #801a13,
 
   // Shipyard: Yellow
-  'yellow': #d5a025,
-  'yellow-light': #ecbc4b,
-  'yellow-lighter': #f9d279,
-  'yellow-lightest': #fce2a4,
-  'yellow-dark': #b3810c,
-  'yellow-darker': #8c6302,
+  // Hue: 42
+  'yellow': #d5a330,
+  'yellow-light': #ecc362,
+  'yellow-lighter': #f9de9e,
+  'yellow-lightest': #fcf1d7,
+  'yellow-dark': #b38210,
+  'yellow-darker': #8c6303,
   'yellow-darkest': #664700,
 
   // Shipyard: Orange
-  'orange': #d57725,
-  'orange-light': #ec964b,
-  'orange-lighter': #f9b579,
-  'orange-lightest': #fccda4,
-  'orange-dark': #b35a0c,
-  'orange-darker': #8c4302,
+  // Hue: 28
+  'orange': #d57d30,
+  'orange-light': #eca362,
+  'orange-lighter': #f9c89e,
+  'orange-lightest': #fce8d7,
+  'orange-dark': #b35c10,
+  'orange-darker': #8c4303,
   'orange-darkest': #663000,
 
   // Shipyard: Purple
-  'purple': #8a44d5,
-  'purple-light': #ab6fec,
-  'purple-lighter': #ca9ef9,
-  'purple-lightest': #e2cafc,
-  'purple-dark': #6b27b3,
-  'purple-darker': #50178c,
-  'purple-darkest': #390f66,
+  // Hue: 269
+  'purple': #924cdb,
+  'purple-light': #b37cef,
+  'purple-lighter': #d4b1f9,
+  'purple-lightest': #efe3fc,
+  'purple-dark': #732cbf,
+  'purple-darker': #5b1b9f,
+  'purple-darkest': #481380,
 
   // Shipyard: Coral
-  'coral': #d5445a,
-  'coral-light': #ec6f81,
-  'coral-lighter': #f99eac,
-  'coral-lightest': #fccad2,
-  'coral-dark': #b3273c,
-  'coral-darker': #8c1729,
-  'coral-darkest': #660f1c,
+  // Hue: 351
+  'coral': #db4c62,
+  'coral-light': #ef7c8d,
+  'coral-lighter': #f9b1bc,
+  'coral-lightest': #fce3e7,
+  'coral-dark': #bf2c42,
+  'coral-darker': #9f1b2f,
+  'coral-darkest': #801323,
 
   // Shipyard: Text Colors
   'text-darkest': #162b44,
@@ -111,9 +154,5 @@ $shipyard-colors: (
   'text-normal': rgba(#162b44, .7),
   'text-light': rgba(#162b44, .6),
   'text-lighter': rgba(#162b44, .5),
-  'text-lightest': rgba(#162b44, .4),
-
-  // Shipyard: Transparent Color
-  'transparent': transparent,
-  'current': currentColor
+  'text-lightest': rgba(#162b44, .4)
 ) !default;

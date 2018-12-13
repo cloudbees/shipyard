@@ -21,10 +21,11 @@ The following icons are the most frequently used in just about any application.
   {% include icon-item.html name="tag" class="center" %}
   {% include icon-item.html name="x" class="icon-outline center" %}
   {% include icon-item.html name="arrow-up" class="icon-outline center" %}
-  {% include icon-item.html name="arrow-down" class=" center" %}
-  {% include icon-item.html name="arrow-left" class=" center" %}
-  {% include icon-item.html name="arrow-right" class=" center" %}
-  {% include icon-item.html name="check" class=" center" %}
+  {% include icon-item.html name="arrow-down" class="center" %}
+  {% include icon-item.html name="arrow-left" class="center" %}
+  {% include icon-item.html name="arrow-right" class="center" %}
+  {% include icon-item.html name="check" class="center" %}
+  {% include icon-item.html name="hamburger" class="icon-outline center w-24 h-24" %}
 </ul>
 
 ---
