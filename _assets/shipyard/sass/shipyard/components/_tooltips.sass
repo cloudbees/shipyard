@@ -1,5 +1,10 @@
 +component('tooltip')
   +border-radius
+  color: #fff
+  padding: 10px 15px
+  font-weight: $normal
+  font-size: $font-size
+  background: $gray-darkest
   width: auto
   opacity: 0
   line-height: 1.5
@@ -58,8 +63,8 @@
       left: 50%
       margin-left: -4px
       border-radius: 0 0 3px 0
-      border-right-color: $gray-darker
-      border-bottom-color: $gray-darker
+      border-right-color: $gray-darkest
+      border-bottom-color: $gray-darkest
       &-active
         transform: rotate(45deg) translate(-4.5px, -4.5px)
       +prepend-to-root('.tooltip-light')
@@ -70,8 +75,8 @@
       left: 50%
       margin-left: -4px
       border-radius: 3px 0 0 0
-      border-top-color: $gray-darker
-      border-left-color: $gray-darker
+      border-top-color: $gray-darkest
+      border-left-color: $gray-darkest
       &-active
         transform: rotate(45deg) translate(4.5px, 4.5px)
       +prepend-to-root('.tooltip-light')
@@ -82,8 +87,8 @@
       top: 50%
       margin-top: -4px
       border-radius: 0 3px 0 0
-      border-top-color: $gray-darker
-      border-right-color: $gray-darker
+      border-top-color: $gray-darkest
+      border-right-color: $gray-darkest
       &-active
         transform: rotate(45deg) translate(-4.5px, 4.5px)
       +prepend-to-root('.tooltip-light')
@@ -94,8 +99,8 @@
       top: 50%
       margin-top: -4px
       border-radius: 0 0 0 3px
-      border-left-color: $gray-darker
-      border-bottom-color: $gray-darker
+      border-left-color: $gray-darkest
+      border-bottom-color: $gray-darkest
       &-active
         transform: rotate(45deg) translate(4.5px, -4.5px)
       +prepend-to-root('.tooltip-light')
