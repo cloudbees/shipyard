@@ -4,9 +4,9 @@
     <title>Border-Radius Utilities</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#20a5a8" />
-    <link media="screen" rel="stylesheet" type="text/css" integrity="sha256-ykLyqEsmScn8zNFsxR+20fkVuioJiNMLkcO4TYcis2k=" crossorigin="anonymous" href="/shipyard/assets/fonts-ca42f2a84b2649c9fcccd16cc51fb6d1f915ba2a0988d30b91c3b84d8722b369.css">
-    <link media="screen" rel="stylesheet" type="text/css" integrity="sha256-QCZr3H/ZlbjN2u7as4F9ePzFrtGJsdaiOmgntDe3FIg=" crossorigin="anonymous" href="/shipyard/assets/syntax-40266bdc7fd995b8cddaeedab3817d78fcc5aed189b1d6a23a6827b437b71488.css">
-    <link media="screen" rel="stylesheet" type="text/css" integrity="sha256-L4QORr5qGYGakGuq7OTn3wpyZFIuRFxsWcFj99DG0VY=" crossorigin="anonymous" href="/shipyard/assets/application-2f840e46be6a19819a906baaece4e7df0a7264522e445c6c59c163f7d0c6d156.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/fonts-ca42f2a84b2649c9fcccd16cc51fb6d1f915ba2a0988d30b91c3b84d8722b369.css" integrity="sha256-ykLyqEsmScn8zNFsxR+20fkVuioJiNMLkcO4TYcis2k=" crossorigin="anonymous">
+    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/syntax-40266bdc7fd995b8cddaeedab3817d78fcc5aed189b1d6a23a6827b437b71488.css" integrity="sha256-QCZr3H/ZlbjN2u7as4F9ePzFrtGJsdaiOmgntDe3FIg=" crossorigin="anonymous">
+    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/application-e80fd212801636dce939977db356c62afaf8ab0a8b361f61b5bd788b1c13e53b.css" integrity="sha256-6A/SEoAWNtzpOZd9s1bGKvr4qwqLNh9htb14ixwT5Ts=" crossorigin="anonymous">
   </head>
   <body>
     <header class="header z-100">
@@ -33,15 +33,19 @@
               <a href="/shipyard/utilities/" class="header-link">Utilities</a>
             </li>
           
+            <li class="header-item ">
+              <a href="/shipyard/stats" class="header-link">Stats</a>
+            </li>
+          
           <li class="header-item header-item-cta">
             <a href="https://www.npmjs.com/package/@cloudbees/shipyard" target="_blank" class="header-link-cta" rel="noopener">Download</a>
           </li>
         </ul>
       </div>
     </header>
-    <div class="container"><h1>Border-Radius Utilities</h1>
+    <div class="container"><h1 class="text-darker">Border-Radius Utilities</h1>
 
-<p class="text-light text-lg mt-16">Shipyard’s border-radius utilities are useful for connecting components together.</p>
+<p class="text-light text-lg">Shipyard’s border-radius utilities are useful for connecting components together.</p>
 
 <hr />
 
@@ -50,23 +54,33 @@
 
 <div class="col-container">
   <div class="col col-50 sm:col-20 mb-8">
-    <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark rounded-pill">pill</div>
+    <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter rounded-pill">
+      <span class="text-dark">pill</span>
+    </div>
   </div>
   <div class="col col-50 sm:col-20 mb-8">
-    <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark rounded">default</div>
+    <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter rounded">
+      <span class="text-dark">default</span>
+    </div>
   </div>
   <div class="col col-50 sm:col-20 mb-8">
-    <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark rounded-sm">sm</div>
+    <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter rounded-sm">
+      <span class="text-dark">sm</span>
+    </div>
   </div>
   <div class="col col-50 sm:col-20 mb-8">
-    <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark rounded-xs">xs</div>
+    <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter rounded-xs">
+      <span class="text-dark">xs</span>
+    </div>
   </div>
   <div class="col col-50 sm:col-20 mb-8">
-    <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark rounded-0">0</div>
+    <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter rounded-0">
+      <span class="text-dark">0</span>
+    </div>
   </div>
 </div>
 
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nc">.rounded</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span> <span class="p">}</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="nc">.rounded</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span> <span class="p">}</span>
 <span class="nc">.rounded-pill</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">999px</span> <span class="p">}</span>
 <span class="nc">.rounded-lg</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">5px</span> <span class="p">}</span>
 <span class="nc">.rounded-md</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span> <span class="p">}</span>
@@ -80,7 +94,7 @@
 <h2 id="responsive-options-screenrounded--direction-">Responsive Options <code class="language-html highlighter-rouge">.{screen}:rounded-{ direction }</code></h2>
 <p class="section-description">The examples below demonstrate the utility classes on each breakpoint.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rounded"</span><span class="nt">&gt;</span><span class="c">&lt;!-- all --&gt;</span><span class="nt">&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rounded"</span><span class="nt">&gt;</span><span class="c">&lt;!-- all --&gt;</span><span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rounded-0"</span><span class="nt">&gt;</span><span class="c">&lt;!-- none --&gt;</span><span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rounded rounded-top"</span><span class="nt">&gt;</span><span class="c">&lt;!-- top --&gt;</span><span class="nt">&lt;/div&gt;</span>
 <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"rounded rounded-bottom"</span><span class="nt">&gt;</span><span class="c">&lt;!-- bottom --&gt;</span><span class="nt">&lt;/div&gt;</span>
@@ -96,62 +110,62 @@
 <div class="col-container">
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded" data-tooltip=".rounded">
-          all
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded" data-tooltip=".rounded">
+          <span class="text-dark">all</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded-0" data-tooltip=".rounded-0">
-          none
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded-0" data-tooltip=".rounded-0">
+          <span class="text-dark">none</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded-top" data-tooltip=".rounded-top">
-          top
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded-top" data-tooltip=".rounded-top">
+          <span class="text-dark">top</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded-bottom" data-tooltip=".rounded-bottom">
-          bottom
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded-bottom" data-tooltip=".rounded-bottom">
+          <span class="text-dark">bottom</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded-left" data-tooltip=".rounded-left">
-          left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded-left" data-tooltip=".rounded-left">
+          <span class="text-dark">left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded-right" data-tooltip=".rounded-right">
-          right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded-right" data-tooltip=".rounded-right">
+          <span class="text-dark">right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded-top-left" data-tooltip=".rounded-top-left">
-          top left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded-top-left" data-tooltip=".rounded-top-left">
+          <span class="text-dark">top left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded-top-right" data-tooltip=".rounded-top-right">
-          top right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded-top-right" data-tooltip=".rounded-top-right">
+          <span class="text-dark">top right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded-bottom-left" data-tooltip=".rounded-bottom-left">
-          bottom left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded-bottom-left" data-tooltip=".rounded-bottom-left">
+          <span class="text-dark">bottom left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top rounded rounded-bottom-right" data-tooltip=".rounded-bottom-right">
-          bottom right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top rounded rounded-bottom-right" data-tooltip=".rounded-bottom-right">
+          <span class="text-dark">bottom right</span>
         </div>
       </div>
     
@@ -161,62 +175,62 @@
 <div class="col-container">
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded" data-tooltip=".sm:rounded">
-          all
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded" data-tooltip=".sm:rounded">
+          <span class="text-dark">all</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded-0" data-tooltip=".sm:rounded-0">
-          none
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded-0" data-tooltip=".sm:rounded-0">
+          <span class="text-dark">none</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded-top" data-tooltip=".sm:rounded-top">
-          top
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded-top" data-tooltip=".sm:rounded-top">
+          <span class="text-dark">top</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded-bottom" data-tooltip=".sm:rounded-bottom">
-          bottom
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded-bottom" data-tooltip=".sm:rounded-bottom">
+          <span class="text-dark">bottom</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded-left" data-tooltip=".sm:rounded-left">
-          left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded-left" data-tooltip=".sm:rounded-left">
+          <span class="text-dark">left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded-right" data-tooltip=".sm:rounded-right">
-          right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded-right" data-tooltip=".sm:rounded-right">
+          <span class="text-dark">right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded-top-left" data-tooltip=".sm:rounded-top-left">
-          top left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded-top-left" data-tooltip=".sm:rounded-top-left">
+          <span class="text-dark">top left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded-top-right" data-tooltip=".sm:rounded-top-right">
-          top right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded-top-right" data-tooltip=".sm:rounded-top-right">
+          <span class="text-dark">top right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded-bottom-left" data-tooltip=".sm:rounded-bottom-left">
-          bottom left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded-bottom-left" data-tooltip=".sm:rounded-bottom-left">
+          <span class="text-dark">bottom left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top sm:rounded sm:rounded-bottom-right" data-tooltip=".sm:rounded-bottom-right">
-          bottom right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top sm:rounded sm:rounded-bottom-right" data-tooltip=".sm:rounded-bottom-right">
+          <span class="text-dark">bottom right</span>
         </div>
       </div>
     
@@ -226,62 +240,62 @@
 <div class="col-container">
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded" data-tooltip=".md:rounded">
-          all
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded" data-tooltip=".md:rounded">
+          <span class="text-dark">all</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded-0" data-tooltip=".md:rounded-0">
-          none
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded-0" data-tooltip=".md:rounded-0">
+          <span class="text-dark">none</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded-top" data-tooltip=".md:rounded-top">
-          top
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded-top" data-tooltip=".md:rounded-top">
+          <span class="text-dark">top</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded-bottom" data-tooltip=".md:rounded-bottom">
-          bottom
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded-bottom" data-tooltip=".md:rounded-bottom">
+          <span class="text-dark">bottom</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded-left" data-tooltip=".md:rounded-left">
-          left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded-left" data-tooltip=".md:rounded-left">
+          <span class="text-dark">left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded-right" data-tooltip=".md:rounded-right">
-          right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded-right" data-tooltip=".md:rounded-right">
+          <span class="text-dark">right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded-top-left" data-tooltip=".md:rounded-top-left">
-          top left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded-top-left" data-tooltip=".md:rounded-top-left">
+          <span class="text-dark">top left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded-top-right" data-tooltip=".md:rounded-top-right">
-          top right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded-top-right" data-tooltip=".md:rounded-top-right">
+          <span class="text-dark">top right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded-bottom-left" data-tooltip=".md:rounded-bottom-left">
-          bottom left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded-bottom-left" data-tooltip=".md:rounded-bottom-left">
+          <span class="text-dark">bottom left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top md:rounded md:rounded-bottom-right" data-tooltip=".md:rounded-bottom-right">
-          bottom right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top md:rounded md:rounded-bottom-right" data-tooltip=".md:rounded-bottom-right">
+          <span class="text-dark">bottom right</span>
         </div>
       </div>
     
@@ -291,62 +305,62 @@
 <div class="col-container">
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded" data-tooltip=".lg:rounded">
-          all
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded" data-tooltip=".lg:rounded">
+          <span class="text-dark">all</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded-0" data-tooltip=".lg:rounded-0">
-          none
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded-0" data-tooltip=".lg:rounded-0">
+          <span class="text-dark">none</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded-top" data-tooltip=".lg:rounded-top">
-          top
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded-top" data-tooltip=".lg:rounded-top">
+          <span class="text-dark">top</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded-bottom" data-tooltip=".lg:rounded-bottom">
-          bottom
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded-bottom" data-tooltip=".lg:rounded-bottom">
+          <span class="text-dark">bottom</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded-left" data-tooltip=".lg:rounded-left">
-          left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded-left" data-tooltip=".lg:rounded-left">
+          <span class="text-dark">left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded-right" data-tooltip=".lg:rounded-right">
-          right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded-right" data-tooltip=".lg:rounded-right">
+          <span class="text-dark">right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded-top-left" data-tooltip=".lg:rounded-top-left">
-          top left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded-top-left" data-tooltip=".lg:rounded-top-left">
+          <span class="text-dark">top left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded-top-right" data-tooltip=".lg:rounded-top-right">
-          top right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded-top-right" data-tooltip=".lg:rounded-top-right">
+          <span class="text-dark">top right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded-bottom-left" data-tooltip=".lg:rounded-bottom-left">
-          bottom left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded-bottom-left" data-tooltip=".lg:rounded-bottom-left">
+          <span class="text-dark">bottom left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top lg:rounded lg:rounded-bottom-right" data-tooltip=".lg:rounded-bottom-right">
-          bottom right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top lg:rounded lg:rounded-bottom-right" data-tooltip=".lg:rounded-bottom-right">
+          <span class="text-dark">bottom right</span>
         </div>
       </div>
     
@@ -356,62 +370,62 @@
 <div class="col-container">
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded" data-tooltip=".xl:rounded">
-          all
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded" data-tooltip=".xl:rounded">
+          <span class="text-dark">all</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded-0" data-tooltip=".xl:rounded-0">
-          none
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded-0" data-tooltip=".xl:rounded-0">
+          <span class="text-dark">none</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded-top" data-tooltip=".xl:rounded-top">
-          top
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded-top" data-tooltip=".xl:rounded-top">
+          <span class="text-dark">top</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded-bottom" data-tooltip=".xl:rounded-bottom">
-          bottom
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded-bottom" data-tooltip=".xl:rounded-bottom">
+          <span class="text-dark">bottom</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded-left" data-tooltip=".xl:rounded-left">
-          left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded-left" data-tooltip=".xl:rounded-left">
+          <span class="text-dark">left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded-right" data-tooltip=".xl:rounded-right">
-          right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded-right" data-tooltip=".xl:rounded-right">
+          <span class="text-dark">right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded-top-left" data-tooltip=".xl:rounded-top-left">
-          top left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded-top-left" data-tooltip=".xl:rounded-top-left">
+          <span class="text-dark">top left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded-top-right" data-tooltip=".xl:rounded-top-right">
-          top right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded-top-right" data-tooltip=".xl:rounded-top-right">
+          <span class="text-dark">top right</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded-bottom-left" data-tooltip=".xl:rounded-bottom-left">
-          bottom left
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded-bottom-left" data-tooltip=".xl:rounded-bottom-left">
+          <span class="text-dark">bottom left</span>
         </div>
       </div>
     
       <div class="col col-50 sm:col-20 mb-8">
-        <div class="pt-8 pb-8 text-sm bold align-center bg-gray-light gray-dark tooltip-data tooltip-data-top xl:rounded xl:rounded-bottom-right" data-tooltip=".xl:rounded-bottom-right">
-          bottom right
+        <div class="pt-8 pb-8 text-sm bold align-center bg-color gray-lighter tooltip-data tooltip-data-top xl:rounded xl:rounded-bottom-right" data-tooltip=".xl:rounded-bottom-right">
+          <span class="text-dark">bottom right</span>
         </div>
       </div>
     
@@ -420,7 +434,7 @@
 <hr />
 
 <h3 id="utility-css">Utility CSS</h3>
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nc">.rounded</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span> <span class="p">}</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="nc">.rounded</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">4px</span> <span class="p">}</span>
 <span class="nc">.rounded-0</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">0</span> <span class="p">}</span>
 <span class="nc">.rounded-xs</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">2px</span> <span class="p">}</span>
 <span class="nc">.rounded-sm</span> <span class="p">{</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">3px</span> <span class="p">}</span>
@@ -530,6 +544,6 @@
     <footer class="align-center text-lightest">
       &copy; Shipyard Framework 2018
     </footer>
-    <script type="text/javascript" integrity="sha256-1GmHfsUW2R4BXqI5kmQqCGNDiCxQmkKzAH+Zp38V83E=" crossorigin="anonymous" src="/shipyard/assets/application-d469877ec516d91e015ea23992642a086343882c509a42b3007f99a77f15f371.js"></script>
+    <script src="/shipyard/assets/application-02c9f422e267fe39b3823737f79a3efe3238ee5aeda60f8b606c321ce62b1008.js" type="text/javascript" integrity="sha256-Asn0IuJn/jmzgjc395o+/jI47lrtpg+LYGwyHOYrEAg=" crossorigin="anonymous"></script>
   </body>
 </html>

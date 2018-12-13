@@ -4,9 +4,9 @@
     <title>Shipyard Statuses</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <meta name="theme-color" content="#20a5a8" />
-    <link media="screen" rel="stylesheet" type="text/css" integrity="sha256-ykLyqEsmScn8zNFsxR+20fkVuioJiNMLkcO4TYcis2k=" crossorigin="anonymous" href="/shipyard/assets/fonts-ca42f2a84b2649c9fcccd16cc51fb6d1f915ba2a0988d30b91c3b84d8722b369.css">
-    <link media="screen" rel="stylesheet" type="text/css" integrity="sha256-QCZr3H/ZlbjN2u7as4F9ePzFrtGJsdaiOmgntDe3FIg=" crossorigin="anonymous" href="/shipyard/assets/syntax-40266bdc7fd995b8cddaeedab3817d78fcc5aed189b1d6a23a6827b437b71488.css">
-    <link media="screen" rel="stylesheet" type="text/css" integrity="sha256-L4QORr5qGYGakGuq7OTn3wpyZFIuRFxsWcFj99DG0VY=" crossorigin="anonymous" href="/shipyard/assets/application-2f840e46be6a19819a906baaece4e7df0a7264522e445c6c59c163f7d0c6d156.css">
+    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/fonts-ca42f2a84b2649c9fcccd16cc51fb6d1f915ba2a0988d30b91c3b84d8722b369.css" integrity="sha256-ykLyqEsmScn8zNFsxR+20fkVuioJiNMLkcO4TYcis2k=" crossorigin="anonymous">
+    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/syntax-40266bdc7fd995b8cddaeedab3817d78fcc5aed189b1d6a23a6827b437b71488.css" integrity="sha256-QCZr3H/ZlbjN2u7as4F9ePzFrtGJsdaiOmgntDe3FIg=" crossorigin="anonymous">
+    <link media="screen" rel="stylesheet" type="text/css" href="/shipyard/assets/application-e80fd212801636dce939977db356c62afaf8ab0a8b361f61b5bd788b1c13e53b.css" integrity="sha256-6A/SEoAWNtzpOZd9s1bGKvr4qwqLNh9htb14ixwT5Ts=" crossorigin="anonymous">
   </head>
   <body>
     <header class="header z-100">
@@ -33,13 +33,17 @@
               <a href="/shipyard/utilities/" class="header-link">Utilities</a>
             </li>
           
+            <li class="header-item ">
+              <a href="/shipyard/stats" class="header-link">Stats</a>
+            </li>
+          
           <li class="header-item header-item-cta">
             <a href="https://www.npmjs.com/package/@cloudbees/shipyard" target="_blank" class="header-link-cta" rel="noopener">Download</a>
           </li>
         </ul>
       </div>
     </header>
-    <div class="container"><h1>Shipyard Statuses</h1>
+    <div class="container"><h1 class="text-darker">Shipyard Statuses</h1>
 
 <hr />
 
@@ -50,7 +54,7 @@
     <button class="btn btn-secondary btn-xs rounded-pill mr-4">
       <span class="status status-skipped status-xs ">
   <svg class="icon icon-skipped icon-outline status-icon status-xs-icon status-xs-icon-skipped" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"></use>
   </svg>
 </span>
 <span class="text-sm medium ml-4 text-skipped">Skipped</span>
@@ -72,7 +76,7 @@
     <button class="btn btn-secondary btn-xs rounded-pill mr-4">
       <span class="status status-running status-xs ">
   <svg class="icon icon-running icon-outline status-icon status-xs-icon status-xs-icon-running" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"></use>
   </svg>
 </span>
 <span class="text-sm medium ml-4 text-running">Running</span>
@@ -81,7 +85,7 @@
     <button class="btn btn-secondary btn-xs rounded-pill mr-4">
       <span class="status status-paused status-xs ">
   <svg class="icon icon-paused icon-outline status-icon status-xs-icon status-xs-icon-paused" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"></use>
   </svg>
 </span>
 <span class="text-sm medium ml-4 text-paused">Paused</span>
@@ -90,7 +94,7 @@
     <button class="btn btn-secondary btn-xs rounded-pill mr-4">
       <span class="status status-warning status-xs ">
   <svg class="icon icon-success icon-outline status-icon status-xs-icon status-xs-icon-warning" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="text-sm medium ml-4 text-warning">Warning</span>
@@ -99,7 +103,7 @@
     <button class="btn btn-secondary btn-xs rounded-pill mr-4">
       <span class="status status-success status-xs ">
   <svg class="icon icon-success icon-outline status-icon status-xs-icon status-xs-icon-success" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="text-sm medium ml-4 text-success">Success</span>
@@ -108,7 +112,7 @@
     <button class="btn btn-secondary btn-xs rounded-pill mr-4">
       <span class="status status-error status-xs ">
   <svg class="icon icon-error-xs icon-outline status-icon status-xs-icon status-xs-icon-error" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error-xs"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error-xs"></use>
   </svg>
 </span>
 <span class="text-sm medium ml-4 text-error">Error</span>
@@ -117,17 +121,17 @@
     <button class="btn btn-secondary btn-xs rounded-pill mr-4">
       <span class="status status-fail status-xs ">
   <svg class="icon icon-fail icon-outline status-icon status-xs-icon status-xs-icon-fail" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"></use>
   </svg>
 </span>
 <span class="text-sm medium ml-4 text-fail">Fail</span>
     </button>
   </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-skipped status-xs "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-skipped icon-outline status-icon status-xs-icon status-xs-icon-skipped"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-skipped"</span><span class="nt">&gt;</span>Skipped<span class="nt">&lt;/span&gt;</span>
@@ -147,7 +151,7 @@
 <span class="c">&lt;!-- Status: Running --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-running status-xs "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-running icon-outline status-icon status-xs-icon status-xs-icon-running"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-running"</span><span class="nt">&gt;</span>Running<span class="nt">&lt;/span&gt;</span>
@@ -155,7 +159,7 @@
 <span class="c">&lt;!-- Status: Paused --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-paused status-xs "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-paused icon-outline status-icon status-xs-icon status-xs-icon-paused"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-paused"</span><span class="nt">&gt;</span>Paused<span class="nt">&lt;/span&gt;</span>
@@ -163,7 +167,7 @@
 <span class="c">&lt;!-- Status: Warning --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-warning status-xs "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-xs-icon status-xs-icon-warning"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
@@ -171,7 +175,7 @@
 <span class="c">&lt;!-- Status: Success --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-success status-xs "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-xs-icon status-xs-icon-success"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
@@ -179,7 +183,7 @@
 <span class="c">&lt;!-- Status: Error --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-error status-xs "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-error-xs icon-outline status-icon status-xs-icon status-xs-icon-error"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error-xs"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error-xs"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-error"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/span&gt;</span>
@@ -187,7 +191,7 @@
 <span class="c">&lt;!-- Status: Fail --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-fail status-xs "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-fail icon-outline status-icon status-xs-icon status-xs-icon-fail"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-fail"</span><span class="nt">&gt;</span>Fail<span class="nt">&lt;/span&gt;</span>
@@ -202,7 +206,7 @@
     <button class="btn btn-secondary btn-sm rounded-pill mr-4">
       <span class="status status-skipped status-sm ">
   <svg class="icon icon-skipped icon-outline status-icon status-sm-icon status-sm-icon-skipped" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"></use>
   </svg>
 </span>
 <span class="text-md medium ml-4 text-skipped">Skipped</span>
@@ -224,7 +228,7 @@
     <button class="btn btn-secondary btn-sm rounded-pill mr-4">
       <span class="status status-running status-sm ">
   <svg class="icon icon-running icon-outline status-icon status-sm-icon status-sm-icon-running" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"></use>
   </svg>
 </span>
 <span class="text-md medium ml-4 text-running">Running</span>
@@ -233,7 +237,7 @@
     <button class="btn btn-secondary btn-sm rounded-pill mr-4">
       <span class="status status-paused status-sm ">
   <svg class="icon icon-paused icon-outline status-icon status-sm-icon status-sm-icon-paused" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"></use>
   </svg>
 </span>
 <span class="text-md medium ml-4 text-paused">Paused</span>
@@ -242,7 +246,7 @@
     <button class="btn btn-secondary btn-sm rounded-pill mr-4">
       <span class="status status-warning status-sm ">
   <svg class="icon icon-success icon-outline status-icon status-sm-icon status-sm-icon-warning" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="text-md medium ml-4 text-warning">Warning</span>
@@ -251,7 +255,7 @@
     <button class="btn btn-secondary btn-sm rounded-pill mr-4">
       <span class="status status-success status-sm ">
   <svg class="icon icon-success icon-outline status-icon status-sm-icon status-sm-icon-success" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="text-md medium ml-4 text-success">Success</span>
@@ -260,7 +264,7 @@
     <button class="btn btn-secondary btn-sm rounded-pill mr-4">
       <span class="status status-error status-sm ">
   <svg class="icon icon-error-xs icon-outline status-icon status-sm-icon status-sm-icon-error" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error-xs"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error-xs"></use>
   </svg>
 </span>
 <span class="text-md medium ml-4 text-error">Error</span>
@@ -269,17 +273,17 @@
     <button class="btn btn-secondary btn-sm rounded-pill mr-4">
       <span class="status status-fail status-sm ">
   <svg class="icon icon-fail icon-outline status-icon status-sm-icon status-sm-icon-fail" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"></use>
   </svg>
 </span>
 <span class="text-md medium ml-4 text-fail">Fail</span>
     </button>
   </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-skipped status-sm "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-skipped icon-outline status-icon status-sm-icon status-sm-icon-skipped"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-skipped"</span><span class="nt">&gt;</span>Skipped<span class="nt">&lt;/span&gt;</span>
@@ -299,7 +303,7 @@
 <span class="c">&lt;!-- Status: Running --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-running status-sm "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-running icon-outline status-icon status-sm-icon status-sm-icon-running"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-running"</span><span class="nt">&gt;</span>Running<span class="nt">&lt;/span&gt;</span>
@@ -307,7 +311,7 @@
 <span class="c">&lt;!-- Status: Paused --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-paused status-sm "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-paused icon-outline status-icon status-sm-icon status-sm-icon-paused"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-paused"</span><span class="nt">&gt;</span>Paused<span class="nt">&lt;/span&gt;</span>
@@ -315,7 +319,7 @@
 <span class="c">&lt;!-- Status: Warning --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-warning status-sm "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-sm-icon status-sm-icon-warning"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-warning"</span><span class="nt">&gt;</span>Warning<span class="nt">&lt;/span&gt;</span>
@@ -323,7 +327,7 @@
 <span class="c">&lt;!-- Status: Success --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-success status-sm "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-sm-icon status-sm-icon-success"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-success"</span><span class="nt">&gt;</span>Success<span class="nt">&lt;/span&gt;</span>
@@ -331,7 +335,7 @@
 <span class="c">&lt;!-- Status: Error --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-error status-sm "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-error-xs icon-outline status-icon status-sm-icon status-sm-icon-error"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error-xs"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error-xs"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-error"</span><span class="nt">&gt;</span>Error<span class="nt">&lt;/span&gt;</span>
@@ -339,7 +343,7 @@
 <span class="c">&lt;!-- Status: Fail --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-fail status-sm "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-fail icon-outline status-icon status-sm-icon status-sm-icon-fail"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text-fail"</span><span class="nt">&gt;</span>Fail<span class="nt">&lt;/span&gt;</span>
@@ -353,7 +357,7 @@
 <div class="mb-24">
   <span class="status status-skipped status-md mr-4">
   <svg class="icon icon-skipped icon-outline status-icon status-md-icon status-md-icon-skipped" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"></use>
   </svg>
 </span>
 <span class="status status-waiting status-md mr-4">
@@ -367,40 +371,40 @@
 </span>
 <span class="status status-running status-md mr-4">
   <svg class="icon icon-running icon-outline status-icon status-md-icon status-md-icon-running" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"></use>
   </svg>
 </span>
 <span class="status status-paused status-md mr-4">
   <svg class="icon icon-paused icon-outline status-icon status-md-icon status-md-icon-paused" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"></use>
   </svg>
 </span>
 <span class="status status-warning status-md mr-4">
   <svg class="icon icon-success icon-outline status-icon status-md-icon status-md-icon-warning" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="status status-success status-md mr-4">
   <svg class="icon icon-success icon-outline status-icon status-md-icon status-md-icon-success" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="status status-error status-md mr-4">
   <svg class="icon icon-error icon-outline status-icon status-md-icon status-md-icon-error" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"></use>
   </svg>
 </span>
 <span class="status status-fail status-md mr-4">
   <svg class="icon icon-fail icon-outline status-icon status-md-icon status-md-icon-fail" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"></use>
   </svg>
 </span>
 </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-skipped status-md "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-skipped icon-outline status-icon status-md-icon status-md-icon-skipped"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
@@ -418,42 +422,42 @@
 <span class="c">&lt;!-- Status: Running --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-running status-md "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-running icon-outline status-icon status-md-icon status-md-icon-running"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Paused --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-paused status-md "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-paused icon-outline status-icon status-md-icon status-md-icon-paused"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Warning --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-warning status-md "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-md-icon status-md-icon-warning"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Success --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-success status-md "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-md-icon status-md-icon-success"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Error --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-error status-md "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-error icon-outline status-icon status-md-icon status-md-icon-error"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Fail --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-fail status-md "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-fail icon-outline status-icon status-md-icon status-md-icon-fail"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 </code></pre></div></div>
@@ -467,7 +471,7 @@
   <div class="status-skipped-bg p-16 pl-0 pr-0 col">
       <span class="status status-skipped status-md status-inverse">
   <svg class="icon icon-skipped icon-outline status-icon status-md-icon status-md-icon-skipped" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"></use>
   </svg>
 </span>
 </div>
@@ -485,51 +489,51 @@
   <div class="status-running-bg p-16 pl-0 pr-0 col">
       <span class="status status-running status-md status-inverse">
   <svg class="icon icon-running icon-outline status-icon status-md-icon status-md-icon-running" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"></use>
   </svg>
 </span>
 </div>
   <div class="status-paused-bg p-16 pl-0 pr-0 col">
       <span class="status status-paused status-md status-inverse">
   <svg class="icon icon-paused icon-outline status-icon status-md-icon status-md-icon-paused" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"></use>
   </svg>
 </span>
 </div>
   <div class="status-warning-bg p-16 pl-0 pr-0 col">
       <span class="status status-warning status-md status-inverse">
   <svg class="icon icon-success icon-outline status-icon status-md-icon status-md-icon-warning" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 </div>
   <div class="status-success-bg p-16 pl-0 pr-0 col">
       <span class="status status-success status-md status-inverse">
   <svg class="icon icon-success icon-outline status-icon status-md-icon status-md-icon-success" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 </div>
   <div class="status-error-bg p-16 pl-0 pr-0 col">
       <span class="status status-error status-md status-inverse">
   <svg class="icon icon-error icon-outline status-icon status-md-icon status-md-icon-error" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"></use>
   </svg>
 </span>
 </div>
   <div class="status-fail-bg p-16 pl-0 pr-0 col">
       <span class="status status-fail status-md status-inverse">
   <svg class="icon icon-fail icon-outline status-icon status-md-icon status-md-icon-fail" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"></use>
   </svg>
 </span>
 </div>
   </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-skipped status-md status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-skipped icon-outline status-icon status-md-icon status-md-icon-skipped"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
@@ -547,42 +551,42 @@
 <span class="c">&lt;!-- Status: Running --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-running status-md status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-running icon-outline status-icon status-md-icon status-md-icon-running"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Paused --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-paused status-md status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-paused icon-outline status-icon status-md-icon status-md-icon-paused"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Warning --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-warning status-md status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-md-icon status-md-icon-warning"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Success --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-success status-md status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-md-icon status-md-icon-success"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Error --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-error status-md status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-error icon-outline status-icon status-md-icon status-md-icon-error"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Fail --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-fail status-md status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-fail icon-outline status-icon status-md-icon status-md-icon-fail"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 </code></pre></div></div>
@@ -595,7 +599,7 @@
 <div class="mb-24">
   <span class="status status-skipped status-lg mr-4">
   <svg class="icon icon-skipped icon-outline status-icon status-lg-icon status-lg-icon-skipped" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"></use>
   </svg>
 </span>
 <span class="status status-waiting status-lg mr-4">
@@ -609,40 +613,40 @@
 </span>
 <span class="status status-running status-lg mr-4">
   <svg class="icon icon-running icon-outline status-icon status-lg-icon status-lg-icon-running" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"></use>
   </svg>
 </span>
 <span class="status status-paused status-lg mr-4">
   <svg class="icon icon-paused icon-outline status-icon status-lg-icon status-lg-icon-paused" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"></use>
   </svg>
 </span>
 <span class="status status-warning status-lg mr-4">
   <svg class="icon icon-success icon-outline status-icon status-lg-icon status-lg-icon-warning" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="status status-success status-lg mr-4">
   <svg class="icon icon-success icon-outline status-icon status-lg-icon status-lg-icon-success" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="status status-error status-lg mr-4">
   <svg class="icon icon-error icon-outline status-icon status-lg-icon status-lg-icon-error" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"></use>
   </svg>
 </span>
 <span class="status status-fail status-lg mr-4">
   <svg class="icon icon-fail icon-outline status-icon status-lg-icon status-lg-icon-fail" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"></use>
   </svg>
 </span>
 </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-skipped status-lg "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-skipped icon-outline status-icon status-lg-icon status-lg-icon-skipped"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
@@ -660,42 +664,42 @@
 <span class="c">&lt;!-- Status: Running --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-running status-lg "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-running icon-outline status-icon status-lg-icon status-lg-icon-running"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Paused --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-paused status-lg "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-paused icon-outline status-icon status-lg-icon status-lg-icon-paused"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Warning --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-warning status-lg "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-lg-icon status-lg-icon-warning"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Success --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-success status-lg "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-lg-icon status-lg-icon-success"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Error --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-error status-lg "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-error icon-outline status-icon status-lg-icon status-lg-icon-error"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Fail --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-fail status-lg "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-fail icon-outline status-icon status-lg-icon status-lg-icon-fail"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 </code></pre></div></div>
@@ -709,7 +713,7 @@
   <div class="status-skipped-bg p-16 pl-0 pr-0 col">
       <span class="status status-skipped status-lg status-inverse">
   <svg class="icon icon-skipped icon-outline status-icon status-lg-icon status-lg-icon-skipped" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"></use>
   </svg>
 </span>
 </div>
@@ -727,51 +731,51 @@
   <div class="status-running-bg p-16 pl-0 pr-0 col">
       <span class="status status-running status-lg status-inverse">
   <svg class="icon icon-running icon-outline status-icon status-lg-icon status-lg-icon-running" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"></use>
   </svg>
 </span>
 </div>
   <div class="status-paused-bg p-16 pl-0 pr-0 col">
       <span class="status status-paused status-lg status-inverse">
   <svg class="icon icon-paused icon-outline status-icon status-lg-icon status-lg-icon-paused" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"></use>
   </svg>
 </span>
 </div>
   <div class="status-warning-bg p-16 pl-0 pr-0 col">
       <span class="status status-warning status-lg status-inverse">
   <svg class="icon icon-success icon-outline status-icon status-lg-icon status-lg-icon-warning" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 </div>
   <div class="status-success-bg p-16 pl-0 pr-0 col">
       <span class="status status-success status-lg status-inverse">
   <svg class="icon icon-success icon-outline status-icon status-lg-icon status-lg-icon-success" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 </div>
   <div class="status-error-bg p-16 pl-0 pr-0 col">
       <span class="status status-error status-lg status-inverse">
   <svg class="icon icon-error icon-outline status-icon status-lg-icon status-lg-icon-error" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"></use>
   </svg>
 </span>
 </div>
   <div class="status-fail-bg p-16 pl-0 pr-0 col">
       <span class="status status-fail status-lg status-inverse">
   <svg class="icon icon-fail icon-outline status-icon status-lg-icon status-lg-icon-fail" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"></use>
   </svg>
 </span>
 </div>
   </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-skipped status-lg status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-skipped icon-outline status-icon status-lg-icon status-lg-icon-skipped"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
@@ -789,42 +793,42 @@
 <span class="c">&lt;!-- Status: Running --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-running status-lg status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-running icon-outline status-icon status-lg-icon status-lg-icon-running"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Paused --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-paused status-lg status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-paused icon-outline status-icon status-lg-icon status-lg-icon-paused"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Warning --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-warning status-lg status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-lg-icon status-lg-icon-warning"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Success --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-success status-lg status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-lg-icon status-lg-icon-success"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Error --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-error status-lg status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-error icon-outline status-icon status-lg-icon status-lg-icon-error"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Fail --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-fail status-lg status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-fail icon-outline status-icon status-lg-icon status-lg-icon-fail"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 </code></pre></div></div>
@@ -837,7 +841,7 @@
 <div class="mb-24">
   <span class="status status-skipped status-xl mr-4">
   <svg class="icon icon-skipped icon-outline status-icon status-xl-icon status-xl-icon-skipped" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"></use>
   </svg>
 </span>
 <span class="status status-waiting status-xl mr-4">
@@ -851,40 +855,40 @@
 </span>
 <span class="status status-running status-xl mr-4">
   <svg class="icon icon-running icon-outline status-icon status-xl-icon status-xl-icon-running" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"></use>
   </svg>
 </span>
 <span class="status status-paused status-xl mr-4">
   <svg class="icon icon-paused icon-outline status-icon status-xl-icon status-xl-icon-paused" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"></use>
   </svg>
 </span>
 <span class="status status-warning status-xl mr-4">
   <svg class="icon icon-success icon-outline status-icon status-xl-icon status-xl-icon-warning" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="status status-success status-xl mr-4">
   <svg class="icon icon-success icon-outline status-icon status-xl-icon status-xl-icon-success" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 <span class="status status-error status-xl mr-4">
   <svg class="icon icon-error icon-outline status-icon status-xl-icon status-xl-icon-error" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"></use>
   </svg>
 </span>
 <span class="status status-fail status-xl mr-4">
   <svg class="icon icon-fail icon-outline status-icon status-xl-icon status-xl-icon-fail" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"></use>
   </svg>
 </span>
 </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-skipped status-xl "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-skipped icon-outline status-icon status-xl-icon status-xl-icon-skipped"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
@@ -902,42 +906,42 @@
 <span class="c">&lt;!-- Status: Running --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-running status-xl "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-running icon-outline status-icon status-xl-icon status-xl-icon-running"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Paused --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-paused status-xl "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-paused icon-outline status-icon status-xl-icon status-xl-icon-paused"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Warning --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-warning status-xl "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-xl-icon status-xl-icon-warning"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Success --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-success status-xl "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-xl-icon status-xl-icon-success"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Error --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-error status-xl "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-error icon-outline status-icon status-xl-icon status-xl-icon-error"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Fail --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-fail status-xl "</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-fail icon-outline status-icon status-xl-icon status-xl-icon-fail"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 </code></pre></div></div>
@@ -951,7 +955,7 @@
   <div class="status-skipped-bg p-16 pl-0 pr-0 col">
       <span class="status status-skipped status-xl status-inverse">
   <svg class="icon icon-skipped icon-outline status-icon status-xl-icon status-xl-icon-skipped" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"></use>
   </svg>
 </span>
 </div>
@@ -969,51 +973,51 @@
   <div class="status-running-bg p-16 pl-0 pr-0 col">
       <span class="status status-running status-xl status-inverse">
   <svg class="icon icon-running icon-outline status-icon status-xl-icon status-xl-icon-running" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"></use>
   </svg>
 </span>
 </div>
   <div class="status-paused-bg p-16 pl-0 pr-0 col">
       <span class="status status-paused status-xl status-inverse">
   <svg class="icon icon-paused icon-outline status-icon status-xl-icon status-xl-icon-paused" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"></use>
   </svg>
 </span>
 </div>
   <div class="status-warning-bg p-16 pl-0 pr-0 col">
       <span class="status status-warning status-xl status-inverse">
   <svg class="icon icon-success icon-outline status-icon status-xl-icon status-xl-icon-warning" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 </div>
   <div class="status-success-bg p-16 pl-0 pr-0 col">
       <span class="status status-success status-xl status-inverse">
   <svg class="icon icon-success icon-outline status-icon status-xl-icon status-xl-icon-success" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"></use>
   </svg>
 </span>
 </div>
   <div class="status-error-bg p-16 pl-0 pr-0 col">
       <span class="status status-error status-xl status-inverse">
   <svg class="icon icon-error icon-outline status-icon status-xl-icon status-xl-icon-error" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"></use>
   </svg>
 </span>
 </div>
   <div class="status-fail-bg p-16 pl-0 pr-0 col">
       <span class="status status-fail status-xl status-inverse">
   <svg class="icon icon-fail icon-outline status-icon status-xl-icon status-xl-icon-fail" preserveAspectRatio="xMinYMin meet">
-    <use xlink:href="/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"></use>
+    <use xlink:href="/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"></use>
   </svg>
 </span>
 </div>
   </div>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="c">&lt;!-- Status: Skipped --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-skipped status-xl status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-skipped icon-outline status-icon status-xl-icon status-xl-icon-skipped"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#skipped"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
@@ -1031,42 +1035,42 @@
 <span class="c">&lt;!-- Status: Running --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-running status-xl status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-running icon-outline status-icon status-xl-icon status-xl-icon-running"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#running"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Paused --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-paused status-xl status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-paused icon-outline status-icon status-xl-icon status-xl-icon-paused"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#paused"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Warning --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-warning status-xl status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-xl-icon status-xl-icon-warning"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Success --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-success status-xl status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-success icon-outline status-icon status-xl-icon status-xl-icon-success"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#success"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Error --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-error status-xl status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-error icon-outline status-icon status-xl-icon status-xl-icon-error"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#error"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 
 <span class="c">&lt;!-- Status: Fail --&gt;</span>
 <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"status status-fail status-xl status-inverse"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;svg</span> <span class="na">class=</span><span class="s">"icon icon-fail icon-outline status-icon status-xl-icon status-xl-icon-fail"</span> <span class="na">preserveAspectRatio=</span><span class="s">"xMinYMin meet"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-fb209326ce8880cecb2dd09e9dfcbab5a42ca0378a568c1a01faefe057e939e3.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
+    <span class="nt">&lt;use</span> <span class="na">xlink:href=</span><span class="s">"/shipyard/assets/icons-8b54f29771faf15e910b0088c70e9dbfeaf00ccbb5df87d5ed3d89e32cb226ca.svg#fail"</span><span class="nt">&gt;&lt;/use&gt;</span>
   <span class="nt">&lt;/svg&gt;</span>
 <span class="nt">&lt;/span&gt;</span>
 </code></pre></div></div>
@@ -1074,47 +1078,47 @@
 <hr />
 
 <h3 id="utility-css">Utility CSS</h3>
-<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block"><code><span class="nc">.status</span> <span class="p">{</span> <span class="nl">top</span><span class="p">:</span> <span class="m">-1px</span><span class="p">;</span> <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span> <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#788594</span><span class="p">;</span> <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="m">#788594</span><span class="p">;</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span> <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">middle</span><span class="p">;</span> <span class="nl">background-clip</span><span class="p">:</span> <span class="n">border-box</span> <span class="p">}</span>
-<span class="nc">.status-skipped-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#788594</span> <span class="p">}</span>
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="code-block mt-16 mb-16"><code><span class="nc">.status</span> <span class="p">{</span> <span class="nl">top</span><span class="p">:</span> <span class="m">-1px</span><span class="p">;</span> <span class="nl">position</span><span class="p">:</span> <span class="nb">relative</span><span class="p">;</span> <span class="nl">display</span><span class="p">:</span> <span class="n">inline-block</span><span class="p">;</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#b9c3cb</span><span class="p">;</span> <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="m">#b9c3cb</span><span class="p">;</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span> <span class="nl">vertical-align</span><span class="p">:</span> <span class="nb">middle</span><span class="p">;</span> <span class="nl">background-clip</span><span class="p">:</span> <span class="n">border-box</span> <span class="p">}</span>
+<span class="nc">.status-skipped-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#b9c3cb</span> <span class="p">}</span>
 <span class="nc">.status-waiting.status-xs</span><span class="nd">::after</span><span class="o">,</span>
 <span class="nc">.status-waiting.status-sm</span><span class="nd">::after</span><span class="o">,</span>
 <span class="nc">.status-running.status-xs</span><span class="nd">::after</span><span class="o">,</span>
 <span class="nc">.status-running.status-sm</span><span class="nd">::after</span> <span class="p">{</span> <span class="nl">top</span><span class="p">:</span> <span class="m">-2px</span><span class="p">;</span> <span class="nl">left</span><span class="p">:</span> <span class="m">-2px</span><span class="p">;</span> <span class="nl">right</span><span class="p">:</span> <span class="m">-2px</span><span class="p">;</span> <span class="nl">bottom</span><span class="p">:</span> <span class="m">-2px</span><span class="p">;</span> <span class="nl">content</span><span class="p">:</span> <span class="s2">''</span><span class="p">;</span> <span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span> <span class="nl">position</span><span class="p">:</span> <span class="nb">absolute</span><span class="p">;</span> <span class="nl">border-radius</span><span class="p">:</span> <span class="m">50%</span><span class="p">;</span> <span class="nl">border</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span> <span class="nl">animation</span><span class="p">:</span> <span class="n">fade</span> <span class="m">1s</span> <span class="n">linear</span> <span class="m">0s</span> <span class="n">infinite</span> <span class="n">alternate</span> <span class="p">}</span>
-<span class="nc">.status-waiting</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#259ad5</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#259ad5</span> <span class="p">}</span>
-<span class="nc">.status-waiting-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#259ad5</span> <span class="p">}</span>
-<span class="nc">.status-waiting.status-md</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.status-inverse</span><span class="o">)</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#259ad5</span> <span class="p">}</span>
+<span class="nc">.status-waiting</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#309ed5</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#309ed5</span> <span class="p">}</span>
+<span class="nc">.status-waiting-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#309ed5</span> <span class="p">}</span>
+<span class="nc">.status-waiting.status-md</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.status-inverse</span><span class="o">)</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#309ed5</span> <span class="p">}</span>
 <span class="nc">.status-waiting.status-xs</span><span class="nd">::after</span><span class="o">,</span>
-<span class="nc">.status-waiting.status-sm</span><span class="nd">::after</span> <span class="p">{</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#4bb7ec</span> <span class="p">}</span>
-<span class="nc">.status-running</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#0b989b</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">89</span><span class="p">,</span><span class="m">123</span><span class="p">,</span><span class="m">145</span><span class="p">,</span><span class="m">0.24</span><span class="p">)</span> <span class="p">}</span>
-<span class="nc">.status-running-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0b989b</span> <span class="p">}</span>
+<span class="nc">.status-waiting.status-sm</span><span class="nd">::after</span> <span class="p">{</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#62beec</span> <span class="p">}</span>
+<span class="nc">.status-running</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#17a1a4</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">89</span><span class="p">,</span><span class="m">123</span><span class="p">,</span><span class="m">145</span><span class="p">,</span><span class="m">0.24</span><span class="p">)</span> <span class="p">}</span>
+<span class="nc">.status-running-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#17a1a4</span> <span class="p">}</span>
 <span class="nc">.status-running.status-xs</span><span class="o">,</span>
-<span class="nc">.status-running.status-sm</span> <span class="p">{</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#20babd</span> <span class="p">}</span>
+<span class="nc">.status-running.status-sm</span> <span class="p">{</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#35c5c8</span> <span class="p">}</span>
 <span class="nc">.status-running.status-xs</span><span class="nd">::after</span><span class="o">,</span>
-<span class="nc">.status-running.status-sm</span><span class="nd">::after</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0b989b</span> <span class="p">}</span>
+<span class="nc">.status-running.status-sm</span><span class="nd">::after</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#17a1a4</span> <span class="p">}</span>
 <span class="nc">.status-running.status-inverse</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="n">rgba</span><span class="p">(</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">255</span><span class="p">,</span><span class="m">0.3</span><span class="p">);</span> <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span> <span class="p">}</span>
 <span class="nc">.status-warning</span><span class="o">,</span>
-<span class="nc">.status-paused</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#b3810c</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#b3810c</span> <span class="p">}</span>
+<span class="nc">.status-paused</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#b38210</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#b38210</span> <span class="p">}</span>
 <span class="nc">.status-warning-bg</span><span class="o">,</span>
-<span class="nc">.status-paused-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#b3810c</span> <span class="p">}</span>
+<span class="nc">.status-paused-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#b38210</span> <span class="p">}</span>
 <span class="nc">.status-warning.status-md</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.status-inverse</span><span class="o">),</span>
-<span class="nc">.status-paused.status-md</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.status-inverse</span><span class="o">)</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#b3810c</span> <span class="p">}</span>
+<span class="nc">.status-paused.status-md</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.status-inverse</span><span class="o">)</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#fff</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#b38210</span> <span class="p">}</span>
 <span class="nc">.status-warning.status-xs</span><span class="o">,</span>
 <span class="nc">.status-warning.status-sm</span><span class="o">,</span>
 <span class="nc">.status-paused.status-xs</span><span class="o">,</span>
 <span class="nc">.status-paused.status-sm</span> <span class="p">{</span> <span class="nl">border-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span> <span class="p">}</span>
-<span class="nc">.status-success</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#0ca04e</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#0ca04e</span> <span class="p">}</span>
+<span class="nc">.status-success</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#17a456</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#17a456</span> <span class="p">}</span>
 <span class="nc">.status-success</span><span class="o">,</span>
-<span class="nc">.status-success-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#0ca04e</span> <span class="p">}</span>
+<span class="nc">.status-success-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#17a456</span> <span class="p">}</span>
 <span class="nc">.status-success.status-xs</span><span class="o">,</span>
 <span class="nc">.status-success.status-sm</span> <span class="p">{</span> <span class="nl">border-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span> <span class="p">}</span>
-<span class="nc">.status-fail</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d54e44</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#d54e44</span> <span class="p">}</span>
+<span class="nc">.status-fail</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#db564c</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#db564c</span> <span class="p">}</span>
 <span class="nc">.status-fail</span><span class="o">,</span>
-<span class="nc">.status-fail-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#d54e44</span> <span class="p">}</span>
+<span class="nc">.status-fail-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#db564c</span> <span class="p">}</span>
 <span class="nc">.status-fail.status-xs</span><span class="o">,</span>
 <span class="nc">.status-fail.status-sm</span> <span class="p">{</span> <span class="nl">border-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span> <span class="p">}</span>
-<span class="nc">.status-error</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d57725</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#d57725</span> <span class="p">}</span>
+<span class="nc">.status-error</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d57d30</span><span class="p">;</span> <span class="nl">border-color</span><span class="p">:</span> <span class="m">#d57d30</span> <span class="p">}</span>
 <span class="nc">.status-error</span><span class="o">,</span>
-<span class="nc">.status-error-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#d57725</span> <span class="p">}</span>
+<span class="nc">.status-error-bg</span> <span class="p">{</span> <span class="nl">background-color</span><span class="p">:</span> <span class="m">#d57d30</span> <span class="p">}</span>
 <span class="nc">.status-error.status-xs</span><span class="o">,</span>
 <span class="nc">.status-error.status-sm</span> <span class="p">{</span> <span class="nl">border-color</span><span class="p">:</span> <span class="nb">transparent</span><span class="p">;</span> <span class="nl">background-color</span><span class="p">:</span> <span class="nb">transparent</span> <span class="p">}</span>
 <span class="nc">.status-success.status-md</span><span class="nd">:not</span><span class="o">(</span><span class="nc">.status-inverse</span><span class="o">),</span>
@@ -1156,14 +1160,14 @@
 <span class="nc">.status-xl-icon-skipped</span> <span class="p">{</span> <span class="nl">margin-left</span><span class="p">:</span> <span class="m">-5px</span> <span class="p">}</span>
 <span class="nc">.status-xl-icon-waiting</span> <span class="p">{</span> <span class="nl">width</span><span class="p">:</span> <span class="m">12px</span><span class="p">;</span> <span class="nl">height</span><span class="p">:</span> <span class="m">2px</span><span class="p">;</span> <span class="nl">margin</span><span class="p">:</span> <span class="m">-1px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">-6px</span> <span class="p">}</span>
 <span class="nc">.status-xl-icon-running</span> <span class="p">{</span> <span class="nl">width</span><span class="p">:</span> <span class="m">34px</span><span class="p">;</span> <span class="nl">height</span><span class="p">:</span> <span class="m">34px</span><span class="p">;</span> <span class="nl">margin</span><span class="p">:</span> <span class="m">-17px</span> <span class="m">0</span> <span class="m">0</span> <span class="m">-17px</span> <span class="p">}</span>
-<span class="nc">.text-skipped</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#788594</span> <span class="p">}</span>
-<span class="nc">.text-waiting</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#259ad5</span> <span class="p">}</span>
-<span class="nc">.text-running</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#0b989b</span> <span class="p">}</span>
+<span class="nc">.text-skipped</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#b9c3cb</span> <span class="p">}</span>
+<span class="nc">.text-waiting</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#309ed5</span> <span class="p">}</span>
+<span class="nc">.text-running</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#17a1a4</span> <span class="p">}</span>
 <span class="nc">.text-paused</span><span class="o">,</span>
-<span class="nc">.text-warning</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#b3810c</span> <span class="p">}</span>
-<span class="nc">.text-success</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#0ca04e</span> <span class="p">}</span>
-<span class="nc">.text-fail</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d54e44</span> <span class="p">}</span>
-<span class="nc">.text-error</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d57725</span> <span class="p">}</span>
+<span class="nc">.text-warning</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#b38210</span> <span class="p">}</span>
+<span class="nc">.text-success</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#17a456</span> <span class="p">}</span>
+<span class="nc">.text-fail</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#db564c</span> <span class="p">}</span>
+<span class="nc">.text-error</span> <span class="p">{</span> <span class="nl">color</span><span class="p">:</span> <span class="m">#d57d30</span> <span class="p">}</span>
 </code></pre></div></div>
 
 <hr />
@@ -1171,7 +1175,7 @@
 <ul class="col-container">
   <li class="css-stat-item col col-10">
     <span class="text-sm medium text-lighter block">Gzipped Size</span>
-    <span class="text-xxxl bold text-darker">961 <span class="text-lightest">B</span></span>
+    <span class="text-xxxl bold text-darker">963 <span class="text-lightest">B</span></span>
   </li>
   <li class="css-stat-item col col-10">
     <span class="text-sm medium text-lighter block">Declarations</span>
@@ -1187,6 +1191,6 @@
     <footer class="align-center text-lightest">
       &copy; Shipyard Framework 2018
     </footer>
-    <script type="text/javascript" integrity="sha256-1GmHfsUW2R4BXqI5kmQqCGNDiCxQmkKzAH+Zp38V83E=" crossorigin="anonymous" src="/shipyard/assets/application-d469877ec516d91e015ea23992642a086343882c509a42b3007f99a77f15f371.js"></script>
+    <script src="/shipyard/assets/application-02c9f422e267fe39b3823737f79a3efe3238ee5aeda60f8b606c321ce62b1008.js" type="text/javascript" integrity="sha256-Asn0IuJn/jmzgjc395o+/jI47lrtpg+LYGwyHOYrEAg=" crossorigin="anonymous"></script>
   </body>
 </html>
