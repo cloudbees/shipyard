@@ -128,7 +128,12 @@ $shipyard-utility-defaults: (
   filter: (
     prefix: 'filter',
     responsive: false,
-    values: (none, inherit)
+    values: (
+      'none': none,
+      'inherit': inherit,
+      'drop-shadow': drop-shadow(0 1px 0 rgba($black, .1)),
+      'drop-shadow-sm': drop-shadow(0 1px 1px rgba($black, .1))
+    )
   ),
 
   // Shipyard: Breakpoints
@@ -346,8 +351,8 @@ $shipyard-utility-defaults: (
     prefix: 'text-shadow',
     responsive: false,
     values: (
-      '': 0 1px 0 rgba(#000,.1),
-      'sm': 0 1px 1px rgba(#000, .1)
+      '': 0 1px 0 rgba($black, .1),
+      'sm': 0 1px 1px rgba($black, .1)
     )
   ),
 
